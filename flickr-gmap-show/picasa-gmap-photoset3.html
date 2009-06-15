@@ -16,7 +16,9 @@ body {height:100%;}
 .screenmask div {position:relative;float:left;left:50%;margin-left:-16px;}
 .popup {z-index:2000; background-color:white; font:14px arial; text-align:left;}
 </style>
-<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAEze7wu8rtJbLUMg9r38hVBT_LlSBiim3A7gNdog-aNvmHZkcbRRtPSOPUukZuz0GJrC8xLpqp6MFlw"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAEze7wu8rtJbLUMg9r38hVBR6JEi-CnLH6jrRAqbmTPdvqdeWphRtMIliFfu-FA0D8DH8UOrc56VJkQ"></script>
+<!-- ABQIAAAAEze7wu8rtJbLUMg9r38hVBT_LlSBiim3A7gNdog-aNvmHZkcbRRtPSOPUukZuz0GJrC8xLpqp6MFlw -->
+<!-- ABQIAAAAEze7wu8rtJbLUMg9r38hVBR6JEi-CnLH6jrRAqbmTPdvqdeWphRtMIliFfu-FA0D8DH8UOrc56VJkQ -->
 
 <script type="text/javascript">//<![CDATA[
 //document.oldwrite = document.write;
@@ -458,6 +460,7 @@ var BrowseMap=window.BrowseMap=function(container, opts){
   this.getContainer().appendChild(options);
 
   this.tracks = [];
+  this.waypoints= [];
   if(this.gpx) {
     this.datetracking=false;
     
@@ -513,7 +516,7 @@ BrowseMap.prototype.gpx_parsewpt=function(wpt) {
         this.openInfoWindow(info);
       });
       this.addOverlay(marker);
-//      this.waypoints.push(marker);
+      this.waypoints.push(marker);
     } else {
     	alert("wpt format error: both lat/lon should be valid");
     }
