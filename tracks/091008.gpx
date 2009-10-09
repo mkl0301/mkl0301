@@ -1,0 +1,5490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+ version = "1.1"
+creator = "TimeMachineX - http://www.wintec.com.tw"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xmlns = "http://www.topografix.com/GPX/1/1"
+xsi:schemaLocation = "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds maxlat="24.804404" maxlon="121.064421" minlat="24.777959" minlon="121.012519"/>
+</metadata>
+<wpt lat="24.791025" lon="121.056645">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:52Z</time>
+ <name>Push Log Point #1</name>
+ <desc>Lat.=24.7910249, Long.=121.0566449, Alt.=72m, Speed=0Km/h, Course=214deg.</desc>
+ <sym>Waypoint</sym>
+ <type>Other</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Push Log Point #1</label_text>
+</label>
+</extensions>
+</wpt>
+<trk>
+<name>Track 001</name>
+ <desc>Total Track Points: 780. Total time: 1h8m34. Journey: 14.225Km</desc>
+<trkseg>
+<trkpt lat="24.7849699" lon="121.0135433">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:01:35Z</time>
+ <desc>Lat.=24.7849699, Long.=121.0135433, Alt.=110m.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7849799" lon="121.0135416">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:01:50Z</time>
+ <desc>Lat.=24.7849799, Long.=121.0135416, Alt.=110m, Speed=0Km/h, Course=351deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7850766" lon="121.0135366">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:01:55Z</time>
+ <desc>Lat.=24.7850766, Long.=121.0135366, Alt.=110m, Speed=7Km/h, Course=357deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7851466" lon="121.0133649">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:00Z</time>
+ <desc>Lat.=24.7851466, Long.=121.0133649, Alt.=110m, Speed=13Km/h, Course=294deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7852066" lon="121.0131433">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:05Z</time>
+ <desc>Lat.=24.7852066, Long.=121.0131433, Alt.=110m, Speed=16Km/h, Course=287deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7851982" lon="121.0129583">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:10Z</time>
+ <desc>Lat.=24.7851982, Long.=121.0129583, Alt.=110m, Speed=13Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7851649" lon="121.0127966">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:15Z</time>
+ <desc>Lat.=24.7851649, Long.=121.0127966, Alt.=110m, Speed=12Km/h, Course=257deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7852850" lon="121.0128083">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:20Z</time>
+ <desc>Lat.=24.7852850, Long.=121.0128083, Alt.=110m, Speed=9Km/h, Course=5deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7854800" lon="121.0128849">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:25Z</time>
+ <desc>Lat.=24.7854800, Long.=121.0128849, Alt.=110m, Speed=16Km/h, Course=20deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7857399" lon="121.0128966">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:30Z</time>
+ <desc>Lat.=24.7857399, Long.=121.0128966, Alt.=110m, Speed=20Km/h, Course=2deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7860016" lon="121.0129483">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:35Z</time>
+ <desc>Lat.=24.7860016, Long.=121.0129483, Alt.=110m, Speed=21Km/h, Course=10deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7862733" lon="121.0130166">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:40Z</time>
+ <desc>Lat.=24.7862733, Long.=121.0130166, Alt.=110m, Speed=22Km/h, Course=13deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7865383" lon="121.0130949">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:45Z</time>
+ <desc>Lat.=24.7865383, Long.=121.0130949, Alt.=110m, Speed=21Km/h, Course=15deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7867966" lon="121.0131816">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:50Z</time>
+ <desc>Lat.=24.7867966, Long.=121.0131816, Alt.=110m, Speed=21Km/h, Course=17deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7870549" lon="121.0132533">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:02:55Z</time>
+ <desc>Lat.=24.7870549, Long.=121.0132533, Alt.=110m, Speed=21Km/h, Course=14deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7872883" lon="121.0133233">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:03:00Z</time>
+ <desc>Lat.=24.7872883, Long.=121.0133233, Alt.=110m, Speed=19Km/h, Course=15deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7875499" lon="121.0133983">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:03:05Z</time>
+ <desc>Lat.=24.7875499, Long.=121.0133983, Alt.=110m, Speed=21Km/h, Course=15deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7878149" lon="121.0134766">
+ <ele>110.000000</ele>
+ <time>2009-10-08T04:03:10Z</time>
+ <desc>Lat.=24.7878149, Long.=121.0134766, Alt.=110m, Speed=21Km/h, Course=15deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7880700" lon="121.0135599">
+ <ele>109.000000</ele>
+ <time>2009-10-08T04:03:15Z</time>
+ <desc>Lat.=24.7880700, Long.=121.0135599, Alt.=109m, Speed=21Km/h, Course=17deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7883133" lon="121.0136249">
+ <ele>109.000000</ele>
+ <time>2009-10-08T04:03:20Z</time>
+ <desc>Lat.=24.7883133, Long.=121.0136249, Alt.=109m, Speed=20Km/h, Course=14deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7885316" lon="121.0134766">
+ <ele>109.000000</ele>
+ <time>2009-10-08T04:03:25Z</time>
+ <desc>Lat.=24.7885316, Long.=121.0134766, Alt.=109m, Speed=20Km/h, Course=328deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7886133" lon="121.0132399">
+ <ele>108.000000</ele>
+ <time>2009-10-08T04:03:30Z</time>
+ <desc>Lat.=24.7886133, Long.=121.0132399, Alt.=108m, Speed=18Km/h, Course=291deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7887183" lon="121.0130500">
+ <ele>106.000000</ele>
+ <time>2009-10-08T04:03:35Z</time>
+ <desc>Lat.=24.7887183, Long.=121.0130500, Alt.=106m, Speed=16Km/h, Course=301deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7888966" lon="121.0131433">
+ <ele>105.000000</ele>
+ <time>2009-10-08T04:03:40Z</time>
+ <desc>Lat.=24.7888966, Long.=121.0131433, Alt.=105m, Speed=15Km/h, Course=25deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7890916" lon="121.0132566">
+ <ele>103.000000</ele>
+ <time>2009-10-08T04:03:45Z</time>
+ <desc>Lat.=24.7890916, Long.=121.0132566, Alt.=103m, Speed=17Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7892650" lon="121.0133549">
+ <ele>102.000000</ele>
+ <time>2009-10-08T04:03:50Z</time>
+ <desc>Lat.=24.7892650, Long.=121.0133549, Alt.=102m, Speed=15Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7894432" lon="121.0134583">
+ <ele>101.000000</ele>
+ <time>2009-10-08T04:03:55Z</time>
+ <desc>Lat.=24.7894432, Long.=121.0134583, Alt.=101m, Speed=16Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7896300" lon="121.0135650">
+ <ele>100.000000</ele>
+ <time>2009-10-08T04:04:00Z</time>
+ <desc>Lat.=24.7896300, Long.=121.0135650, Alt.=100m, Speed=16Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7898333" lon="121.0136799">
+ <ele>98.000000</ele>
+ <time>2009-10-08T04:04:05Z</time>
+ <desc>Lat.=24.7898333, Long.=121.0136799, Alt.=98m, Speed=18Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7900433" lon="121.0137983">
+ <ele>97.000000</ele>
+ <time>2009-10-08T04:04:10Z</time>
+ <desc>Lat.=24.7900433, Long.=121.0137983, Alt.=97m, Speed=18Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7902633" lon="121.0139283">
+ <ele>96.000000</ele>
+ <time>2009-10-08T04:04:15Z</time>
+ <desc>Lat.=24.7902633, Long.=121.0139283, Alt.=96m, Speed=20Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904950" lon="121.0140616">
+ <ele>95.000000</ele>
+ <time>2009-10-08T04:04:20Z</time>
+ <desc>Lat.=24.7904950, Long.=121.0140616, Alt.=95m, Speed=20Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7907200" lon="121.0141949">
+ <ele>94.000000</ele>
+ <time>2009-10-08T04:04:25Z</time>
+ <desc>Lat.=24.7907200, Long.=121.0141949, Alt.=94m, Speed=20Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7909366" lon="121.0143199">
+ <ele>93.000000</ele>
+ <time>2009-10-08T04:04:30Z</time>
+ <desc>Lat.=24.7909366, Long.=121.0143199, Alt.=93m, Speed=19Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7911349" lon="121.0144366">
+ <ele>92.000000</ele>
+ <time>2009-10-08T04:04:35Z</time>
+ <desc>Lat.=24.7911349, Long.=121.0144366, Alt.=92m, Speed=18Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7913283" lon="121.0145516">
+ <ele>90.000000</ele>
+ <time>2009-10-08T04:04:40Z</time>
+ <desc>Lat.=24.7913283, Long.=121.0145516, Alt.=90m, Speed=17Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7915249" lon="121.0146633">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:04:45Z</time>
+ <desc>Lat.=24.7915249, Long.=121.0146633, Alt.=87m, Speed=17Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7917183" lon="121.0147733">
+ <ele>86.000000</ele>
+ <time>2009-10-08T04:04:50Z</time>
+ <desc>Lat.=24.7917183, Long.=121.0147733, Alt.=86m, Speed=17Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7919033" lon="121.0148716">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:04:55Z</time>
+ <desc>Lat.=24.7919033, Long.=121.0148716, Alt.=85m, Speed=16Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7920849" lon="121.0149699">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:05:00Z</time>
+ <desc>Lat.=24.7920849, Long.=121.0149699, Alt.=83m, Speed=16Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7922783" lon="121.0150683">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:05:05Z</time>
+ <desc>Lat.=24.7922783, Long.=121.0150683, Alt.=82m, Speed=17Km/h, Course=25deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7924649" lon="121.0151783">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:05:10Z</time>
+ <desc>Lat.=24.7924649, Long.=121.0151783, Alt.=81m, Speed=16Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7926532" lon="121.0152799">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:05:15Z</time>
+ <desc>Lat.=24.7926532, Long.=121.0152799, Alt.=80m, Speed=16Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7928483" lon="121.0153799">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:05:20Z</time>
+ <desc>Lat.=24.7928483, Long.=121.0153799, Alt.=79m, Speed=17Km/h, Course=25deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7930366" lon="121.0154916">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:05:25Z</time>
+ <desc>Lat.=24.7930366, Long.=121.0154916, Alt.=78m, Speed=17Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7932083" lon="121.0155683">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:05:30Z</time>
+ <desc>Lat.=24.7932083, Long.=121.0155683, Alt.=78m, Speed=14Km/h, Course=22deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7933400" lon="121.0154466">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:05:35Z</time>
+ <desc>Lat.=24.7933400, Long.=121.0154466, Alt.=78m, Speed=13Km/h, Course=320deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7933616" lon="121.0152199">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:05:40Z</time>
+ <desc>Lat.=24.7933616, Long.=121.0152199, Alt.=78m, Speed=16Km/h, Course=276deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7934483" lon="121.0149333">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:05:45Z</time>
+ <desc>Lat.=24.7934483, Long.=121.0149333, Alt.=79m, Speed=21Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7935483" lon="121.0147516">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:05:50Z</time>
+ <desc>Lat.=24.7935483, Long.=121.0147516, Alt.=80m, Speed=15Km/h, Course=301deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7936466" lon="121.0145699">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:05:55Z</time>
+ <desc>Lat.=24.7936466, Long.=121.0145699, Alt.=80m, Speed=15Km/h, Course=301deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7937216" lon="121.0143983">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:06:00Z</time>
+ <desc>Lat.=24.7937216, Long.=121.0143983, Alt.=81m, Speed=13Km/h, Course=296deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7938416" lon="121.0141716">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:06:05Z</time>
+ <desc>Lat.=24.7938416, Long.=121.0141716, Alt.=81m, Speed=19Km/h, Course=300deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7939683" lon="121.0139366">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:06:10Z</time>
+ <desc>Lat.=24.7939683, Long.=121.0139366, Alt.=82m, Speed=19Km/h, Course=301deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7940083" lon="121.0137716">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:06:15Z</time>
+ <desc>Lat.=24.7940083, Long.=121.0137716, Alt.=82m, Speed=12Km/h, Course=285deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7940966" lon="121.0135299">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:06:20Z</time>
+ <desc>Lat.=24.7940966, Long.=121.0135299, Alt.=83m, Speed=18Km/h, Course=292deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7943216" lon="121.0136366">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:06:25Z</time>
+ <desc>Lat.=24.7943216, Long.=121.0136366, Alt.=83m, Speed=19Km/h, Course=23deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7943783" lon="121.0139833">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:06:30Z</time>
+ <desc>Lat.=24.7943783, Long.=121.0139833, Alt.=82m, Speed=25Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7945966" lon="121.0142349">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:06:35Z</time>
+ <desc>Lat.=24.7945966, Long.=121.0142349, Alt.=82m, Speed=25Km/h, Course=46deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7948100" lon="121.0144166">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:06:40Z</time>
+ <desc>Lat.=24.7948100, Long.=121.0144166, Alt.=81m, Speed=21Km/h, Course=38deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7950399" lon="121.0144349">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:06:45Z</time>
+ <desc>Lat.=24.7950399, Long.=121.0144349, Alt.=80m, Speed=18Km/h, Course=4deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7953033" lon="121.0145316">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:06:50Z</time>
+ <desc>Lat.=24.7953033, Long.=121.0145316, Alt.=80m, Speed=22Km/h, Course=18deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7955133" lon="121.0147216">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:06:55Z</time>
+ <desc>Lat.=24.7955133, Long.=121.0147216, Alt.=80m, Speed=21Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7957233" lon="121.0146249">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:07:00Z</time>
+ <desc>Lat.=24.7957233, Long.=121.0146249, Alt.=79m, Speed=18Km/h, Course=337deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7958566" lon="121.0144266">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:07:05Z</time>
+ <desc>Lat.=24.7958566, Long.=121.0144266, Alt.=79m, Speed=17Km/h, Course=307deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7960833" lon="121.0142233">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:07:10Z</time>
+ <desc>Lat.=24.7960833, Long.=121.0142233, Alt.=79m, Speed=23Km/h, Course=321deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7963216" lon="121.0140366">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:07:15Z</time>
+ <desc>Lat.=24.7963216, Long.=121.0140366, Alt.=78m, Speed=23Km/h, Course=325deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964683" lon="121.0138999">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:07:20Z</time>
+ <desc>Lat.=24.7964683, Long.=121.0138999, Alt.=78m, Speed=15Km/h, Course=320deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7965883" lon="121.0139716">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:07:25Z</time>
+ <desc>Lat.=24.7965883, Long.=121.0139716, Alt.=77m, Speed=10Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7967050" lon="121.0141266">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:07:30Z</time>
+ <desc>Lat.=24.7967050, Long.=121.0141266, Alt.=76m, Speed=14Km/h, Course=50deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7968233" lon="121.0142866">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:07:35Z</time>
+ <desc>Lat.=24.7968233, Long.=121.0142866, Alt.=76m, Speed=15Km/h, Course=51deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7969516" lon="121.0144249">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:07:40Z</time>
+ <desc>Lat.=24.7969516, Long.=121.0144249, Alt.=77m, Speed=14Km/h, Course=44deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7971149" lon="121.0145649">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:07:45Z</time>
+ <desc>Lat.=24.7971149, Long.=121.0145649, Alt.=77m, Speed=16Km/h, Course=38deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7972632" lon="121.0147149">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:07:50Z</time>
+ <desc>Lat.=24.7972632, Long.=121.0147149, Alt.=77m, Speed=16Km/h, Course=43deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7973716" lon="121.0148683">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:07:55Z</time>
+ <desc>Lat.=24.7973716, Long.=121.0148683, Alt.=76m, Speed=14Km/h, Course=52deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7974849" lon="121.0150449">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:08:00Z</time>
+ <desc>Lat.=24.7974849, Long.=121.0150449, Alt.=75m, Speed=15Km/h, Course=55deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7976866" lon="121.0152616">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:08:05Z</time>
+ <desc>Lat.=24.7976866, Long.=121.0152616, Alt.=74m, Speed=22Km/h, Course=44deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7978550" lon="121.0154716">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:08:10Z</time>
+ <desc>Lat.=24.7978550, Long.=121.0154716, Alt.=74m, Speed=20Km/h, Course=49deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980766" lon="121.0156549">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:08:15Z</time>
+ <desc>Lat.=24.7980766, Long.=121.0156549, Alt.=73m, Speed=22Km/h, Course=37deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7984083" lon="121.0155783">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:08:20Z</time>
+ <desc>Lat.=24.7984083, Long.=121.0155783, Alt.=71m, Speed=27Km/h, Course=348deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7986933" lon="121.0151649">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:08:25Z</time>
+ <desc>Lat.=24.7986933, Long.=121.0151649, Alt.=71m, Speed=37Km/h, Course=307deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989099" lon="121.0149899">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:08:30Z</time>
+ <desc>Lat.=24.7989099, Long.=121.0149899, Alt.=70m, Speed=21Km/h, Course=324deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990766" lon="121.0147533">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:08:35Z</time>
+ <desc>Lat.=24.7990766, Long.=121.0147533, Alt.=67m, Speed=21Km/h, Course=308deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990549" lon="121.0142916">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:08:40Z</time>
+ <desc>Lat.=24.7990549, Long.=121.0142916, Alt.=64m, Speed=33Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989916" lon="121.0138766">
+ <ele>61.000000</ele>
+ <time>2009-10-08T04:08:45Z</time>
+ <desc>Lat.=24.7989916, Long.=121.0138766, Alt.=61m, Speed=30Km/h, Course=260deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989699" lon="121.0135866">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:08:50Z</time>
+ <desc>Lat.=24.7989699, Long.=121.0135866, Alt.=60m, Speed=21Km/h, Course=265deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990633" lon="121.0137749">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:08:55Z</time>
+ <desc>Lat.=24.7990633, Long.=121.0137749, Alt.=60m, Speed=15Km/h, Course=61deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7992916" lon="121.0138716">
+ <ele>59.000000</ele>
+ <time>2009-10-08T04:09:00Z</time>
+ <desc>Lat.=24.7992916, Long.=121.0138716, Alt.=59m, Speed=19Km/h, Course=21deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996783" lon="121.0138666">
+ <ele>59.000000</ele>
+ <time>2009-10-08T04:09:05Z</time>
+ <desc>Lat.=24.7996783, Long.=121.0138666, Alt.=59m, Speed=30Km/h, Course=359deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999733" lon="121.0139133">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:09:10Z</time>
+ <desc>Lat.=24.7999733, Long.=121.0139133, Alt.=58m, Speed=23Km/h, Course=8deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002399" lon="121.0139716">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:09:15Z</time>
+ <desc>Lat.=24.8002399, Long.=121.0139716, Alt.=58m, Speed=21Km/h, Course=11deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004833" lon="121.0140516">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:09:20Z</time>
+ <desc>Lat.=24.8004833, Long.=121.0140516, Alt.=58m, Speed=20Km/h, Course=17deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007266" lon="121.0141083">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:09:25Z</time>
+ <desc>Lat.=24.8007266, Long.=121.0141083, Alt.=58m, Speed=19Km/h, Course=12deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010900" lon="121.0140266">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:09:30Z</time>
+ <desc>Lat.=24.8010900, Long.=121.0140266, Alt.=58m, Speed=29Km/h, Course=348deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010566" lon="121.0143383">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:09:35Z</time>
+ <desc>Lat.=24.8010566, Long.=121.0143383, Alt.=57m, Speed=22Km/h, Course=97deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012399" lon="121.0144233">
+ <ele>56.000000</ele>
+ <time>2009-10-08T04:09:40Z</time>
+ <desc>Lat.=24.8012399, Long.=121.0144233, Alt.=56m, Speed=15Km/h, Course=23deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8013850" lon="121.0145099">
+ <ele>55.000000</ele>
+ <time>2009-10-08T04:09:45Z</time>
+ <desc>Lat.=24.8013850, Long.=121.0145099, Alt.=55m, Speed=13Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8015266" lon="121.0146349">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:09:50Z</time>
+ <desc>Lat.=24.8015266, Long.=121.0146349, Alt.=54m, Speed=14Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8016583" lon="121.0147583">
+ <ele>55.000000</ele>
+ <time>2009-10-08T04:09:55Z</time>
+ <desc>Lat.=24.8016583, Long.=121.0147583, Alt.=55m, Speed=13Km/h, Course=40deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8017949" lon="121.0148833">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:10:00Z</time>
+ <desc>Lat.=24.8017949, Long.=121.0148833, Alt.=54m, Speed=14Km/h, Course=40deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8019199" lon="121.0150133">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:10:05Z</time>
+ <desc>Lat.=24.8019199, Long.=121.0150133, Alt.=54m, Speed=13Km/h, Course=43deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8020550" lon="121.0151416">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:10:10Z</time>
+ <desc>Lat.=24.8020550, Long.=121.0151416, Alt.=54m, Speed=14Km/h, Course=41deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8021933" lon="121.0152749">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:10:15Z</time>
+ <desc>Lat.=24.8021933, Long.=121.0152749, Alt.=53m, Speed=14Km/h, Course=41deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8023283" lon="121.0154166">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:10:20Z</time>
+ <desc>Lat.=24.8023283, Long.=121.0154166, Alt.=53m, Speed=14Km/h, Course=44deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8024650" lon="121.0155399">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:10:25Z</time>
+ <desc>Lat.=24.8024650, Long.=121.0155399, Alt.=52m, Speed=14Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8026316" lon="121.0155366">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:10:30Z</time>
+ <desc>Lat.=24.8026316, Long.=121.0155366, Alt.=53m, Speed=13Km/h, Course=359deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8027783" lon="121.0154299">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:10:35Z</time>
+ <desc>Lat.=24.8027783, Long.=121.0154299, Alt.=53m, Speed=14Km/h, Course=327deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8029349" lon="121.0152666">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:10:40Z</time>
+ <desc>Lat.=24.8029349, Long.=121.0152666, Alt.=53m, Speed=17Km/h, Course=317deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8031016" lon="121.0153033">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:10:45Z</time>
+ <desc>Lat.=24.8031016, Long.=121.0153033, Alt.=52m, Speed=13Km/h, Course=11deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8032566" lon="121.0154099">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:10:50Z</time>
+ <desc>Lat.=24.8032566, Long.=121.0154099, Alt.=52m, Speed=14Km/h, Course=32deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8033633" lon="121.0155483">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:10:55Z</time>
+ <desc>Lat.=24.8033633, Long.=121.0155483, Alt.=52m, Speed=13Km/h, Course=50deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8034450" lon="121.0156933">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:00Z</time>
+ <desc>Lat.=24.8034450, Long.=121.0156933, Alt.=53m, Speed=12Km/h, Course=58deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8035516" lon="121.0158233">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:05Z</time>
+ <desc>Lat.=24.8035516, Long.=121.0158233, Alt.=53m, Speed=12Km/h, Course=48deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8036666" lon="121.0159433">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:10Z</time>
+ <desc>Lat.=24.8036666, Long.=121.0159433, Alt.=53m, Speed=12Km/h, Course=43deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8037683" lon="121.0160766">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:15Z</time>
+ <desc>Lat.=24.8037683, Long.=121.0160766, Alt.=53m, Speed=12Km/h, Course=50deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8037483" lon="121.0163166">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:20Z</time>
+ <desc>Lat.=24.8037483, Long.=121.0163166, Alt.=53m, Speed=17Km/h, Course=95deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8031100" lon="121.0171149">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:11:30Z</time>
+ <desc>Lat.=24.8031100, Long.=121.0171149, Alt.=54m, Speed=38Km/h, Course=131deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8031233" lon="121.0173033">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:11:35Z</time>
+ <desc>Lat.=24.8031233, Long.=121.0173033, Alt.=54m, Speed=13Km/h, Course=86deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8030932" lon="121.0174800">
+ <ele>55.000000</ele>
+ <time>2009-10-08T04:11:40Z</time>
+ <desc>Lat.=24.8030932, Long.=121.0174800, Alt.=55m, Speed=13Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8037250" lon="121.0172449">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:11:45Z</time>
+ <desc>Lat.=24.8037250, Long.=121.0172449, Alt.=54m, Speed=53Km/h, Course=341deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8040933" lon="121.0172716">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:50Z</time>
+ <desc>Lat.=24.8040933, Long.=121.0172716, Alt.=53m, Speed=29Km/h, Course=4deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8041266" lon="121.0173549">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:11:55Z</time>
+ <desc>Lat.=24.8041266, Long.=121.0173549, Alt.=53m, Speed=6Km/h, Course=66deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8041166" lon="121.0174233">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:00Z</time>
+ <desc>Lat.=24.8041166, Long.=121.0174233, Alt.=53m, Speed=5Km/h, Course=99deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8040999" lon="121.0175049">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:05Z</time>
+ <desc>Lat.=24.8040999, Long.=121.0175049, Alt.=53m, Speed=6Km/h, Course=103deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8040399" lon="121.0176266">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:10Z</time>
+ <desc>Lat.=24.8040399, Long.=121.0176266, Alt.=53m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8039799" lon="121.0177566">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:15Z</time>
+ <desc>Lat.=24.8039799, Long.=121.0177566, Alt.=53m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8039050" lon="121.0179149">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:20Z</time>
+ <desc>Lat.=24.8039050, Long.=121.0179149, Alt.=53m, Speed=12Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8037433" lon="121.0181633">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:12:25Z</time>
+ <desc>Lat.=24.8037433, Long.=121.0181633, Alt.=52m, Speed=22Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8036250" lon="121.0183583">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:12:30Z</time>
+ <desc>Lat.=24.8036250, Long.=121.0183583, Alt.=52m, Speed=17Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8034899" lon="121.0185616">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:35Z</time>
+ <desc>Lat.=24.8034899, Long.=121.0185616, Alt.=53m, Speed=18Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8033699" lon="121.0187433">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:40Z</time>
+ <desc>Lat.=24.8033699, Long.=121.0187433, Alt.=53m, Speed=16Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8032583" lon="121.0189199">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:45Z</time>
+ <desc>Lat.=24.8032583, Long.=121.0189199, Alt.=53m, Speed=15Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8031399" lon="121.0191016">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:50Z</time>
+ <desc>Lat.=24.8031399, Long.=121.0191016, Alt.=53m, Speed=16Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8030082" lon="121.0192933">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:12:55Z</time>
+ <desc>Lat.=24.8030082, Long.=121.0192933, Alt.=53m, Speed=17Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8028749" lon="121.0194966">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:00Z</time>
+ <desc>Lat.=24.8028749, Long.=121.0194966, Alt.=53m, Speed=18Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8027866" lon="121.0196350">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:13:05Z</time>
+ <desc>Lat.=24.8027866, Long.=121.0196350, Alt.=54m, Speed=12Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8026900" lon="121.0198033">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:10Z</time>
+ <desc>Lat.=24.8026900, Long.=121.0198033, Alt.=53m, Speed=14Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8025649" lon="121.0200083">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:15Z</time>
+ <desc>Lat.=24.8025649, Long.=121.0200083, Alt.=53m, Speed=17Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8024183" lon="121.0202266">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:20Z</time>
+ <desc>Lat.=24.8024183, Long.=121.0202266, Alt.=53m, Speed=19Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8022866" lon="121.0204433">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:25Z</time>
+ <desc>Lat.=24.8022866, Long.=121.0204433, Alt.=53m, Speed=18Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8021733" lon="121.0206566">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:30Z</time>
+ <desc>Lat.=24.8021733, Long.=121.0206566, Alt.=53m, Speed=17Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8019783" lon="121.0208849">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:35Z</time>
+ <desc>Lat.=24.8019783, Long.=121.0208849, Alt.=53m, Speed=22Km/h, Course=133deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8018416" lon="121.0210616">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:40Z</time>
+ <desc>Lat.=24.8018416, Long.=121.0210616, Alt.=53m, Speed=16Km/h, Course=130deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8017350" lon="121.0212183">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:13:45Z</time>
+ <desc>Lat.=24.8017350, Long.=121.0212183, Alt.=53m, Speed=14Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8016250" lon="121.0213999">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:13:50Z</time>
+ <desc>Lat.=24.8016250, Long.=121.0213999, Alt.=51m, Speed=15Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014883" lon="121.0216783">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:13:55Z</time>
+ <desc>Lat.=24.8014883, Long.=121.0216783, Alt.=51m, Speed=23Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8013583" lon="121.0219249">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:14:00Z</time>
+ <desc>Lat.=24.8013583, Long.=121.0219249, Alt.=51m, Speed=20Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012283" lon="121.0221383">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:05Z</time>
+ <desc>Lat.=24.8012283, Long.=121.0221383, Alt.=50m, Speed=18Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011066" lon="121.0223383">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:10Z</time>
+ <desc>Lat.=24.8011066, Long.=121.0223383, Alt.=50m, Speed=17Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009766" lon="121.0225399">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:15Z</time>
+ <desc>Lat.=24.8009766, Long.=121.0225399, Alt.=50m, Speed=17Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008549" lon="121.0227383">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:20Z</time>
+ <desc>Lat.=24.8008549, Long.=121.0227383, Alt.=50m, Speed=17Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007283" lon="121.0229216">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:25Z</time>
+ <desc>Lat.=24.8007283, Long.=121.0229216, Alt.=50m, Speed=16Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005866" lon="121.0231533">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:30Z</time>
+ <desc>Lat.=24.8005866, Long.=121.0231533, Alt.=50m, Speed=20Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004266" lon="121.0233949">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:35Z</time>
+ <desc>Lat.=24.8004266, Long.=121.0233949, Alt.=50m, Speed=21Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003033" lon="121.0236149">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:14:40Z</time>
+ <desc>Lat.=24.8003033, Long.=121.0236149, Alt.=50m, Speed=18Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8001950" lon="121.0238166">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:14:45Z</time>
+ <desc>Lat.=24.8001950, Long.=121.0238166, Alt.=49m, Speed=17Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8000716" lon="121.0240149">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:14:50Z</time>
+ <desc>Lat.=24.8000716, Long.=121.0240149, Alt.=49m, Speed=17Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999599" lon="121.0241949">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:14:55Z</time>
+ <desc>Lat.=24.7999599, Long.=121.0241949, Alt.=49m, Speed=15Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998583" lon="121.0243850">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:00Z</time>
+ <desc>Lat.=24.7998583, Long.=121.0243850, Alt.=49m, Speed=16Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7997750" lon="121.0245483">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:05Z</time>
+ <desc>Lat.=24.7997750, Long.=121.0245483, Alt.=49m, Speed=13Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996983" lon="121.0247133">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:10Z</time>
+ <desc>Lat.=24.7996983, Long.=121.0247133, Alt.=49m, Speed=13Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996283" lon="121.0248883">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:15Z</time>
+ <desc>Lat.=24.7996283, Long.=121.0248883, Alt.=49m, Speed=13Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7994783" lon="121.0251383">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:20Z</time>
+ <desc>Lat.=24.7994783, Long.=121.0251383, Alt.=49m, Speed=21Km/h, Course=123deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7993500" lon="121.0253733">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:25Z</time>
+ <desc>Lat.=24.7993500, Long.=121.0253733, Alt.=49m, Speed=19Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991933" lon="121.0256249">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:15:30Z</time>
+ <desc>Lat.=24.7991933, Long.=121.0256249, Alt.=49m, Speed=22Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989683" lon="121.0259316">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:15:35Z</time>
+ <desc>Lat.=24.7989683, Long.=121.0259316, Alt.=50m, Speed=28Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989300" lon="121.0260383">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:15:40Z</time>
+ <desc>Lat.=24.7989300, Long.=121.0260383, Alt.=51m, Speed=8Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989433" lon="121.0261066">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:15:45Z</time>
+ <desc>Lat.=24.7989433, Long.=121.0261066, Alt.=52m, Speed=5Km/h, Course=78deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989032" lon="121.0262333">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:15:50Z</time>
+ <desc>Lat.=24.7989032, Long.=121.0262333, Alt.=52m, Speed=9Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988399" lon="121.0264066">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:15:55Z</time>
+ <desc>Lat.=24.7988399, Long.=121.0264066, Alt.=52m, Speed=13Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987716" lon="121.0265899">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:00Z</time>
+ <desc>Lat.=24.7987716, Long.=121.0265899, Alt.=52m, Speed=14Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987166" lon="121.0267633">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:05Z</time>
+ <desc>Lat.=24.7987166, Long.=121.0267633, Alt.=52m, Speed=13Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7986449" lon="121.0269866">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:10Z</time>
+ <desc>Lat.=24.7986449, Long.=121.0269866, Alt.=52m, Speed=17Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7986049" lon="121.0271533">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:15Z</time>
+ <desc>Lat.=24.7986049, Long.=121.0271533, Alt.=52m, Speed=12Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985466" lon="121.0273066">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:20Z</time>
+ <desc>Lat.=24.7985466, Long.=121.0273066, Alt.=52m, Speed=12Km/h, Course=113deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985333" lon="121.0274783">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:16:25Z</time>
+ <desc>Lat.=24.7985333, Long.=121.0274783, Alt.=52m, Speed=12Km/h, Course=95deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985566" lon="121.0276833">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:16:30Z</time>
+ <desc>Lat.=24.7985566, Long.=121.0276833, Alt.=51m, Speed=15Km/h, Course=83deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985683" lon="121.0278416">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:16:35Z</time>
+ <desc>Lat.=24.7985683, Long.=121.0278416, Alt.=50m, Speed=11Km/h, Course=85deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985566" lon="121.0279966">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:16:40Z</time>
+ <desc>Lat.=24.7985566, Long.=121.0279966, Alt.=49m, Speed=11Km/h, Course=95deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7986933" lon="121.0280099">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:16:45Z</time>
+ <desc>Lat.=24.7986933, Long.=121.0280099, Alt.=49m, Speed=10Km/h, Course=5deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988332" lon="121.0282183">
+ <ele>47.000000</ele>
+ <time>2009-10-08T04:16:50Z</time>
+ <desc>Lat.=24.7988332, Long.=121.0282183, Alt.=47m, Speed=18Km/h, Course=54deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987933" lon="121.0285050">
+ <ele>46.000000</ele>
+ <time>2009-10-08T04:16:55Z</time>
+ <desc>Lat.=24.7987933, Long.=121.0285050, Alt.=46m, Speed=21Km/h, Course=99deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987800" lon="121.0287083">
+ <ele>46.000000</ele>
+ <time>2009-10-08T04:17:00Z</time>
+ <desc>Lat.=24.7987800, Long.=121.0287083, Alt.=46m, Speed=14Km/h, Course=94deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987800" lon="121.0288849">
+ <ele>46.000000</ele>
+ <time>2009-10-08T04:17:05Z</time>
+ <desc>Lat.=24.7987800, Long.=121.0288849, Alt.=46m, Speed=12Km/h, Course=90deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988249" lon="121.0289866">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:17:10Z</time>
+ <desc>Lat.=24.7988249, Long.=121.0289866, Alt.=45m, Speed=8Km/h, Course=64deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989032" lon="121.0290533">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:17:15Z</time>
+ <desc>Lat.=24.7989032, Long.=121.0290533, Alt.=45m, Speed=7Km/h, Course=38deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990099" lon="121.0291500">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:17:20Z</time>
+ <desc>Lat.=24.7990099, Long.=121.0291500, Alt.=44m, Speed=11Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991183" lon="121.0292483">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:17:25Z</time>
+ <desc>Lat.=24.7991183, Long.=121.0292483, Alt.=44m, Speed=11Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7992349" lon="121.0293166">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:17:30Z</time>
+ <desc>Lat.=24.7992349, Long.=121.0293166, Alt.=44m, Speed=10Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7993616" lon="121.0293566">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:17:35Z</time>
+ <desc>Lat.=24.7993616, Long.=121.0293566, Alt.=44m, Speed=10Km/h, Course=16deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7995033" lon="121.0293516">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:17:40Z</time>
+ <desc>Lat.=24.7995033, Long.=121.0293516, Alt.=43m, Speed=11Km/h, Course=358deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996233" lon="121.0293483">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:17:45Z</time>
+ <desc>Lat.=24.7996233, Long.=121.0293483, Alt.=43m, Speed=9Km/h, Course=359deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996916" lon="121.0294566">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:17:50Z</time>
+ <desc>Lat.=24.7996916, Long.=121.0294566, Alt.=43m, Speed=9Km/h, Course=55deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7997499" lon="121.0295233">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:17:55Z</time>
+ <desc>Lat.=24.7997499, Long.=121.0295233, Alt.=43m, Speed=6Km/h, Course=46deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7997933" lon="121.0295350">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:18:00Z</time>
+ <desc>Lat.=24.7997933, Long.=121.0295350, Alt.=43m, Speed=3Km/h, Course=14deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998316" lon="121.0295666">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:18:39Z</time>
+ <desc>Lat.=24.7998316, Long.=121.0295666, Alt.=42m, Speed=0Km/h, Course=37deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998599" lon="121.0295766">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:18:44Z</time>
+ <desc>Lat.=24.7998599, Long.=121.0295766, Alt.=42m, Speed=2Km/h, Course=18deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998883" lon="121.0295866">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:18:49Z</time>
+ <desc>Lat.=24.7998883, Long.=121.0295866, Alt.=42m, Speed=2Km/h, Course=18deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999083" lon="121.0296149">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:18:54Z</time>
+ <desc>Lat.=24.7999083, Long.=121.0296149, Alt.=42m, Speed=2Km/h, Course=52deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999416" lon="121.0296366">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:18:59Z</time>
+ <desc>Lat.=24.7999416, Long.=121.0296366, Alt.=42m, Speed=3Km/h, Course=31deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999799" lon="121.0296599">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:19:04Z</time>
+ <desc>Lat.=24.7999799, Long.=121.0296599, Alt.=42m, Speed=3Km/h, Course=29deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8000199" lon="121.0296816">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:09Z</time>
+ <desc>Lat.=24.8000199, Long.=121.0296816, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8000550" lon="121.0297000">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:14Z</time>
+ <desc>Lat.=24.8000550, Long.=121.0297000, Alt.=43m, Speed=3Km/h, Course=25deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8000899" lon="121.0297216">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:19Z</time>
+ <desc>Lat.=24.8000899, Long.=121.0297216, Alt.=43m, Speed=3Km/h, Course=29deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8001299" lon="121.0297483">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:24Z</time>
+ <desc>Lat.=24.8001299, Long.=121.0297483, Alt.=43m, Speed=3Km/h, Course=31deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8001699" lon="121.0297699">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:29Z</time>
+ <desc>Lat.=24.8001699, Long.=121.0297699, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002066" lon="121.0297933">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:34Z</time>
+ <desc>Lat.=24.8002066, Long.=121.0297933, Alt.=43m, Speed=3Km/h, Course=30deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002500" lon="121.0298183">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:39Z</time>
+ <desc>Lat.=24.8002500, Long.=121.0298183, Alt.=43m, Speed=3Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002900" lon="121.0298383">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:44Z</time>
+ <desc>Lat.=24.8002900, Long.=121.0298383, Alt.=43m, Speed=3Km/h, Course=24deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003266" lon="121.0298633">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:49Z</time>
+ <desc>Lat.=24.8003266, Long.=121.0298633, Alt.=43m, Speed=3Km/h, Course=32deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003666" lon="121.0298849">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:54Z</time>
+ <desc>Lat.=24.8003666, Long.=121.0298849, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004150" lon="121.0299116">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:19:59Z</time>
+ <desc>Lat.=24.8004150, Long.=121.0299116, Alt.=43m, Speed=4Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004516" lon="121.0299333">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:04Z</time>
+ <desc>Lat.=24.8004516, Long.=121.0299333, Alt.=43m, Speed=3Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004850" lon="121.0299499">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:09Z</time>
+ <desc>Lat.=24.8004850, Long.=121.0299499, Alt.=43m, Speed=2Km/h, Course=24deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005233" lon="121.0299749">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:14Z</time>
+ <desc>Lat.=24.8005233, Long.=121.0299749, Alt.=43m, Speed=3Km/h, Course=31deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005633" lon="121.0299966">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:19Z</time>
+ <desc>Lat.=24.8005633, Long.=121.0299966, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006033" lon="121.0300199">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:24Z</time>
+ <desc>Lat.=24.8006033, Long.=121.0300199, Alt.=43m, Speed=3Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006433" lon="121.0300416">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:29Z</time>
+ <desc>Lat.=24.8006433, Long.=121.0300416, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006816" lon="121.0300633">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:34Z</time>
+ <desc>Lat.=24.8006816, Long.=121.0300633, Alt.=43m, Speed=3Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007199" lon="121.0300849">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:39Z</time>
+ <desc>Lat.=24.8007199, Long.=121.0300849, Alt.=43m, Speed=3Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007599" lon="121.0301066">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:44Z</time>
+ <desc>Lat.=24.8007599, Long.=121.0301066, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007999" lon="121.0301283">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:49Z</time>
+ <desc>Lat.=24.8007999, Long.=121.0301283, Alt.=43m, Speed=3Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008383" lon="121.0301499">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:54Z</time>
+ <desc>Lat.=24.8008383, Long.=121.0301499, Alt.=43m, Speed=3Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008766" lon="121.0301699">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:20:59Z</time>
+ <desc>Lat.=24.8008766, Long.=121.0301699, Alt.=43m, Speed=3Km/h, Course=25deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009183" lon="121.0301949">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:04Z</time>
+ <desc>Lat.=24.8009183, Long.=121.0301949, Alt.=43m, Speed=3Km/h, Course=29deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009599" lon="121.0302150">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:09Z</time>
+ <desc>Lat.=24.8009599, Long.=121.0302150, Alt.=43m, Speed=3Km/h, Course=24deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010033" lon="121.0302399">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:14Z</time>
+ <desc>Lat.=24.8010033, Long.=121.0302399, Alt.=43m, Speed=3Km/h, Course=28deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010383" lon="121.0302599">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:19Z</time>
+ <desc>Lat.=24.8010383, Long.=121.0302599, Alt.=43m, Speed=3Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010783" lon="121.0302783">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:24Z</time>
+ <desc>Lat.=24.8010783, Long.=121.0302783, Alt.=43m, Speed=3Km/h, Course=23deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011266" lon="121.0303049">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:29Z</time>
+ <desc>Lat.=24.8011266, Long.=121.0303049, Alt.=43m, Speed=4Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011750" lon="121.0303316">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:34Z</time>
+ <desc>Lat.=24.8011750, Long.=121.0303316, Alt.=43m, Speed=4Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012199" lon="121.0303516">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:39Z</time>
+ <desc>Lat.=24.8012199, Long.=121.0303516, Alt.=43m, Speed=3Km/h, Course=22deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012683" lon="121.0303749">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:44Z</time>
+ <desc>Lat.=24.8012683, Long.=121.0303749, Alt.=43m, Speed=4Km/h, Course=24deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8013150" lon="121.0304016">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:49Z</time>
+ <desc>Lat.=24.8013150, Long.=121.0304016, Alt.=43m, Speed=4Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8013616" lon="121.0304249">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:54Z</time>
+ <desc>Lat.=24.8013616, Long.=121.0304249, Alt.=43m, Speed=4Km/h, Course=24deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014066" lon="121.0304499">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:21:59Z</time>
+ <desc>Lat.=24.8014066, Long.=121.0304499, Alt.=43m, Speed=4Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014416" lon="121.0304616">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:22:15Z</time>
+ <desc>Lat.=24.8014416, Long.=121.0304616, Alt.=43m, Speed=0Km/h, Course=17deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014616" lon="121.0304899">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:20Z</time>
+ <desc>Lat.=24.8014616, Long.=121.0304899, Alt.=44m, Speed=2Km/h, Course=52deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014733" lon="121.0305266">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:22:25Z</time>
+ <desc>Lat.=24.8014733, Long.=121.0305266, Alt.=45m, Speed=2Km/h, Course=71deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014733" lon="121.0305399">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:31Z</time>
+ <desc>Lat.=24.8014733, Long.=121.0305399, Alt.=44m, Speed=0Km/h, Course=90deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014716" lon="121.0305449">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:43Z</time>
+ <desc>Lat.=24.8014716, Long.=121.0305449, Alt.=44m, Speed=0Km/h, Course=111deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8014100" lon="121.0306399">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:48Z</time>
+ <desc>Lat.=24.8014100, Long.=121.0306399, Alt.=44m, Speed=8Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8013333" lon="121.0307599">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:53Z</time>
+ <desc>Lat.=24.8013333, Long.=121.0307599, Alt.=44m, Speed=10Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012666" lon="121.0308933">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:22:58Z</time>
+ <desc>Lat.=24.8012666, Long.=121.0308933, Alt.=44m, Speed=11Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012066" lon="121.0310199">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:23:03Z</time>
+ <desc>Lat.=24.8012066, Long.=121.0310199, Alt.=44m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011350" lon="121.0311616">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:23:08Z</time>
+ <desc>Lat.=24.8011350, Long.=121.0311616, Alt.=44m, Speed=11Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010566" lon="121.0313183">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:23:13Z</time>
+ <desc>Lat.=24.8010566, Long.=121.0313183, Alt.=43m, Speed=13Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009733" lon="121.0314766">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:23:18Z</time>
+ <desc>Lat.=24.8009733, Long.=121.0314766, Alt.=43m, Speed=13Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008916" lon="121.0316366">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:23:23Z</time>
+ <desc>Lat.=24.8008916, Long.=121.0316366, Alt.=43m, Speed=13Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008149" lon="121.0318083">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:23:28Z</time>
+ <desc>Lat.=24.8008149, Long.=121.0318083, Alt.=43m, Speed=13Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007149" lon="121.0319799">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:23:33Z</time>
+ <desc>Lat.=24.8007149, Long.=121.0319799, Alt.=43m, Speed=14Km/h, Course=123deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006333" lon="121.0321666">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:23:38Z</time>
+ <desc>Lat.=24.8006333, Long.=121.0321666, Alt.=42m, Speed=15Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005383" lon="121.0323416">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:23:43Z</time>
+ <desc>Lat.=24.8005383, Long.=121.0323416, Alt.=42m, Speed=14Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004516" lon="121.0325166">
+ <ele>41.000000</ele>
+ <time>2009-10-08T04:23:48Z</time>
+ <desc>Lat.=24.8004516, Long.=121.0325166, Alt.=41m, Speed=14Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003716" lon="121.0326816">
+ <ele>41.000000</ele>
+ <time>2009-10-08T04:23:53Z</time>
+ <desc>Lat.=24.8003716, Long.=121.0326816, Alt.=41m, Speed=13Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002883" lon="121.0328449">
+ <ele>40.000000</ele>
+ <time>2009-10-08T04:23:58Z</time>
+ <desc>Lat.=24.8002883, Long.=121.0328449, Alt.=40m, Speed=13Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002166" lon="121.0329883">
+ <ele>40.000000</ele>
+ <time>2009-10-08T04:24:03Z</time>
+ <desc>Lat.=24.8002166, Long.=121.0329883, Alt.=40m, Speed=11Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002366" lon="121.0331199">
+ <ele>40.000000</ele>
+ <time>2009-10-08T04:24:08Z</time>
+ <desc>Lat.=24.8002366, Long.=121.0331199, Alt.=40m, Speed=9Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003316" lon="121.0332283">
+ <ele>41.000000</ele>
+ <time>2009-10-08T04:24:13Z</time>
+ <desc>Lat.=24.8003316, Long.=121.0332283, Alt.=41m, Speed=10Km/h, Course=46deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004349" lon="121.0333366">
+ <ele>42.000000</ele>
+ <time>2009-10-08T04:24:18Z</time>
+ <desc>Lat.=24.8004349, Long.=121.0333366, Alt.=42m, Speed=11Km/h, Course=44deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005216" lon="121.0334316">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:24:23Z</time>
+ <desc>Lat.=24.8005216, Long.=121.0334316, Alt.=43m, Speed=9Km/h, Course=45deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006099" lon="121.0335149">
+ <ele>43.000000</ele>
+ <time>2009-10-08T04:24:28Z</time>
+ <desc>Lat.=24.8006099, Long.=121.0335149, Alt.=43m, Speed=9Km/h, Course=41deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006983" lon="121.0335766">
+ <ele>44.000000</ele>
+ <time>2009-10-08T04:24:33Z</time>
+ <desc>Lat.=24.8006983, Long.=121.0335766, Alt.=44m, Speed=8Km/h, Course=32deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007766" lon="121.0336433">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:24:38Z</time>
+ <desc>Lat.=24.8007766, Long.=121.0336433, Alt.=45m, Speed=7Km/h, Course=38deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008616" lon="121.0336916">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:24:43Z</time>
+ <desc>Lat.=24.8008616, Long.=121.0336916, Alt.=45m, Speed=7Km/h, Course=27deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009599" lon="121.0337433">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:24:48Z</time>
+ <desc>Lat.=24.8009599, Long.=121.0337433, Alt.=45m, Speed=8Km/h, Course=26deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010483" lon="121.0338199">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:24:53Z</time>
+ <desc>Lat.=24.8010483, Long.=121.0338199, Alt.=45m, Speed=9Km/h, Course=38deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011099" lon="121.0339283">
+ <ele>46.000000</ele>
+ <time>2009-10-08T04:24:58Z</time>
+ <desc>Lat.=24.8011099, Long.=121.0339283, Alt.=46m, Speed=9Km/h, Course=58deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011233" lon="121.0339583">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:25:09Z</time>
+ <desc>Lat.=24.8011233, Long.=121.0339583, Alt.=45m, Speed=1Km/h, Course=64deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011316" lon="121.0339733">
+ <ele>45.000000</ele>
+ <time>2009-10-08T04:25:15Z</time>
+ <desc>Lat.=24.8011316, Long.=121.0339733, Alt.=45m, Speed=1Km/h, Course=59deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011566" lon="121.0339899">
+ <ele>47.000000</ele>
+ <time>2009-10-08T04:25:20Z</time>
+ <desc>Lat.=24.8011566, Long.=121.0339899, Alt.=47m, Speed=2Km/h, Course=31deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011866" lon="121.0340116">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:25:25Z</time>
+ <desc>Lat.=24.8011866, Long.=121.0340116, Alt.=49m, Speed=2Km/h, Course=33deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8012083" lon="121.0340249">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:25:30Z</time>
+ <desc>Lat.=24.8012083, Long.=121.0340249, Alt.=50m, Speed=1Km/h, Course=29deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011949" lon="121.0340533">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:25:35Z</time>
+ <desc>Lat.=24.8011949, Long.=121.0340533, Alt.=50m, Speed=2Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8011383" lon="121.0341316">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:25:40Z</time>
+ <desc>Lat.=24.8011383, Long.=121.0341316, Alt.=50m, Speed=7Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010816" lon="121.0342349">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:25:45Z</time>
+ <desc>Lat.=24.8010816, Long.=121.0342349, Alt.=49m, Speed=8Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8010149" lon="121.0343533">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:25:50Z</time>
+ <desc>Lat.=24.8010149, Long.=121.0343533, Alt.=49m, Speed=10Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8009466" lon="121.0344733">
+ <ele>48.000000</ele>
+ <time>2009-10-08T04:25:55Z</time>
+ <desc>Lat.=24.8009466, Long.=121.0344733, Alt.=48m, Speed=10Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008666" lon="121.0345949">
+ <ele>48.000000</ele>
+ <time>2009-10-08T04:26:00Z</time>
+ <desc>Lat.=24.8008666, Long.=121.0345949, Alt.=48m, Speed=10Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8008033" lon="121.0347266">
+ <ele>49.000000</ele>
+ <time>2009-10-08T04:26:05Z</time>
+ <desc>Lat.=24.8008033, Long.=121.0347266, Alt.=49m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8007400" lon="121.0348433">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:26:10Z</time>
+ <desc>Lat.=24.8007400, Long.=121.0348433, Alt.=50m, Speed=9Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006850" lon="121.0349683">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:26:15Z</time>
+ <desc>Lat.=24.8006850, Long.=121.0349683, Alt.=51m, Speed=10Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006150" lon="121.0350899">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:26:20Z</time>
+ <desc>Lat.=24.8006150, Long.=121.0350899, Alt.=52m, Speed=10Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005749" lon="121.0352149">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:26:25Z</time>
+ <desc>Lat.=24.8005749, Long.=121.0352149, Alt.=52m, Speed=9Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8006099" lon="121.0353833">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:26:30Z</time>
+ <desc>Lat.=24.8006099, Long.=121.0353833, Alt.=52m, Speed=12Km/h, Course=77deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005600" lon="121.0355116">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:26:35Z</time>
+ <desc>Lat.=24.8005600, Long.=121.0355116, Alt.=50m, Speed=10Km/h, Course=113deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8005033" lon="121.0356383">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:26:40Z</time>
+ <desc>Lat.=24.8005033, Long.=121.0356383, Alt.=51m, Speed=10Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8004433" lon="121.0357549">
+ <ele>50.000000</ele>
+ <time>2009-10-08T04:26:45Z</time>
+ <desc>Lat.=24.8004433, Long.=121.0357549, Alt.=50m, Speed=9Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003766" lon="121.0358583">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:26:50Z</time>
+ <desc>Lat.=24.8003766, Long.=121.0358583, Alt.=51m, Speed=9Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8003099" lon="121.0359733">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:26:55Z</time>
+ <desc>Lat.=24.8003099, Long.=121.0359733, Alt.=52m, Speed=9Km/h, Course=123deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8002449" lon="121.0360983">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:27:00Z</time>
+ <desc>Lat.=24.8002449, Long.=121.0360983, Alt.=54m, Speed=10Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8001516" lon="121.0362183">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:27:05Z</time>
+ <desc>Lat.=24.8001516, Long.=121.0362183, Alt.=54m, Speed=11Km/h, Course=131deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.8000550" lon="121.0363533">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:10Z</time>
+ <desc>Lat.=24.8000550, Long.=121.0363533, Alt.=53m, Speed=12Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999766" lon="121.0364999">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:15Z</time>
+ <desc>Lat.=24.7999766, Long.=121.0364999, Alt.=53m, Speed=12Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7999116" lon="121.0366283">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:20Z</time>
+ <desc>Lat.=24.7999116, Long.=121.0366283, Alt.=53m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998949" lon="121.0367399">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:27:25Z</time>
+ <desc>Lat.=24.7998949, Long.=121.0367399, Alt.=52m, Speed=8Km/h, Course=99deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998933" lon="121.0367533">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:30Z</time>
+ <desc>Lat.=24.7998933, Long.=121.0367533, Alt.=53m, Speed=0Km/h, Course=97deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998616" lon="121.0367916">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:35Z</time>
+ <desc>Lat.=24.7998616, Long.=121.0367916, Alt.=53m, Speed=3Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7998083" lon="121.0368949">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:27:40Z</time>
+ <desc>Lat.=24.7998083, Long.=121.0368949, Alt.=53m, Speed=8Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7997616" lon="121.0369899">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:27:45Z</time>
+ <desc>Lat.=24.7997616, Long.=121.0369899, Alt.=52m, Speed=7Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7997083" lon="121.0371033">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:27:50Z</time>
+ <desc>Lat.=24.7997083, Long.=121.0371033, Alt.=52m, Speed=9Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996633" lon="121.0371983">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:27:55Z</time>
+ <desc>Lat.=24.7996633, Long.=121.0371983, Alt.=51m, Speed=7Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7996299" lon="121.0373150">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:28:00Z</time>
+ <desc>Lat.=24.7996299, Long.=121.0373150, Alt.=52m, Speed=8Km/h, Course=107deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7995849" lon="121.0373883">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:28:06Z</time>
+ <desc>Lat.=24.7995849, Long.=121.0373883, Alt.=54m, Speed=5Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7995633" lon="121.0374016">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:28:11Z</time>
+ <desc>Lat.=24.7995633, Long.=121.0374016, Alt.=53m, Speed=1Km/h, Course=151deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7995033" lon="121.0374099">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:28:16Z</time>
+ <desc>Lat.=24.7995033, Long.=121.0374099, Alt.=53m, Speed=4Km/h, Course=173deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7994549" lon="121.0375033">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:28:21Z</time>
+ <desc>Lat.=24.7994549, Long.=121.0375033, Alt.=54m, Speed=7Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7994049" lon="121.0375983">
+ <ele>55.000000</ele>
+ <time>2009-10-08T04:28:26Z</time>
+ <desc>Lat.=24.7994049, Long.=121.0375983, Alt.=55m, Speed=7Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7993250" lon="121.0376400">
+ <ele>56.000000</ele>
+ <time>2009-10-08T04:28:31Z</time>
+ <desc>Lat.=24.7993250, Long.=121.0376400, Alt.=56m, Speed=7Km/h, Course=155deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7992999" lon="121.0377083">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:28:36Z</time>
+ <desc>Lat.=24.7992999, Long.=121.0377083, Alt.=58m, Speed=5Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7992516" lon="121.0377849">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:28:41Z</time>
+ <desc>Lat.=24.7992516, Long.=121.0377849, Alt.=58m, Speed=6Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991832" lon="121.0379183">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:28:46Z</time>
+ <desc>Lat.=24.7991832, Long.=121.0379183, Alt.=57m, Speed=11Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991766" lon="121.0379866">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:28:51Z</time>
+ <desc>Lat.=24.7991766, Long.=121.0379866, Alt.=57m, Speed=4Km/h, Course=96deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991499" lon="121.0380999">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:28:56Z</time>
+ <desc>Lat.=24.7991499, Long.=121.0380999, Alt.=57m, Speed=8Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7991150" lon="121.0382166">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:29:01Z</time>
+ <desc>Lat.=24.7991150, Long.=121.0382166, Alt.=57m, Speed=8Km/h, Course=108deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990416" lon="121.0383199">
+ <ele>57.000000</ele>
+ <time>2009-10-08T04:29:06Z</time>
+ <desc>Lat.=24.7990416, Long.=121.0383199, Alt.=57m, Speed=9Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989283" lon="121.0384266">
+ <ele>56.000000</ele>
+ <time>2009-10-08T04:29:11Z</time>
+ <desc>Lat.=24.7989283, Long.=121.0384266, Alt.=56m, Speed=11Km/h, Course=139deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988466" lon="121.0385199">
+ <ele>55.000000</ele>
+ <time>2009-10-08T04:29:16Z</time>
+ <desc>Lat.=24.7988466, Long.=121.0385199, Alt.=55m, Speed=9Km/h, Course=134deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988149" lon="121.0385933">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:29:21Z</time>
+ <desc>Lat.=24.7988149, Long.=121.0385933, Alt.=54m, Speed=5Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988383" lon="121.0386566">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:29:26Z</time>
+ <desc>Lat.=24.7988383, Long.=121.0386566, Alt.=54m, Speed=4Km/h, Course=68deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988566" lon="121.0386816">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:29:39Z</time>
+ <desc>Lat.=24.7988566, Long.=121.0386816, Alt.=53m, Speed=0Km/h, Course=51deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988583" lon="121.0387183">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:29:47Z</time>
+ <desc>Lat.=24.7988583, Long.=121.0387183, Alt.=53m, Speed=1Km/h, Course=87deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988600" lon="121.0387900">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:29:52Z</time>
+ <desc>Lat.=24.7988600, Long.=121.0387900, Alt.=53m, Speed=5Km/h, Course=89deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988849" lon="121.0388583">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:29:57Z</time>
+ <desc>Lat.=24.7988849, Long.=121.0388583, Alt.=53m, Speed=5Km/h, Course=68deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989032" lon="121.0389233">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:02Z</time>
+ <desc>Lat.=24.7989032, Long.=121.0389233, Alt.=53m, Speed=4Km/h, Course=73deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989233" lon="121.0390116">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:07Z</time>
+ <desc>Lat.=24.7989233, Long.=121.0390116, Alt.=53m, Speed=6Km/h, Course=76deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989499" lon="121.0391233">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:12Z</time>
+ <desc>Lat.=24.7989499, Long.=121.0391233, Alt.=53m, Speed=8Km/h, Course=75deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989766" lon="121.0392383">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:17Z</time>
+ <desc>Lat.=24.7989766, Long.=121.0392383, Alt.=53m, Speed=8Km/h, Course=76deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990066" lon="121.0393349">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:22Z</time>
+ <desc>Lat.=24.7990066, Long.=121.0393349, Alt.=53m, Speed=7Km/h, Course=71deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990466" lon="121.0394166">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:27Z</time>
+ <desc>Lat.=24.7990466, Long.=121.0394166, Alt.=53m, Speed=6Km/h, Course=62deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990633" lon="121.0395233">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:30:32Z</time>
+ <desc>Lat.=24.7990633, Long.=121.0395233, Alt.=53m, Speed=7Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7990249" lon="121.0396150">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:30:37Z</time>
+ <desc>Lat.=24.7990249, Long.=121.0396150, Alt.=52m, Speed=7Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7989499" lon="121.0396850">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:30:42Z</time>
+ <desc>Lat.=24.7989499, Long.=121.0396850, Alt.=52m, Speed=7Km/h, Course=140deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988983" lon="121.0397583">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:30:47Z</time>
+ <desc>Lat.=24.7988983, Long.=121.0397583, Alt.=52m, Speed=6Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7988766" lon="121.0398266">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:30:52Z</time>
+ <desc>Lat.=24.7988766, Long.=121.0398266, Alt.=52m, Speed=5Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987866" lon="121.0399366">
+ <ele>51.000000</ele>
+ <time>2009-10-08T04:30:57Z</time>
+ <desc>Lat.=24.7987866, Long.=121.0399366, Alt.=51m, Speed=10Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7987249" lon="121.0399733">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:31:02Z</time>
+ <desc>Lat.=24.7987249, Long.=121.0399733, Alt.=52m, Speed=5Km/h, Course=152deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7986583" lon="121.0399799">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:31:07Z</time>
+ <desc>Lat.=24.7986583, Long.=121.0399799, Alt.=52m, Speed=5Km/h, Course=175deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985916" lon="121.0400133">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:31:12Z</time>
+ <desc>Lat.=24.7985916, Long.=121.0400133, Alt.=52m, Speed=5Km/h, Course=156deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7985183" lon="121.0400416">
+ <ele>52.000000</ele>
+ <time>2009-10-08T04:31:17Z</time>
+ <desc>Lat.=24.7985183, Long.=121.0400416, Alt.=52m, Speed=6Km/h, Course=161deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7984566" lon="121.0401166">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:31:22Z</time>
+ <desc>Lat.=24.7984566, Long.=121.0401166, Alt.=53m, Speed=7Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7984049" lon="121.0401800">
+ <ele>53.000000</ele>
+ <time>2009-10-08T04:31:27Z</time>
+ <desc>Lat.=24.7984049, Long.=121.0401800, Alt.=53m, Speed=6Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7983649" lon="121.0402599">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:31:32Z</time>
+ <desc>Lat.=24.7983649, Long.=121.0402599, Alt.=54m, Speed=6Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7983316" lon="121.0403466">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:31:37Z</time>
+ <desc>Lat.=24.7983316, Long.=121.0403466, Alt.=54m, Speed=6Km/h, Course=113deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7983049" lon="121.0404349">
+ <ele>54.000000</ele>
+ <time>2009-10-08T04:31:42Z</time>
+ <desc>Lat.=24.7983049, Long.=121.0404349, Alt.=54m, Speed=6Km/h, Course=108deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7982766" lon="121.0405183">
+ <ele>56.000000</ele>
+ <time>2009-10-08T04:31:47Z</time>
+ <desc>Lat.=24.7982766, Long.=121.0405183, Alt.=56m, Speed=6Km/h, Course=110deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7982216" lon="121.0406066">
+ <ele>56.000000</ele>
+ <time>2009-10-08T04:31:52Z</time>
+ <desc>Lat.=24.7982216, Long.=121.0406066, Alt.=56m, Speed=7Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7981733" lon="121.0407116">
+ <ele>58.000000</ele>
+ <time>2009-10-08T04:31:57Z</time>
+ <desc>Lat.=24.7981733, Long.=121.0407116, Alt.=58m, Speed=8Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7981066" lon="121.0407633">
+ <ele>59.000000</ele>
+ <time>2009-10-08T04:32:02Z</time>
+ <desc>Lat.=24.7981066, Long.=121.0407633, Alt.=59m, Speed=6Km/h, Course=145deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980633" lon="121.0406649">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:32:07Z</time>
+ <desc>Lat.=24.7980633, Long.=121.0406649, Alt.=60m, Speed=7Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980616" lon="121.0405950">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:32:12Z</time>
+ <desc>Lat.=24.7980616, Long.=121.0405950, Alt.=60m, Speed=5Km/h, Course=268deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980316" lon="121.0406133">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:32:17Z</time>
+ <desc>Lat.=24.7980316, Long.=121.0406133, Alt.=60m, Speed=2Km/h, Course=151deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980583" lon="121.0406950">
+ <ele>59.000000</ele>
+ <time>2009-10-08T04:32:22Z</time>
+ <desc>Lat.=24.7980583, Long.=121.0406950, Alt.=59m, Speed=6Km/h, Course=70deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980983" lon="121.0407749">
+ <ele>59.000000</ele>
+ <time>2009-10-08T04:32:27Z</time>
+ <desc>Lat.=24.7980983, Long.=121.0407749, Alt.=59m, Speed=6Km/h, Course=61deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980833" lon="121.0408799">
+ <ele>60.000000</ele>
+ <time>2009-10-08T04:32:32Z</time>
+ <desc>Lat.=24.7980833, Long.=121.0408799, Alt.=60m, Speed=7Km/h, Course=99deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7980399" lon="121.0409883">
+ <ele>61.000000</ele>
+ <time>2009-10-08T04:32:37Z</time>
+ <desc>Lat.=24.7980399, Long.=121.0409883, Alt.=61m, Speed=8Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7979916" lon="121.0410966">
+ <ele>62.000000</ele>
+ <time>2009-10-08T04:32:42Z</time>
+ <desc>Lat.=24.7979916, Long.=121.0410966, Alt.=62m, Speed=8Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7979333" lon="121.0412183">
+ <ele>62.000000</ele>
+ <time>2009-10-08T04:32:47Z</time>
+ <desc>Lat.=24.7979333, Long.=121.0412183, Alt.=62m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7978716" lon="121.0413333">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:32:52Z</time>
+ <desc>Lat.=24.7978716, Long.=121.0413333, Alt.=63m, Speed=9Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7978266" lon="121.0414249">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:32:57Z</time>
+ <desc>Lat.=24.7978266, Long.=121.0414249, Alt.=63m, Speed=7Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7978066" lon="121.0414700">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:33:02Z</time>
+ <desc>Lat.=24.7978066, Long.=121.0414700, Alt.=64m, Speed=3Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7977532" lon="121.0415983">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:33:07Z</time>
+ <desc>Lat.=24.7977532, Long.=121.0415983, Alt.=64m, Speed=10Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7977216" lon="121.0416399">
+ <ele>65.000000</ele>
+ <time>2009-10-08T04:33:12Z</time>
+ <desc>Lat.=24.7977216, Long.=121.0416399, Alt.=65m, Speed=3Km/h, Course=130deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7976949" lon="121.0416250">
+ <ele>66.000000</ele>
+ <time>2009-10-08T04:33:19Z</time>
+ <desc>Lat.=24.7976949, Long.=121.0416250, Alt.=66m, Speed=1Km/h, Course=207deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7976666" lon="121.0416033">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:33:24Z</time>
+ <desc>Lat.=24.7976666, Long.=121.0416033, Alt.=67m, Speed=2Km/h, Course=215deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7976516" lon="121.0416183">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:33:29Z</time>
+ <desc>Lat.=24.7976516, Long.=121.0416183, Alt.=67m, Speed=1Km/h, Course=138deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7976233" lon="121.0416833">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:33:34Z</time>
+ <desc>Lat.=24.7976233, Long.=121.0416833, Alt.=67m, Speed=5Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7975699" lon="121.0417916">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:33:39Z</time>
+ <desc>Lat.=24.7975699, Long.=121.0417916, Alt.=67m, Speed=8Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7975066" lon="121.0419216">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:33:44Z</time>
+ <desc>Lat.=24.7975066, Long.=121.0419216, Alt.=67m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7974466" lon="121.0420533">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:33:49Z</time>
+ <desc>Lat.=24.7974466, Long.=121.0420533, Alt.=68m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7974233" lon="121.0421433">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:33:54Z</time>
+ <desc>Lat.=24.7974233, Long.=121.0421433, Alt.=68m, Speed=6Km/h, Course=106deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7973416" lon="121.0422916">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:33:59Z</time>
+ <desc>Lat.=24.7973416, Long.=121.0422916, Alt.=68m, Speed=12Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7972800" lon="121.0424366">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:34:04Z</time>
+ <desc>Lat.=24.7972800, Long.=121.0424366, Alt.=68m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7971950" lon="121.0426050">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:09Z</time>
+ <desc>Lat.=24.7971950, Long.=121.0426050, Alt.=69m, Speed=14Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7971232" lon="121.0427633">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:34:14Z</time>
+ <desc>Lat.=24.7971232, Long.=121.0427633, Alt.=68m, Speed=12Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7970566" lon="121.0429133">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:19Z</time>
+ <desc>Lat.=24.7970566, Long.=121.0429133, Alt.=69m, Speed=12Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7969949" lon="121.0430483">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:24Z</time>
+ <desc>Lat.=24.7969949, Long.=121.0430483, Alt.=69m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7969333" lon="121.0431899">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:29Z</time>
+ <desc>Lat.=24.7969333, Long.=121.0431899, Alt.=69m, Speed=11Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7968716" lon="121.0433233">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:34Z</time>
+ <desc>Lat.=24.7968716, Long.=121.0433233, Alt.=69m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7968083" lon="121.0434699">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:39Z</time>
+ <desc>Lat.=24.7968083, Long.=121.0434699, Alt.=69m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7967499" lon="121.0436083">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:34:44Z</time>
+ <desc>Lat.=24.7967499, Long.=121.0436083, Alt.=69m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7967032" lon="121.0437449">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:34:49Z</time>
+ <desc>Lat.=24.7967032, Long.=121.0437449, Alt.=68m, Speed=10Km/h, Course=111deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7966649" lon="121.0438799">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:34:54Z</time>
+ <desc>Lat.=24.7966649, Long.=121.0438799, Alt.=67m, Speed=10Km/h, Course=107deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7966433" lon="121.0439549">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:34:59Z</time>
+ <desc>Lat.=24.7966433, Long.=121.0439549, Alt.=67m, Speed=5Km/h, Course=108deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7966050" lon="121.0441083">
+ <ele>66.000000</ele>
+ <time>2009-10-08T04:35:04Z</time>
+ <desc>Lat.=24.7966050, Long.=121.0441083, Alt.=66m, Speed=11Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7965783" lon="121.0442649">
+ <ele>65.000000</ele>
+ <time>2009-10-08T04:35:09Z</time>
+ <desc>Lat.=24.7965783, Long.=121.0442649, Alt.=65m, Speed=11Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7965533" lon="121.0444166">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:35:14Z</time>
+ <desc>Lat.=24.7965533, Long.=121.0444166, Alt.=64m, Speed=11Km/h, Course=100deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7965366" lon="121.0445466">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:35:19Z</time>
+ <desc>Lat.=24.7965366, Long.=121.0445466, Alt.=64m, Speed=9Km/h, Course=98deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7965183" lon="121.0446816">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:35:24Z</time>
+ <desc>Lat.=24.7965183, Long.=121.0446816, Alt.=64m, Speed=9Km/h, Course=98deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964999" lon="121.0448049">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:29Z</time>
+ <desc>Lat.=24.7964999, Long.=121.0448049, Alt.=63m, Speed=9Km/h, Course=99deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964800" lon="121.0449233">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:34Z</time>
+ <desc>Lat.=24.7964800, Long.=121.0449233, Alt.=63m, Speed=8Km/h, Course=100deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964599" lon="121.0450416">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:39Z</time>
+ <desc>Lat.=24.7964599, Long.=121.0450416, Alt.=63m, Speed=8Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964416" lon="121.0451483">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:44Z</time>
+ <desc>Lat.=24.7964416, Long.=121.0451483, Alt.=63m, Speed=7Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7964183" lon="121.0452599">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:49Z</time>
+ <desc>Lat.=24.7964183, Long.=121.0452599, Alt.=63m, Speed=8Km/h, Course=103deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7963899" lon="121.0453766">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:54Z</time>
+ <desc>Lat.=24.7963899, Long.=121.0453766, Alt.=63m, Speed=8Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7963516" lon="121.0455050">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:35:59Z</time>
+ <desc>Lat.=24.7963516, Long.=121.0455050, Alt.=63m, Speed=9Km/h, Course=108deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7963100" lon="121.0456283">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:36:04Z</time>
+ <desc>Lat.=24.7963100, Long.=121.0456283, Alt.=63m, Speed=9Km/h, Course=110deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7962599" lon="121.0457433">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:36:09Z</time>
+ <desc>Lat.=24.7962599, Long.=121.0457433, Alt.=63m, Speed=9Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7962216" lon="121.0458466">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:36:14Z</time>
+ <desc>Lat.=24.7962216, Long.=121.0458466, Alt.=63m, Speed=8Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7961566" lon="121.0459749">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:36:19Z</time>
+ <desc>Lat.=24.7961566, Long.=121.0459749, Alt.=63m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7961000" lon="121.0461083">
+ <ele>63.000000</ele>
+ <time>2009-10-08T04:36:24Z</time>
+ <desc>Lat.=24.7961000, Long.=121.0461083, Alt.=63m, Speed=10Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7960416" lon="121.0462366">
+ <ele>64.000000</ele>
+ <time>2009-10-08T04:36:29Z</time>
+ <desc>Lat.=24.7960416, Long.=121.0462366, Alt.=64m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7959833" lon="121.0463650">
+ <ele>65.000000</ele>
+ <time>2009-10-08T04:36:34Z</time>
+ <desc>Lat.=24.7959833, Long.=121.0463650, Alt.=65m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7959216" lon="121.0465000">
+ <ele>66.000000</ele>
+ <time>2009-10-08T04:36:39Z</time>
+ <desc>Lat.=24.7959216, Long.=121.0465000, Alt.=66m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7958633" lon="121.0466366">
+ <ele>67.000000</ele>
+ <time>2009-10-08T04:36:44Z</time>
+ <desc>Lat.=24.7958633, Long.=121.0466366, Alt.=67m, Speed=10Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7957999" lon="121.0467816">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:36:49Z</time>
+ <desc>Lat.=24.7957999, Long.=121.0467816, Alt.=68m, Speed=11Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7957433" lon="121.0469049">
+ <ele>68.000000</ele>
+ <time>2009-10-08T04:36:54Z</time>
+ <desc>Lat.=24.7957433, Long.=121.0469049, Alt.=68m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7956849" lon="121.0470333">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:36:59Z</time>
+ <desc>Lat.=24.7956849, Long.=121.0470333, Alt.=69m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7956232" lon="121.0471766">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:37:04Z</time>
+ <desc>Lat.=24.7956232, Long.=121.0471766, Alt.=70m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7955566" lon="121.0473266">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:37:09Z</time>
+ <desc>Lat.=24.7955566, Long.=121.0473266, Alt.=71m, Speed=12Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7954966" lon="121.0474683">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:37:14Z</time>
+ <desc>Lat.=24.7954966, Long.=121.0474683, Alt.=71m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7954366" lon="121.0476049">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:37:19Z</time>
+ <desc>Lat.=24.7954366, Long.=121.0476049, Alt.=71m, Speed=11Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7953783" lon="121.0477366">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:37:24Z</time>
+ <desc>Lat.=24.7953783, Long.=121.0477366, Alt.=72m, Speed=10Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7953199" lon="121.0478649">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:37:29Z</time>
+ <desc>Lat.=24.7953199, Long.=121.0478649, Alt.=72m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952649" lon="121.0479849">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:37:34Z</time>
+ <desc>Lat.=24.7952649, Long.=121.0479849, Alt.=72m, Speed=9Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952283" lon="121.0480699">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:37:39Z</time>
+ <desc>Lat.=24.7952283, Long.=121.0480699, Alt.=72m, Speed=6Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952200" lon="121.0481033">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:37:44Z</time>
+ <desc>Lat.=24.7952200, Long.=121.0481033, Alt.=71m, Speed=2Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952633" lon="121.0481383">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:37:49Z</time>
+ <desc>Lat.=24.7952633, Long.=121.0481383, Alt.=70m, Speed=4Km/h, Course=36deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952583" lon="121.0481649">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:37:57Z</time>
+ <desc>Lat.=24.7952583, Long.=121.0481649, Alt.=70m, Speed=1Km/h, Course=102deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952283" lon="121.0481883">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:02Z</time>
+ <desc>Lat.=24.7952283, Long.=121.0481883, Alt.=70m, Speed=2Km/h, Course=145deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7952249" lon="121.0481916">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:09Z</time>
+ <desc>Lat.=24.7952249, Long.=121.0481916, Alt.=70m, Speed=0Km/h, Course=139deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7951683" lon="121.0483149">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:14Z</time>
+ <desc>Lat.=24.7951683, Long.=121.0483149, Alt.=70m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7950966" lon="121.0484649">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:19Z</time>
+ <desc>Lat.=24.7950966, Long.=121.0484649, Alt.=70m, Speed=12Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7950250" lon="121.0486183">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:24Z</time>
+ <desc>Lat.=24.7950250, Long.=121.0486183, Alt.=70m, Speed=12Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7949633" lon="121.0487683">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:29Z</time>
+ <desc>Lat.=24.7949633, Long.=121.0487683, Alt.=70m, Speed=11Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7948999" lon="121.0489183">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:34Z</time>
+ <desc>Lat.=24.7948999, Long.=121.0489183, Alt.=70m, Speed=12Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7948233" lon="121.0490783">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:39Z</time>
+ <desc>Lat.=24.7948233, Long.=121.0490783, Alt.=70m, Speed=13Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7947566" lon="121.0492449">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:38:44Z</time>
+ <desc>Lat.=24.7947566, Long.=121.0492449, Alt.=70m, Speed=13Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7946883" lon="121.0494099">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:38:49Z</time>
+ <desc>Lat.=24.7946883, Long.=121.0494099, Alt.=71m, Speed=13Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7946233" lon="121.0495616">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:38:54Z</time>
+ <desc>Lat.=24.7946233, Long.=121.0495616, Alt.=71m, Speed=12Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7945633" lon="121.0497016">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:38:59Z</time>
+ <desc>Lat.=24.7945633, Long.=121.0497016, Alt.=71m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7945033" lon="121.0498416">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:39:04Z</time>
+ <desc>Lat.=24.7945033, Long.=121.0498416, Alt.=71m, Speed=11Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7944266" lon="121.0499749">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:39:09Z</time>
+ <desc>Lat.=24.7944266, Long.=121.0499749, Alt.=71m, Speed=11Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7943316" lon="121.0500966">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:39:14Z</time>
+ <desc>Lat.=24.7943316, Long.=121.0500966, Alt.=72m, Speed=11Km/h, Course=131deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7942066" lon="121.0501783">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:39:19Z</time>
+ <desc>Lat.=24.7942066, Long.=121.0501783, Alt.=72m, Speed=11Km/h, Course=149deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7940616" lon="121.0502666">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:39:24Z</time>
+ <desc>Lat.=24.7940616, Long.=121.0502666, Alt.=72m, Speed=13Km/h, Course=151deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7939233" lon="121.0503699">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:39:29Z</time>
+ <desc>Lat.=24.7939233, Long.=121.0503699, Alt.=73m, Speed=13Km/h, Course=146deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7938166" lon="121.0504466">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:39:34Z</time>
+ <desc>Lat.=24.7938166, Long.=121.0504466, Alt.=74m, Speed=10Km/h, Course=147deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7937233" lon="121.0505783">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:39:39Z</time>
+ <desc>Lat.=24.7937233, Long.=121.0505783, Alt.=76m, Speed=12Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7936566" lon="121.0507333">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:39:44Z</time>
+ <desc>Lat.=24.7936566, Long.=121.0507333, Alt.=76m, Speed=12Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7935883" lon="121.0508833">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:39:49Z</time>
+ <desc>Lat.=24.7935883, Long.=121.0508833, Alt.=75m, Speed=12Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7935216" lon="121.0510333">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:39:54Z</time>
+ <desc>Lat.=24.7935216, Long.=121.0510333, Alt.=75m, Speed=12Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7934583" lon="121.0511833">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:39:59Z</time>
+ <desc>Lat.=24.7934583, Long.=121.0511833, Alt.=75m, Speed=12Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7933933" lon="121.0513366">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:04Z</time>
+ <desc>Lat.=24.7933933, Long.=121.0513366, Alt.=74m, Speed=12Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7933366" lon="121.0514899">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:09Z</time>
+ <desc>Lat.=24.7933366, Long.=121.0514899, Alt.=74m, Speed=12Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7932733" lon="121.0516299">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:14Z</time>
+ <desc>Lat.=24.7932733, Long.=121.0516299, Alt.=73m, Speed=11Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7932083" lon="121.0517716">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:19Z</time>
+ <desc>Lat.=24.7932083, Long.=121.0517716, Alt.=74m, Speed=11Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7931450" lon="121.0519149">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:24Z</time>
+ <desc>Lat.=24.7931450, Long.=121.0519149, Alt.=73m, Speed=11Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7930816" lon="121.0520500">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:29Z</time>
+ <desc>Lat.=24.7930816, Long.=121.0520500, Alt.=73m, Speed=11Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7930249" lon="121.0521933">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:34Z</time>
+ <desc>Lat.=24.7930249, Long.=121.0521933, Alt.=73m, Speed=11Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7929600" lon="121.0523250">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:39Z</time>
+ <desc>Lat.=24.7929600, Long.=121.0523250, Alt.=73m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7929016" lon="121.0524583">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:40:44Z</time>
+ <desc>Lat.=24.7929016, Long.=121.0524583, Alt.=73m, Speed=10Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7928350" lon="121.0525899">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:49Z</time>
+ <desc>Lat.=24.7928350, Long.=121.0525899, Alt.=74m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7927849" lon="121.0527266">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:54Z</time>
+ <desc>Lat.=24.7927849, Long.=121.0527266, Alt.=74m, Speed=10Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7927232" lon="121.0528499">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:40:59Z</time>
+ <desc>Lat.=24.7927232, Long.=121.0528499, Alt.=74m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7926633" lon="121.0529716">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:04Z</time>
+ <desc>Lat.=24.7926633, Long.=121.0529716, Alt.=75m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7926133" lon="121.0530950">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:09Z</time>
+ <desc>Lat.=24.7926133, Long.=121.0530950, Alt.=75m, Speed=9Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7925533" lon="121.0532183">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:14Z</time>
+ <desc>Lat.=24.7925533, Long.=121.0532183, Alt.=75m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7924966" lon="121.0533416">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:41:19Z</time>
+ <desc>Lat.=24.7924966, Long.=121.0533416, Alt.=74m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7924333" lon="121.0534616">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:41:24Z</time>
+ <desc>Lat.=24.7924333, Long.=121.0534616, Alt.=74m, Speed=10Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7923799" lon="121.0535883">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:29Z</time>
+ <desc>Lat.=24.7923799, Long.=121.0535883, Alt.=75m, Speed=10Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7923183" lon="121.0537233">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:34Z</time>
+ <desc>Lat.=24.7923183, Long.=121.0537233, Alt.=75m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7922566" lon="121.0538549">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:39Z</time>
+ <desc>Lat.=24.7922566, Long.=121.0538549, Alt.=75m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7921966" lon="121.0540016">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:41:44Z</time>
+ <desc>Lat.=24.7921966, Long.=121.0540016, Alt.=76m, Speed=11Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7920983" lon="121.0541799">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:41:49Z</time>
+ <desc>Lat.=24.7920983, Long.=121.0541799, Alt.=75m, Speed=15Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7920049" lon="121.0543083">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:41:54Z</time>
+ <desc>Lat.=24.7920049, Long.=121.0543083, Alt.=76m, Speed=11Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7919382" lon="121.0542849">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:41:59Z</time>
+ <desc>Lat.=24.7919382, Long.=121.0542849, Alt.=76m, Speed=5Km/h, Course=198deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7919166" lon="121.0543033">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:42:12Z</time>
+ <desc>Lat.=24.7919166, Long.=121.0543033, Alt.=77m, Speed=0Km/h, Course=142deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7919250" lon="121.0543766">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:42:17Z</time>
+ <desc>Lat.=24.7919250, Long.=121.0543766, Alt.=77m, Speed=5Km/h, Course=83deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7918833" lon="121.0544700">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:42:22Z</time>
+ <desc>Lat.=24.7918833, Long.=121.0544700, Alt.=77m, Speed=7Km/h, Course=116deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7918433" lon="121.0545633">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:42:27Z</time>
+ <desc>Lat.=24.7918433, Long.=121.0545633, Alt.=78m, Speed=7Km/h, Course=115deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7917916" lon="121.0546183">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:42:32Z</time>
+ <desc>Lat.=24.7917916, Long.=121.0546183, Alt.=78m, Speed=5Km/h, Course=136deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7917666" lon="121.0546966">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:42:37Z</time>
+ <desc>Lat.=24.7917666, Long.=121.0546966, Alt.=77m, Speed=6Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7917099" lon="121.0548183">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:42:42Z</time>
+ <desc>Lat.=24.7917099, Long.=121.0548183, Alt.=77m, Speed=9Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7916900" lon="121.0548549">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:42:47Z</time>
+ <desc>Lat.=24.7916900, Long.=121.0548549, Alt.=76m, Speed=3Km/h, Course=121deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7916450" lon="121.0549000">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:42:52Z</time>
+ <desc>Lat.=24.7916450, Long.=121.0549000, Alt.=76m, Speed=4Km/h, Course=138deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7915666" lon="121.0549533">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:42:57Z</time>
+ <desc>Lat.=24.7915666, Long.=121.0549533, Alt.=75m, Speed=7Km/h, Course=148deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7915683" lon="121.0549716">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:43:02Z</time>
+ <desc>Lat.=24.7915683, Long.=121.0549716, Alt.=74m, Speed=1Km/h, Course=84deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7915283" lon="121.0550366">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:07Z</time>
+ <desc>Lat.=24.7915283, Long.=121.0550366, Alt.=73m, Speed=5Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7915116" lon="121.0550966">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:12Z</time>
+ <desc>Lat.=24.7915116, Long.=121.0550966, Alt.=73m, Speed=4Km/h, Course=107deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7914583" lon="121.0551916">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:17Z</time>
+ <desc>Lat.=24.7914583, Long.=121.0551916, Alt.=73m, Speed=8Km/h, Course=122deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7914316" lon="121.0552699">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:22Z</time>
+ <desc>Lat.=24.7914316, Long.=121.0552699, Alt.=73m, Speed=6Km/h, Course=111deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7913849" lon="121.0553699">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:27Z</time>
+ <desc>Lat.=24.7913849, Long.=121.0553699, Alt.=73m, Speed=8Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7913333" lon="121.0554833">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:32Z</time>
+ <desc>Lat.=24.7913333, Long.=121.0554833, Alt.=73m, Speed=9Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7912716" lon="121.0556150">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:37Z</time>
+ <desc>Lat.=24.7912716, Long.=121.0556150, Alt.=73m, Speed=10Km/h, Course=117deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7911816" lon="121.0556999">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:43:42Z</time>
+ <desc>Lat.=24.7911816, Long.=121.0556999, Alt.=73m, Speed=9Km/h, Course=139deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7911216" lon="121.0557783">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:43:47Z</time>
+ <desc>Lat.=24.7911216, Long.=121.0557783, Alt.=72m, Speed=7Km/h, Course=130deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910899" lon="121.0559166">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:43:52Z</time>
+ <desc>Lat.=24.7910899, Long.=121.0559166, Alt.=72m, Speed=10Km/h, Course=104deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910333" lon="121.0560949">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:43:57Z</time>
+ <desc>Lat.=24.7910333, Long.=121.0560949, Alt.=72m, Speed=13Km/h, Course=109deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7909816" lon="121.0563149">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:44:02Z</time>
+ <desc>Lat.=24.7909816, Long.=121.0563149, Alt.=71m, Speed=16Km/h, Course=105deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7909249" lon="121.0564583">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:44:07Z</time>
+ <desc>Lat.=24.7909249, Long.=121.0564583, Alt.=71m, Speed=11Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7909116" lon="121.0565866">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:12Z</time>
+ <desc>Lat.=24.7909116, Long.=121.0565866, Alt.=72m, Speed=9Km/h, Course=97deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7909816" lon="121.0566316">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:17Z</time>
+ <desc>Lat.=24.7909816, Long.=121.0566316, Alt.=72m, Speed=6Km/h, Course=30deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910433" lon="121.0566716">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:22Z</time>
+ <desc>Lat.=24.7910433, Long.=121.0566716, Alt.=72m, Speed=5Km/h, Course=30deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910550" lon="121.0566683">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:38Z</time>
+ <desc>Lat.=24.7910550, Long.=121.0566683, Alt.=72m, Speed=0Km/h, Course=346deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910383" lon="121.0566549">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:44Z</time>
+ <desc>Lat.=24.7910383, Long.=121.0566549, Alt.=72m, Speed=1Km/h, Course=216deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910249" lon="121.0566449">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:52Z</time>
+ <desc>Lat.=24.7910249, Long.=121.0566449, Alt.=72m, Speed=0Km/h, Course=214deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7910116" lon="121.0566433">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:44:56Z</time>
+ <desc>Lat.=24.7910116, Long.=121.0566433, Alt.=72m, Speed=1Km/h, Course=186deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7908966" lon="121.0565983">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:45:02Z</time>
+ <desc>Lat.=24.7908966, Long.=121.0565983, Alt.=72m, Speed=8Km/h, Course=200deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7908350" lon="121.0567249">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:45:07Z</time>
+ <desc>Lat.=24.7908350, Long.=121.0567249, Alt.=72m, Speed=10Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7908032" lon="121.0570066">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:45:12Z</time>
+ <desc>Lat.=24.7908032, Long.=121.0570066, Alt.=69m, Speed=20Km/h, Course=97deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7906916" lon="121.0572833">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:45:17Z</time>
+ <desc>Lat.=24.7906916, Long.=121.0572833, Alt.=69m, Speed=22Km/h, Course=114deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905932" lon="121.0575533">
+ <ele>69.000000</ele>
+ <time>2009-10-08T04:45:22Z</time>
+ <desc>Lat.=24.7905932, Long.=121.0575533, Alt.=69m, Speed=21Km/h, Course=112deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905533" lon="121.0577716">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:45:27Z</time>
+ <desc>Lat.=24.7905533, Long.=121.0577716, Alt.=70m, Speed=16Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905116" lon="121.0580433">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:45:32Z</time>
+ <desc>Lat.=24.7905116, Long.=121.0580433, Alt.=70m, Speed=20Km/h, Course=100deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904866" lon="121.0583066">
+ <ele>70.000000</ele>
+ <time>2009-10-08T04:45:37Z</time>
+ <desc>Lat.=24.7904866, Long.=121.0583066, Alt.=70m, Speed=19Km/h, Course=96deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904250" lon="121.0584299">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:45:42Z</time>
+ <desc>Lat.=24.7904250, Long.=121.0584299, Alt.=71m, Speed=10Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7903866" lon="121.0585033">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:45:47Z</time>
+ <desc>Lat.=24.7903866, Long.=121.0585033, Alt.=71m, Speed=6Km/h, Course=120deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7903633" lon="121.0586333">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:45:52Z</time>
+ <desc>Lat.=24.7903633, Long.=121.0586333, Alt.=71m, Speed=9Km/h, Course=101deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7903816" lon="121.0587566">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:45:57Z</time>
+ <desc>Lat.=24.7903816, Long.=121.0587566, Alt.=71m, Speed=9Km/h, Course=81deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904000" lon="121.0588866">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:46:02Z</time>
+ <desc>Lat.=24.7904000, Long.=121.0588866, Alt.=71m, Speed=9Km/h, Course=81deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904216" lon="121.0590249">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:46:07Z</time>
+ <desc>Lat.=24.7904216, Long.=121.0590249, Alt.=71m, Speed=10Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904466" lon="121.0591716">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:46:12Z</time>
+ <desc>Lat.=24.7904466, Long.=121.0591716, Alt.=71m, Speed=10Km/h, Course=79deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904800" lon="121.0593116">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:46:17Z</time>
+ <desc>Lat.=24.7904800, Long.=121.0593116, Alt.=72m, Speed=10Km/h, Course=75deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904966" lon="121.0594300">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:46:22Z</time>
+ <desc>Lat.=24.7904966, Long.=121.0594300, Alt.=72m, Speed=8Km/h, Course=81deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905183" lon="121.0595983">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:46:27Z</time>
+ <desc>Lat.=24.7905183, Long.=121.0595983, Alt.=73m, Speed=12Km/h, Course=82deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905416" lon="121.0597799">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:46:32Z</time>
+ <desc>Lat.=24.7905416, Long.=121.0597799, Alt.=73m, Speed=13Km/h, Course=82deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905666" lon="121.0599716">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:46:37Z</time>
+ <desc>Lat.=24.7905666, Long.=121.0599716, Alt.=73m, Speed=14Km/h, Course=82deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905966" lon="121.0601666">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:46:42Z</time>
+ <desc>Lat.=24.7905966, Long.=121.0601666, Alt.=72m, Speed=14Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7906583" lon="121.0603499">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:46:47Z</time>
+ <desc>Lat.=24.7906583, Long.=121.0603499, Alt.=71m, Speed=14Km/h, Course=70deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7906833" lon="121.0605249">
+ <ele>72.000000</ele>
+ <time>2009-10-08T04:46:52Z</time>
+ <desc>Lat.=24.7906833, Long.=121.0605249, Alt.=72m, Speed=12Km/h, Course=81deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7907116" lon="121.0606983">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:46:57Z</time>
+ <desc>Lat.=24.7907116, Long.=121.0606983, Alt.=71m, Speed=12Km/h, Course=80deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7906399" lon="121.0608416">
+ <ele>71.000000</ele>
+ <time>2009-10-08T04:47:02Z</time>
+ <desc>Lat.=24.7906399, Long.=121.0608416, Alt.=71m, Speed=11Km/h, Course=119deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7905166" lon="121.0609950">
+ <ele>73.000000</ele>
+ <time>2009-10-08T04:47:07Z</time>
+ <desc>Lat.=24.7905166, Long.=121.0609950, Alt.=73m, Speed=14Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7904016" lon="121.0611516">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:47:12Z</time>
+ <desc>Lat.=24.7904016, Long.=121.0611516, Alt.=74m, Speed=14Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7902866" lon="121.0613133">
+ <ele>74.000000</ele>
+ <time>2009-10-08T04:47:17Z</time>
+ <desc>Lat.=24.7902866, Long.=121.0613133, Alt.=74m, Speed=14Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7901733" lon="121.0614799">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:47:22Z</time>
+ <desc>Lat.=24.7901733, Long.=121.0614799, Alt.=75m, Speed=15Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7900649" lon="121.0616399">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:47:27Z</time>
+ <desc>Lat.=24.7900649, Long.=121.0616399, Alt.=75m, Speed=14Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7899549" lon="121.0618066">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:47:32Z</time>
+ <desc>Lat.=24.7899549, Long.=121.0618066, Alt.=76m, Speed=14Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7898400" lon="121.0619616">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:47:37Z</time>
+ <desc>Lat.=24.7898400, Long.=121.0619616, Alt.=77m, Speed=14Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7897250" lon="121.0621266">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:47:42Z</time>
+ <desc>Lat.=24.7897250, Long.=121.0621266, Alt.=78m, Speed=15Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7896099" lon="121.0622883">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:47:47Z</time>
+ <desc>Lat.=24.7896099, Long.=121.0622883, Alt.=79m, Speed=14Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7894899" lon="121.0624566">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:47:52Z</time>
+ <desc>Lat.=24.7894899, Long.=121.0624566, Alt.=80m, Speed=15Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7893766" lon="121.0626183">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:47:57Z</time>
+ <desc>Lat.=24.7893766, Long.=121.0626183, Alt.=80m, Speed=14Km/h, Course=128deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7892483" lon="121.0627916">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:48:02Z</time>
+ <desc>Lat.=24.7892483, Long.=121.0627916, Alt.=80m, Speed=16Km/h, Course=129deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7891333" lon="121.0629700">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:48:07Z</time>
+ <desc>Lat.=24.7891333, Long.=121.0629700, Alt.=81m, Speed=15Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7890133" lon="121.0631466">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:48:12Z</time>
+ <desc>Lat.=24.7890133, Long.=121.0631466, Alt.=82m, Speed=16Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7888966" lon="121.0633250">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:48:17Z</time>
+ <desc>Lat.=24.7888966, Long.=121.0633250, Alt.=83m, Speed=16Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7887799" lon="121.0634933">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:48:22Z</time>
+ <desc>Lat.=24.7887799, Long.=121.0634933, Alt.=83m, Speed=15Km/h, Course=127deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7886716" lon="121.0636599">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:48:27Z</time>
+ <desc>Lat.=24.7886716, Long.=121.0636599, Alt.=84m, Speed=14Km/h, Course=126deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7885466" lon="121.0638199">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:48:32Z</time>
+ <desc>Lat.=24.7885466, Long.=121.0638199, Alt.=84m, Speed=15Km/h, Course=131deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7884383" lon="121.0639583">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:48:37Z</time>
+ <desc>Lat.=24.7884383, Long.=121.0639583, Alt.=84m, Speed=13Km/h, Course=131deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7883216" lon="121.0641033">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:48:42Z</time>
+ <desc>Lat.=24.7883216, Long.=121.0641033, Alt.=84m, Speed=14Km/h, Course=132deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7881682" lon="121.0641433">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:48:47Z</time>
+ <desc>Lat.=24.7881682, Long.=121.0641433, Alt.=84m, Speed=12Km/h, Course=167deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7881583" lon="121.0639283">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:48:52Z</time>
+ <desc>Lat.=24.7881583, Long.=121.0639283, Alt.=83m, Speed=15Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7881633" lon="121.0636750">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:48:57Z</time>
+ <desc>Lat.=24.7881633, Long.=121.0636750, Alt.=83m, Speed=18Km/h, Course=271deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7881899" lon="121.0634150">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:49:02Z</time>
+ <desc>Lat.=24.7881899, Long.=121.0634150, Alt.=82m, Speed=19Km/h, Course=276deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7882100" lon="121.0631566">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:49:07Z</time>
+ <desc>Lat.=24.7882100, Long.=121.0631566, Alt.=80m, Speed=18Km/h, Course=275deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7881666" lon="121.0629016">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:49:12Z</time>
+ <desc>Lat.=24.7881666, Long.=121.0629016, Alt.=80m, Speed=18Km/h, Course=259deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7880516" lon="121.0626383">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:49:17Z</time>
+ <desc>Lat.=24.7880516, Long.=121.0626383, Alt.=80m, Speed=21Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7879349" lon="121.0624033">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:49:22Z</time>
+ <desc>Lat.=24.7879349, Long.=121.0624033, Alt.=81m, Speed=19Km/h, Course=241deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7878333" lon="121.0621933">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:49:27Z</time>
+ <desc>Lat.=24.7878333, Long.=121.0621933, Alt.=82m, Speed=17Km/h, Course=242deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7877500" lon="121.0619833">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:49:32Z</time>
+ <desc>Lat.=24.7877500, Long.=121.0619833, Alt.=83m, Speed=16Km/h, Course=246deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7876733" lon="121.0617766">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:49:37Z</time>
+ <desc>Lat.=24.7876733, Long.=121.0617766, Alt.=83m, Speed=16Km/h, Course=248deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7875866" lon="121.0615983">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:49:42Z</time>
+ <desc>Lat.=24.7875866, Long.=121.0615983, Alt.=83m, Speed=14Km/h, Course=242deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7875116" lon="121.0614283">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:49:47Z</time>
+ <desc>Lat.=24.7875116, Long.=121.0614283, Alt.=84m, Speed=13Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7874183" lon="121.0612533">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:49:52Z</time>
+ <desc>Lat.=24.7874183, Long.=121.0612533, Alt.=83m, Speed=14Km/h, Course=240deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7873282" lon="121.0610533">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:49:57Z</time>
+ <desc>Lat.=24.7873282, Long.=121.0610533, Alt.=83m, Speed=16Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7872432" lon="121.0608550">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:50:02Z</time>
+ <desc>Lat.=24.7872432, Long.=121.0608550, Alt.=83m, Speed=15Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7871499" lon="121.0606533">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:50:07Z</time>
+ <desc>Lat.=24.7871499, Long.=121.0606533, Alt.=83m, Speed=16Km/h, Course=243deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7870549" lon="121.0604466">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:50:12Z</time>
+ <desc>Lat.=24.7870549, Long.=121.0604466, Alt.=83m, Speed=16Km/h, Course=243deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7869616" lon="121.0602299">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:17Z</time>
+ <desc>Lat.=24.7869616, Long.=121.0602299, Alt.=82m, Speed=17Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7868699" lon="121.0600183">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:22Z</time>
+ <desc>Lat.=24.7868699, Long.=121.0600183, Alt.=82m, Speed=17Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7867733" lon="121.0598033">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:27Z</time>
+ <desc>Lat.=24.7867733, Long.=121.0598033, Alt.=82m, Speed=17Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7866766" lon="121.0595783">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:32Z</time>
+ <desc>Lat.=24.7866766, Long.=121.0595783, Alt.=82m, Speed=18Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7865833" lon="121.0593516">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:37Z</time>
+ <desc>Lat.=24.7865833, Long.=121.0593516, Alt.=82m, Speed=18Km/h, Course=246deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7864833" lon="121.0591199">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:42Z</time>
+ <desc>Lat.=24.7864833, Long.=121.0591199, Alt.=82m, Speed=18Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7863833" lon="121.0588833">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:50:47Z</time>
+ <desc>Lat.=24.7863833, Long.=121.0588833, Alt.=82m, Speed=18Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7862783" lon="121.0586466">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:50:52Z</time>
+ <desc>Lat.=24.7862783, Long.=121.0586466, Alt.=81m, Speed=19Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7861749" lon="121.0584066">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:50:57Z</time>
+ <desc>Lat.=24.7861749, Long.=121.0584066, Alt.=81m, Speed=19Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7860733" lon="121.0581766">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:02Z</time>
+ <desc>Lat.=24.7860733, Long.=121.0581766, Alt.=81m, Speed=18Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7859716" lon="121.0579433">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:07Z</time>
+ <desc>Lat.=24.7859716, Long.=121.0579433, Alt.=81m, Speed=18Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7858716" lon="121.0577033">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:12Z</time>
+ <desc>Lat.=24.7858716, Long.=121.0577033, Alt.=81m, Speed=19Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7857616" lon="121.0574550">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:17Z</time>
+ <desc>Lat.=24.7857616, Long.=121.0574550, Alt.=81m, Speed=20Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7856399" lon="121.0571833">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:22Z</time>
+ <desc>Lat.=24.7856399, Long.=121.0571833, Alt.=81m, Speed=22Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7855100" lon="121.0568883">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:27Z</time>
+ <desc>Lat.=24.7855100, Long.=121.0568883, Alt.=80m, Speed=23Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7853783" lon="121.0565899">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:32Z</time>
+ <desc>Lat.=24.7853783, Long.=121.0565899, Alt.=80m, Speed=24Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7852449" lon="121.0562833">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:37Z</time>
+ <desc>Lat.=24.7852449, Long.=121.0562833, Alt.=80m, Speed=24Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7851099" lon="121.0559816">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:42Z</time>
+ <desc>Lat.=24.7851099, Long.=121.0559816, Alt.=80m, Speed=24Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7849833" lon="121.0556799">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:47Z</time>
+ <desc>Lat.=24.7849833, Long.=121.0556799, Alt.=80m, Speed=24Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7848316" lon="121.0553566">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:51:52Z</time>
+ <desc>Lat.=24.7848316, Long.=121.0553566, Alt.=80m, Speed=26Km/h, Course=243deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7846833" lon="121.0550183">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:51:57Z</time>
+ <desc>Lat.=24.7846833, Long.=121.0550183, Alt.=81m, Speed=27Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7845683" lon="121.0547316">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:52:02Z</time>
+ <desc>Lat.=24.7845683, Long.=121.0547316, Alt.=82m, Speed=22Km/h, Course=246deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7844599" lon="121.0544816">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:52:07Z</time>
+ <desc>Lat.=24.7844599, Long.=121.0544816, Alt.=82m, Speed=20Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7843133" lon="121.0542849">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:52:12Z</time>
+ <desc>Lat.=24.7843133, Long.=121.0542849, Alt.=82m, Speed=18Km/h, Course=231deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7841533" lon="121.0541216">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:52:17Z</time>
+ <desc>Lat.=24.7841533, Long.=121.0541216, Alt.=83m, Speed=17Km/h, Course=223deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840183" lon="121.0539700">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:52:22Z</time>
+ <desc>Lat.=24.7840183, Long.=121.0539700, Alt.=84m, Speed=15Km/h, Course=226deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839449" lon="121.0537483">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:52:27Z</time>
+ <desc>Lat.=24.7839449, Long.=121.0537483, Alt.=84m, Speed=17Km/h, Course=250deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839516" lon="121.0534833">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:52:32Z</time>
+ <desc>Lat.=24.7839516, Long.=121.0534833, Alt.=85m, Speed=19Km/h, Course=272deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839983" lon="121.0532399">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:52:37Z</time>
+ <desc>Lat.=24.7839983, Long.=121.0532399, Alt.=85m, Speed=18Km/h, Course=282deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840549" lon="121.0529616">
+ <ele>86.000000</ele>
+ <time>2009-10-08T04:52:42Z</time>
+ <desc>Lat.=24.7840549, Long.=121.0529616, Alt.=86m, Speed=20Km/h, Course=283deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7841633" lon="121.0526866">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:52:47Z</time>
+ <desc>Lat.=24.7841633, Long.=121.0526866, Alt.=87m, Speed=21Km/h, Course=293deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7842900" lon="121.0524316">
+ <ele>89.000000</ele>
+ <time>2009-10-08T04:52:52Z</time>
+ <desc>Lat.=24.7842900, Long.=121.0524316, Alt.=89m, Speed=21Km/h, Course=299deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7843883" lon="121.0521933">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:52:57Z</time>
+ <desc>Lat.=24.7843883, Long.=121.0521933, Alt.=88m, Speed=19Km/h, Course=294deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7844683" lon="121.0519633">
+ <ele>89.000000</ele>
+ <time>2009-10-08T04:53:02Z</time>
+ <desc>Lat.=24.7844683, Long.=121.0519633, Alt.=89m, Speed=17Km/h, Course=291deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7845483" lon="121.0516983">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:53:07Z</time>
+ <desc>Lat.=24.7845483, Long.=121.0516983, Alt.=88m, Speed=20Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7846216" lon="121.0513783">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:53:12Z</time>
+ <desc>Lat.=24.7846216, Long.=121.0513783, Alt.=88m, Speed=24Km/h, Course=284deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7846199" lon="121.0509800">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:53:17Z</time>
+ <desc>Lat.=24.7846199, Long.=121.0509800, Alt.=88m, Speed=28Km/h, Course=270deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7845400" lon="121.0505283">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:53:22Z</time>
+ <desc>Lat.=24.7845400, Long.=121.0505283, Alt.=87m, Speed=33Km/h, Course=259deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7846849" lon="121.0500316">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:53:27Z</time>
+ <desc>Lat.=24.7846849, Long.=121.0500316, Alt.=83m, Speed=37Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7847266" lon="121.0494749">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:53:32Z</time>
+ <desc>Lat.=24.7847266, Long.=121.0494749, Alt.=80m, Speed=40Km/h, Course=275deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7846483" lon="121.0489683">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:53:37Z</time>
+ <desc>Lat.=24.7846483, Long.=121.0489683, Alt.=79m, Speed=37Km/h, Course=260deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7845816" lon="121.0485733">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:53:42Z</time>
+ <desc>Lat.=24.7845816, Long.=121.0485733, Alt.=77m, Speed=29Km/h, Course=259deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7845250" lon="121.0482566">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:53:47Z</time>
+ <desc>Lat.=24.7845250, Long.=121.0482566, Alt.=77m, Speed=23Km/h, Course=259deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7844583" lon="121.0479549">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:53:52Z</time>
+ <desc>Lat.=24.7844583, Long.=121.0479549, Alt.=77m, Speed=22Km/h, Course=256deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7843850" lon="121.0476333">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:53:57Z</time>
+ <desc>Lat.=24.7843850, Long.=121.0476333, Alt.=76m, Speed=24Km/h, Course=256deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7843083" lon="121.0473049">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:54:02Z</time>
+ <desc>Lat.=24.7843083, Long.=121.0473049, Alt.=77m, Speed=24Km/h, Course=256deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7842366" lon="121.0469566">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:54:07Z</time>
+ <desc>Lat.=24.7842366, Long.=121.0469566, Alt.=77m, Speed=25Km/h, Course=257deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7841799" lon="121.0466433">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:54:12Z</time>
+ <desc>Lat.=24.7841799, Long.=121.0466433, Alt.=76m, Speed=23Km/h, Course=259deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7841399" lon="121.0463650">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:54:17Z</time>
+ <desc>Lat.=24.7841399, Long.=121.0463650, Alt.=75m, Speed=20Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7841116" lon="121.0460649">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:54:22Z</time>
+ <desc>Lat.=24.7841116, Long.=121.0460649, Alt.=75m, Speed=21Km/h, Course=264deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840749" lon="121.0457800">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:54:27Z</time>
+ <desc>Lat.=24.7840749, Long.=121.0457800, Alt.=75m, Speed=20Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840616" lon="121.0455266">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:54:32Z</time>
+ <desc>Lat.=24.7840616, Long.=121.0455266, Alt.=75m, Speed=18Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840316" lon="121.0452883">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:54:37Z</time>
+ <desc>Lat.=24.7840316, Long.=121.0452883, Alt.=76m, Speed=17Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7840066" lon="121.0450600">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:54:42Z</time>
+ <desc>Lat.=24.7840066, Long.=121.0450600, Alt.=77m, Speed=16Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839866" lon="121.0448366">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:54:47Z</time>
+ <desc>Lat.=24.7839866, Long.=121.0448366, Alt.=78m, Speed=16Km/h, Course=264deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839699" lon="121.0446199">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:54:52Z</time>
+ <desc>Lat.=24.7839699, Long.=121.0446199, Alt.=77m, Speed=15Km/h, Course=265deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839500" lon="121.0443949">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:54:57Z</time>
+ <desc>Lat.=24.7839500, Long.=121.0443949, Alt.=77m, Speed=16Km/h, Course=264deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839216" lon="121.0441449">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:55:02Z</time>
+ <desc>Lat.=24.7839216, Long.=121.0441449, Alt.=78m, Speed=18Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7839016" lon="121.0439049">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:55:07Z</time>
+ <desc>Lat.=24.7839016, Long.=121.0439049, Alt.=77m, Speed=17Km/h, Course=265deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7838766" lon="121.0436733">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:55:12Z</time>
+ <desc>Lat.=24.7838766, Long.=121.0436733, Alt.=76m, Speed=16Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7838533" lon="121.0434483">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:55:17Z</time>
+ <desc>Lat.=24.7838533, Long.=121.0434483, Alt.=75m, Speed=16Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7838233" lon="121.0432316">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:55:22Z</time>
+ <desc>Lat.=24.7838233, Long.=121.0432316, Alt.=75m, Speed=15Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7837983" lon="121.0429966">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:55:27Z</time>
+ <desc>Lat.=24.7837983, Long.=121.0429966, Alt.=75m, Speed=17Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7837766" lon="121.0427766">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:55:32Z</time>
+ <desc>Lat.=24.7837766, Long.=121.0427766, Alt.=76m, Speed=16Km/h, Course=264deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7837533" lon="121.0425666">
+ <ele>75.000000</ele>
+ <time>2009-10-08T04:55:37Z</time>
+ <desc>Lat.=24.7837533, Long.=121.0425666, Alt.=75m, Speed=15Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7837233" lon="121.0423399">
+ <ele>76.000000</ele>
+ <time>2009-10-08T04:55:42Z</time>
+ <desc>Lat.=24.7837233, Long.=121.0423399, Alt.=76m, Speed=16Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7836933" lon="121.0421299">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:55:47Z</time>
+ <desc>Lat.=24.7836933, Long.=121.0421299, Alt.=77m, Speed=15Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7836600" lon="121.0419149">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:55:52Z</time>
+ <desc>Lat.=24.7836600, Long.=121.0419149, Alt.=77m, Speed=15Km/h, Course=260deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7836383" lon="121.0417199">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:55:57Z</time>
+ <desc>Lat.=24.7836383, Long.=121.0417199, Alt.=77m, Speed=14Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7836116" lon="121.0415033">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:56:02Z</time>
+ <desc>Lat.=24.7836116, Long.=121.0415033, Alt.=77m, Speed=15Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7836616" lon="121.0413383">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:56:07Z</time>
+ <desc>Lat.=24.7836616, Long.=121.0413383, Alt.=77m, Speed=12Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7835949" lon="121.0410966">
+ <ele>77.000000</ele>
+ <time>2009-10-08T04:56:12Z</time>
+ <desc>Lat.=24.7835949, Long.=121.0410966, Alt.=77m, Speed=18Km/h, Course=253deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7835266" lon="121.0409083">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:56:17Z</time>
+ <desc>Lat.=24.7835266, Long.=121.0409083, Alt.=78m, Speed=14Km/h, Course=248deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834933" lon="121.0406816">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:56:22Z</time>
+ <desc>Lat.=24.7834933, Long.=121.0406816, Alt.=79m, Speed=16Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834616" lon="121.0404616">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:56:27Z</time>
+ <desc>Lat.=24.7834616, Long.=121.0404616, Alt.=79m, Speed=16Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834500" lon="121.0402233">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:56:32Z</time>
+ <desc>Lat.=24.7834500, Long.=121.0402233, Alt.=79m, Speed=17Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834416" lon="121.0399799">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:56:37Z</time>
+ <desc>Lat.=24.7834416, Long.=121.0399799, Alt.=79m, Speed=17Km/h, Course=268deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834683" lon="121.0397883">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:56:42Z</time>
+ <desc>Lat.=24.7834683, Long.=121.0397883, Alt.=79m, Speed=14Km/h, Course=279deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834316" lon="121.0395116">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:56:47Z</time>
+ <desc>Lat.=24.7834316, Long.=121.0395116, Alt.=80m, Speed=20Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7834033" lon="121.0392466">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:56:52Z</time>
+ <desc>Lat.=24.7834033, Long.=121.0392466, Alt.=81m, Speed=19Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833699" lon="121.0389933">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:56:57Z</time>
+ <desc>Lat.=24.7833699, Long.=121.0389933, Alt.=82m, Speed=18Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833350" lon="121.0387400">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:57:02Z</time>
+ <desc>Lat.=24.7833350, Long.=121.0387400, Alt.=81m, Speed=18Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833099" lon="121.0384983">
+ <ele>81.000000</ele>
+ <time>2009-10-08T04:57:07Z</time>
+ <desc>Lat.=24.7833099, Long.=121.0384983, Alt.=81m, Speed=17Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832950" lon="121.0382816">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:57:12Z</time>
+ <desc>Lat.=24.7832950, Long.=121.0382816, Alt.=80m, Speed=15Km/h, Course=266deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832833" lon="121.0380500">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:57:17Z</time>
+ <desc>Lat.=24.7832833, Long.=121.0380500, Alt.=80m, Speed=16Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832650" lon="121.0378199">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:57:22Z</time>
+ <desc>Lat.=24.7832650, Long.=121.0378199, Alt.=79m, Speed=16Km/h, Course=265deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832416" lon="121.0375849">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:57:27Z</time>
+ <desc>Lat.=24.7832416, Long.=121.0375849, Alt.=78m, Speed=17Km/h, Course=264deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832133" lon="121.0373583">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:57:32Z</time>
+ <desc>Lat.=24.7832133, Long.=121.0373583, Alt.=78m, Speed=16Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7831833" lon="121.0371333">
+ <ele>78.000000</ele>
+ <time>2009-10-08T04:57:37Z</time>
+ <desc>Lat.=24.7831833, Long.=121.0371333, Alt.=78m, Speed=16Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7831766" lon="121.0369333">
+ <ele>80.000000</ele>
+ <time>2009-10-08T04:57:42Z</time>
+ <desc>Lat.=24.7831766, Long.=121.0369333, Alt.=80m, Speed=14Km/h, Course=268deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832233" lon="121.0367499">
+ <ele>79.000000</ele>
+ <time>2009-10-08T04:57:47Z</time>
+ <desc>Lat.=24.7832233, Long.=121.0367499, Alt.=79m, Speed=13Km/h, Course=286deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832599" lon="121.0366083">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:57:52Z</time>
+ <desc>Lat.=24.7832599, Long.=121.0366083, Alt.=83m, Speed=10Km/h, Course=286deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833166" lon="121.0364283">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:57:57Z</time>
+ <desc>Lat.=24.7833166, Long.=121.0364283, Alt.=84m, Speed=13Km/h, Course=289deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833766" lon="121.0362549">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:58:02Z</time>
+ <desc>Lat.=24.7833766, Long.=121.0362549, Alt.=85m, Speed=13Km/h, Course=291deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833583" lon="121.0360450">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:58:07Z</time>
+ <desc>Lat.=24.7833583, Long.=121.0360450, Alt.=87m, Speed=15Km/h, Course=265deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7833116" lon="121.0358599">
+ <ele>86.000000</ele>
+ <time>2009-10-08T04:58:12Z</time>
+ <desc>Lat.=24.7833116, Long.=121.0358599, Alt.=86m, Speed=13Km/h, Course=254deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7832383" lon="121.0356599">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:58:17Z</time>
+ <desc>Lat.=24.7832383, Long.=121.0356599, Alt.=88m, Speed=15Km/h, Course=248deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7831599" lon="121.0354600">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:58:22Z</time>
+ <desc>Lat.=24.7831599, Long.=121.0354600, Alt.=87m, Speed=15Km/h, Course=247deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7830866" lon="121.0352433">
+ <ele>88.000000</ele>
+ <time>2009-10-08T04:58:27Z</time>
+ <desc>Lat.=24.7830866, Long.=121.0352433, Alt.=88m, Speed=16Km/h, Course=250deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7830216" lon="121.0350249">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:58:32Z</time>
+ <desc>Lat.=24.7830216, Long.=121.0350249, Alt.=87m, Speed=16Km/h, Course=252deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7829499" lon="121.0348050">
+ <ele>86.000000</ele>
+ <time>2009-10-08T04:58:37Z</time>
+ <desc>Lat.=24.7829499, Long.=121.0348050, Alt.=86m, Speed=17Km/h, Course=250deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7828850" lon="121.0345933">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:58:42Z</time>
+ <desc>Lat.=24.7828850, Long.=121.0345933, Alt.=87m, Speed=16Km/h, Course=251deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7827750" lon="121.0344116">
+ <ele>87.000000</ele>
+ <time>2009-10-08T04:58:47Z</time>
+ <desc>Lat.=24.7827750, Long.=121.0344116, Alt.=87m, Speed=15Km/h, Course=236deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7827249" lon="121.0341666">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:58:52Z</time>
+ <desc>Lat.=24.7827249, Long.=121.0341666, Alt.=84m, Speed=18Km/h, Course=257deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7826916" lon="121.0339150">
+ <ele>83.000000</ele>
+ <time>2009-10-08T04:58:57Z</time>
+ <desc>Lat.=24.7826916, Long.=121.0339150, Alt.=83m, Speed=18Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7826399" lon="121.0336999">
+ <ele>82.000000</ele>
+ <time>2009-10-08T04:59:02Z</time>
+ <desc>Lat.=24.7826399, Long.=121.0336999, Alt.=82m, Speed=16Km/h, Course=255deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7825449" lon="121.0334966">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:07Z</time>
+ <desc>Lat.=24.7825449, Long.=121.0334966, Alt.=84m, Speed=16Km/h, Course=243deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7824483" lon="121.0332983">
+ <ele>86.000000</ele>
+ <time>2009-10-08T04:59:12Z</time>
+ <desc>Lat.=24.7824483, Long.=121.0332983, Alt.=86m, Speed=16Km/h, Course=242deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7823633" lon="121.0330983">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:59:17Z</time>
+ <desc>Lat.=24.7823633, Long.=121.0330983, Alt.=85m, Speed=16Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7823100" lon="121.0328749">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:22Z</time>
+ <desc>Lat.=24.7823100, Long.=121.0328749, Alt.=84m, Speed=16Km/h, Course=255deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7822550" lon="121.0326366">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:27Z</time>
+ <desc>Lat.=24.7822550, Long.=121.0326366, Alt.=84m, Speed=17Km/h, Course=256deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7821766" lon="121.0323999">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:32Z</time>
+ <desc>Lat.=24.7821766, Long.=121.0323999, Alt.=84m, Speed=18Km/h, Course=250deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7820966" lon="121.0321233">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:37Z</time>
+ <desc>Lat.=24.7820966, Long.=121.0321233, Alt.=84m, Speed=21Km/h, Course=252deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7819900" lon="121.0318633">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:42Z</time>
+ <desc>Lat.=24.7819900, Long.=121.0318633, Alt.=84m, Speed=20Km/h, Course=246deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7819016" lon="121.0315983">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:47Z</time>
+ <desc>Lat.=24.7819016, Long.=121.0315983, Alt.=84m, Speed=20Km/h, Course=250deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7818216" lon="121.0314116">
+ <ele>84.000000</ele>
+ <time>2009-10-08T04:59:52Z</time>
+ <desc>Lat.=24.7818216, Long.=121.0314116, Alt.=84m, Speed=15Km/h, Course=245deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7817833" lon="121.0311266">
+ <ele>85.000000</ele>
+ <time>2009-10-08T04:59:57Z</time>
+ <desc>Lat.=24.7817833, Long.=121.0311266, Alt.=85m, Speed=20Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7817933" lon="121.0308783">
+ <ele>84.000000</ele>
+ <time>2009-10-08T05:00:02Z</time>
+ <desc>Lat.=24.7817933, Long.=121.0308783, Alt.=84m, Speed=18Km/h, Course=273deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7817966" lon="121.0306399">
+ <ele>85.000000</ele>
+ <time>2009-10-08T05:00:07Z</time>
+ <desc>Lat.=24.7817966, Long.=121.0306399, Alt.=85m, Speed=17Km/h, Course=271deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816633" lon="121.0304733">
+ <ele>86.000000</ele>
+ <time>2009-10-08T05:00:12Z</time>
+ <desc>Lat.=24.7816633, Long.=121.0304733, Alt.=86m, Speed=16Km/h, Course=229deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7814899" lon="121.0303333">
+ <ele>86.000000</ele>
+ <time>2009-10-08T05:00:17Z</time>
+ <desc>Lat.=24.7814899, Long.=121.0303333, Alt.=86m, Speed=17Km/h, Course=216deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813850" lon="121.0301399">
+ <ele>87.000000</ele>
+ <time>2009-10-08T05:00:22Z</time>
+ <desc>Lat.=24.7813850, Long.=121.0301399, Alt.=87m, Speed=16Km/h, Course=239deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813216" lon="121.0299299">
+ <ele>88.000000</ele>
+ <time>2009-10-08T05:00:27Z</time>
+ <desc>Lat.=24.7813216, Long.=121.0299299, Alt.=88m, Speed=16Km/h, Course=252deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7811666" lon="121.0297416">
+ <ele>91.000000</ele>
+ <time>2009-10-08T05:00:32Z</time>
+ <desc>Lat.=24.7811666, Long.=121.0297416, Alt.=91m, Speed=18Km/h, Course=228deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7810616" lon="121.0294366">
+ <ele>91.000000</ele>
+ <time>2009-10-08T05:00:37Z</time>
+ <desc>Lat.=24.7810616, Long.=121.0294366, Alt.=91m, Speed=23Km/h, Course=249deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7810399" lon="121.0292566">
+ <ele>94.000000</ele>
+ <time>2009-10-08T05:00:42Z</time>
+ <desc>Lat.=24.7810399, Long.=121.0292566, Alt.=94m, Speed=13Km/h, Course=262deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7809916" lon="121.0290633">
+ <ele>95.000000</ele>
+ <time>2009-10-08T05:00:47Z</time>
+ <desc>Lat.=24.7809916, Long.=121.0290633, Alt.=95m, Speed=14Km/h, Course=255deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7809016" lon="121.0288050">
+ <ele>96.000000</ele>
+ <time>2009-10-08T05:00:52Z</time>
+ <desc>Lat.=24.7809016, Long.=121.0288050, Alt.=96m, Speed=20Km/h, Course=249deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7807766" lon="121.0285483">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:00:57Z</time>
+ <desc>Lat.=24.7807766, Long.=121.0285483, Alt.=97m, Speed=21Km/h, Course=242deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7806783" lon="121.0282883">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:02Z</time>
+ <desc>Lat.=24.7806783, Long.=121.0282883, Alt.=97m, Speed=20Km/h, Course=247deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7805866" lon="121.0280816">
+ <ele>98.000000</ele>
+ <time>2009-10-08T05:01:07Z</time>
+ <desc>Lat.=24.7805866, Long.=121.0280816, Alt.=98m, Speed=16Km/h, Course=244deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7804399" lon="121.0278100">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:12Z</time>
+ <desc>Lat.=24.7804399, Long.=121.0278100, Alt.=97m, Speed=22Km/h, Course=239deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7804266" lon="121.0275100">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:17Z</time>
+ <desc>Lat.=24.7804266, Long.=121.0275100, Alt.=97m, Speed=21Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7805583" lon="121.0271799">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:22Z</time>
+ <desc>Lat.=24.7805583, Long.=121.0271799, Alt.=97m, Speed=26Km/h, Course=294deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7807216" lon="121.0268366">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:27Z</time>
+ <desc>Lat.=24.7807216, Long.=121.0268366, Alt.=97m, Speed=28Km/h, Course=298deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7808916" lon="121.0265566">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:32Z</time>
+ <desc>Lat.=24.7808916, Long.=121.0265566, Alt.=97m, Speed=24Km/h, Course=304deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7810549" lon="121.0263083">
+ <ele>96.000000</ele>
+ <time>2009-10-08T05:01:37Z</time>
+ <desc>Lat.=24.7810549, Long.=121.0263083, Alt.=96m, Speed=22Km/h, Course=306deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7811750" lon="121.0260633">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:42Z</time>
+ <desc>Lat.=24.7811750, Long.=121.0260633, Alt.=97m, Speed=20Km/h, Course=298deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812633" lon="121.0258299">
+ <ele>97.000000</ele>
+ <time>2009-10-08T05:01:47Z</time>
+ <desc>Lat.=24.7812633, Long.=121.0258299, Alt.=97m, Speed=18Km/h, Course=293deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813349" lon="121.0255850">
+ <ele>99.000000</ele>
+ <time>2009-10-08T05:01:52Z</time>
+ <desc>Lat.=24.7813349, Long.=121.0255850, Alt.=99m, Speed=18Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813433" lon="121.0252933">
+ <ele>102.000000</ele>
+ <time>2009-10-08T05:01:57Z</time>
+ <desc>Lat.=24.7813433, Long.=121.0252933, Alt.=102m, Speed=21Km/h, Course=272deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813416" lon="121.0250533">
+ <ele>103.000000</ele>
+ <time>2009-10-08T05:02:02Z</time>
+ <desc>Lat.=24.7813416, Long.=121.0250533, Alt.=103m, Speed=17Km/h, Course=270deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813349" lon="121.0249133">
+ <ele>103.000000</ele>
+ <time>2009-10-08T05:02:07Z</time>
+ <desc>Lat.=24.7813349, Long.=121.0249133, Alt.=103m, Speed=10Km/h, Course=267deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813416" lon="121.0247516">
+ <ele>103.000000</ele>
+ <time>2009-10-08T05:02:12Z</time>
+ <desc>Lat.=24.7813416, Long.=121.0247516, Alt.=103m, Speed=11Km/h, Course=273deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813099" lon="121.0245366">
+ <ele>103.000000</ele>
+ <time>2009-10-08T05:02:17Z</time>
+ <desc>Lat.=24.7813099, Long.=121.0245366, Alt.=103m, Speed=15Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812533" lon="121.0243266">
+ <ele>105.000000</ele>
+ <time>2009-10-08T05:02:22Z</time>
+ <desc>Lat.=24.7812533, Long.=121.0243266, Alt.=105m, Speed=15Km/h, Course=253deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812350" lon="121.0241666">
+ <ele>105.000000</ele>
+ <time>2009-10-08T05:02:27Z</time>
+ <desc>Lat.=24.7812350, Long.=121.0241666, Alt.=105m, Speed=11Km/h, Course=263deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812433" lon="121.0240316">
+ <ele>106.000000</ele>
+ <time>2009-10-08T05:02:32Z</time>
+ <desc>Lat.=24.7812433, Long.=121.0240316, Alt.=106m, Speed=9Km/h, Course=274deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812583" lon="121.0238633">
+ <ele>106.000000</ele>
+ <time>2009-10-08T05:02:37Z</time>
+ <desc>Lat.=24.7812583, Long.=121.0238633, Alt.=106m, Speed=12Km/h, Course=276deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7812649" lon="121.0236349">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:02:42Z</time>
+ <desc>Lat.=24.7812649, Long.=121.0236349, Alt.=107m, Speed=16Km/h, Course=272deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813133" lon="121.0234349">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:02:47Z</time>
+ <desc>Lat.=24.7813133, Long.=121.0234349, Alt.=107m, Speed=15Km/h, Course=285deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813366" lon="121.0232416">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:02:52Z</time>
+ <desc>Lat.=24.7813366, Long.=121.0232416, Alt.=107m, Speed=14Km/h, Course=278deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813733" lon="121.0230266">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:02:57Z</time>
+ <desc>Lat.=24.7813733, Long.=121.0230266, Alt.=107m, Speed=15Km/h, Course=281deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7814083" lon="121.0227549">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:03:02Z</time>
+ <desc>Lat.=24.7814083, Long.=121.0227549, Alt.=107m, Speed=19Km/h, Course=278deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7814516" lon="121.0225383">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:03:07Z</time>
+ <desc>Lat.=24.7814516, Long.=121.0225383, Alt.=107m, Speed=16Km/h, Course=282deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7814799" lon="121.0224216">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:03:12Z</time>
+ <desc>Lat.=24.7814799, Long.=121.0224216, Alt.=108m, Speed=8Km/h, Course=285deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815049" lon="121.0223083">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:03:17Z</time>
+ <desc>Lat.=24.7815049, Long.=121.0223083, Alt.=108m, Speed=8Km/h, Course=284deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815316" lon="121.0221783">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:03:22Z</time>
+ <desc>Lat.=24.7815316, Long.=121.0221783, Alt.=109m, Speed=9Km/h, Course=283deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815766" lon="121.0219866">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:03:27Z</time>
+ <desc>Lat.=24.7815766, Long.=121.0219866, Alt.=109m, Speed=14Km/h, Course=284deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816016" lon="121.0218016">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:03:32Z</time>
+ <desc>Lat.=24.7816016, Long.=121.0218016, Alt.=111m, Speed=13Km/h, Course=278deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815866" lon="121.0217233">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:03:37Z</time>
+ <desc>Lat.=24.7815866, Long.=121.0217233, Alt.=112m, Speed=5Km/h, Course=258deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816033" lon="121.0217383">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:24Z</time>
+ <desc>Lat.=24.7816033, Long.=121.0217383, Alt.=112m, Speed=0Km/h, Course=39deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816049" lon="121.0216749">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:29Z</time>
+ <desc>Lat.=24.7816049, Long.=121.0216749, Alt.=112m, Speed=4Km/h, Course=272deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816516" lon="121.0215816">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:34Z</time>
+ <desc>Lat.=24.7816516, Long.=121.0215816, Alt.=112m, Speed=7Km/h, Course=299deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816866" lon="121.0214566">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:39Z</time>
+ <desc>Lat.=24.7816866, Long.=121.0214566, Alt.=112m, Speed=9Km/h, Course=287deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7817250" lon="121.0213249">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:44Z</time>
+ <desc>Lat.=24.7817250, Long.=121.0213249, Alt.=112m, Speed=10Km/h, Course=288deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7817033" lon="121.0213600">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:49Z</time>
+ <desc>Lat.=24.7817033, Long.=121.0213600, Alt.=112m, Speed=3Km/h, Course=124deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7816566" lon="121.0213383">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:54Z</time>
+ <desc>Lat.=24.7816566, Long.=121.0213383, Alt.=112m, Speed=4Km/h, Course=203deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815850" lon="121.0212383">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:05:59Z</time>
+ <desc>Lat.=24.7815850, Long.=121.0212383, Alt.=112m, Speed=9Km/h, Course=232deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815716" lon="121.0211399">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:06:04Z</time>
+ <desc>Lat.=24.7815716, Long.=121.0211399, Alt.=112m, Speed=7Km/h, Course=261deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7815099" lon="121.0210799">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:06:09Z</time>
+ <desc>Lat.=24.7815099, Long.=121.0210799, Alt.=112m, Speed=6Km/h, Course=221deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7814233" lon="121.0210599">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:06:14Z</time>
+ <desc>Lat.=24.7814233, Long.=121.0210599, Alt.=112m, Speed=7Km/h, Course=192deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7813083" lon="121.0210166">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:19Z</time>
+ <desc>Lat.=24.7813083, Long.=121.0210166, Alt.=111m, Speed=9Km/h, Course=199deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7811916" lon="121.0209483">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:24Z</time>
+ <desc>Lat.=24.7811916, Long.=121.0209483, Alt.=111m, Speed=10Km/h, Course=208deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7810849" lon="121.0208683">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:29Z</time>
+ <desc>Lat.=24.7810849, Long.=121.0208683, Alt.=111m, Speed=10Km/h, Course=214deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7809816" lon="121.0207916">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:34Z</time>
+ <desc>Lat.=24.7809816, Long.=121.0207916, Alt.=111m, Speed=9Km/h, Course=214deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7808816" lon="121.0206683">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:39Z</time>
+ <desc>Lat.=24.7808816, Long.=121.0206683, Alt.=111m, Speed=12Km/h, Course=228deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7807716" lon="121.0206316">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:44Z</time>
+ <desc>Lat.=24.7807716, Long.=121.0206316, Alt.=111m, Speed=9Km/h, Course=197deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7806699" lon="121.0205799">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:06:49Z</time>
+ <desc>Lat.=24.7806699, Long.=121.0205799, Alt.=111m, Speed=8Km/h, Course=205deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7805633" lon="121.0205233">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:06:54Z</time>
+ <desc>Lat.=24.7805633, Long.=121.0205233, Alt.=110m, Speed=9Km/h, Course=206deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7804566" lon="121.0204633">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:06:59Z</time>
+ <desc>Lat.=24.7804566, Long.=121.0204633, Alt.=110m, Speed=9Km/h, Course=207deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7803416" lon="121.0203899">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:07:04Z</time>
+ <desc>Lat.=24.7803416, Long.=121.0203899, Alt.=110m, Speed=10Km/h, Course=210deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7802316" lon="121.0203316">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:07:09Z</time>
+ <desc>Lat.=24.7802316, Long.=121.0203316, Alt.=110m, Speed=9Km/h, Course=206deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7801116" lon="121.0203216">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:07:14Z</time>
+ <desc>Lat.=24.7801116, Long.=121.0203216, Alt.=110m, Speed=9Km/h, Course=184deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7799899" lon="121.0202800">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:07:19Z</time>
+ <desc>Lat.=24.7799899, Long.=121.0202800, Alt.=109m, Speed=10Km/h, Course=197deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7798600" lon="121.0202249">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:07:24Z</time>
+ <desc>Lat.=24.7798600, Long.=121.0202249, Alt.=109m, Speed=11Km/h, Course=201deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7797249" lon="121.0201533">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:07:29Z</time>
+ <desc>Lat.=24.7797249, Long.=121.0201533, Alt.=109m, Speed=12Km/h, Course=206deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7795950" lon="121.0200849">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:07:34Z</time>
+ <desc>Lat.=24.7795950, Long.=121.0200849, Alt.=109m, Speed=11Km/h, Course=206deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7794749" lon="121.0200316">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:07:39Z</time>
+ <desc>Lat.=24.7794749, Long.=121.0200316, Alt.=109m, Speed=10Km/h, Course=202deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7793516" lon="121.0199533">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:07:44Z</time>
+ <desc>Lat.=24.7793516, Long.=121.0199533, Alt.=108m, Speed=11Km/h, Course=210deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7792383" lon="121.0198933">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:07:49Z</time>
+ <desc>Lat.=24.7792383, Long.=121.0198933, Alt.=108m, Speed=10Km/h, Course=206deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7791183" lon="121.0198250">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:07:54Z</time>
+ <desc>Lat.=24.7791183, Long.=121.0198250, Alt.=108m, Speed=10Km/h, Course=207deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7789783" lon="121.0197566">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:07:59Z</time>
+ <desc>Lat.=24.7789783, Long.=121.0197566, Alt.=108m, Speed=12Km/h, Course=204deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7788466" lon="121.0197033">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:04Z</time>
+ <desc>Lat.=24.7788466, Long.=121.0197033, Alt.=108m, Speed=11Km/h, Course=200deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7787316" lon="121.0196350">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:09Z</time>
+ <desc>Lat.=24.7787316, Long.=121.0196350, Alt.=108m, Speed=10Km/h, Course=208deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7786116" lon="121.0195783">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:14Z</time>
+ <desc>Lat.=24.7786116, Long.=121.0195783, Alt.=108m, Speed=10Km/h, Course=203deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7785533" lon="121.0195516">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:19Z</time>
+ <desc>Lat.=24.7785533, Long.=121.0195516, Alt.=108m, Speed=5Km/h, Course=203deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7785199" lon="121.0195266">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:24Z</time>
+ <desc>Lat.=24.7785199, Long.=121.0195266, Alt.=108m, Speed=3Km/h, Course=214deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7785300" lon="121.0195516">
+ <ele>107.000000</ele>
+ <time>2009-10-08T05:08:29Z</time>
+ <desc>Lat.=24.7785300, Long.=121.0195516, Alt.=107m, Speed=1Km/h, Course=66deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7784766" lon="121.0195483">
+ <ele>108.000000</ele>
+ <time>2009-10-08T05:08:34Z</time>
+ <desc>Lat.=24.7784766, Long.=121.0195483, Alt.=108m, Speed=4Km/h, Course=183deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7784166" lon="121.0195500">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:08:39Z</time>
+ <desc>Lat.=24.7784166, Long.=121.0195500, Alt.=109m, Speed=4Km/h, Course=179deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7783566" lon="121.0195699">
+ <ele>109.000000</ele>
+ <time>2009-10-08T05:08:44Z</time>
+ <desc>Lat.=24.7783566, Long.=121.0195699, Alt.=109m, Speed=5Km/h, Course=163deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7783266" lon="121.0195199">
+ <ele>110.000000</ele>
+ <time>2009-10-08T05:08:49Z</time>
+ <desc>Lat.=24.7783266, Long.=121.0195199, Alt.=110m, Speed=4Km/h, Course=237deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7783133" lon="121.0195250">
+ <ele>111.000000</ele>
+ <time>2009-10-08T05:08:54Z</time>
+ <desc>Lat.=24.7783133, Long.=121.0195250, Alt.=111m, Speed=1Km/h, Course=161deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7782766" lon="121.0195683">
+ <ele>112.000000</ele>
+ <time>2009-10-08T05:08:59Z</time>
+ <desc>Lat.=24.7782766, Long.=121.0195683, Alt.=112m, Speed=4Km/h, Course=133deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7783083" lon="121.0196933">
+ <ele>113.000000</ele>
+ <time>2009-10-08T05:09:04Z</time>
+ <desc>Lat.=24.7783083, Long.=121.0196933, Alt.=113m, Speed=9Km/h, Course=74deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7782366" lon="121.0198433">
+ <ele>115.000000</ele>
+ <time>2009-10-08T05:09:09Z</time>
+ <desc>Lat.=24.7782366, Long.=121.0198433, Alt.=115m, Speed=12Km/h, Course=118deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7782566" lon="121.0199083">
+ <ele>116.000000</ele>
+ <time>2009-10-08T05:09:14Z</time>
+ <desc>Lat.=24.7782566, Long.=121.0199083, Alt.=116m, Speed=4Km/h, Course=71deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7783983" lon="121.0200183">
+ <ele>119.000000</ele>
+ <time>2009-10-08T05:09:19Z</time>
+ <desc>Lat.=24.7783983, Long.=121.0200183, Alt.=119m, Speed=13Km/h, Course=35deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7785283" lon="121.0201916">
+ <ele>121.000000</ele>
+ <time>2009-10-08T05:09:24Z</time>
+ <desc>Lat.=24.7785283, Long.=121.0201916, Alt.=121m, Speed=16Km/h, Course=50deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7786966" lon="121.0202166">
+ <ele>123.000000</ele>
+ <time>2009-10-08T05:09:29Z</time>
+ <desc>Lat.=24.7786966, Long.=121.0202166, Alt.=123m, Speed=13Km/h, Course=8deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7788466" lon="121.0202866">
+ <ele>123.000000</ele>
+ <time>2009-10-08T05:09:34Z</time>
+ <desc>Lat.=24.7788466, Long.=121.0202866, Alt.=123m, Speed=13Km/h, Course=23deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7790016" lon="121.0203816">
+ <ele>124.000000</ele>
+ <time>2009-10-08T05:09:39Z</time>
+ <desc>Lat.=24.7790016, Long.=121.0203816, Alt.=124m, Speed=14Km/h, Course=29deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7791600" lon="121.0205066">
+ <ele>126.000000</ele>
+ <time>2009-10-08T05:09:44Z</time>
+ <desc>Lat.=24.7791600, Long.=121.0205066, Alt.=126m, Speed=15Km/h, Course=36deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7792166" lon="121.0206449">
+ <ele>126.000000</ele>
+ <time>2009-10-08T05:09:49Z</time>
+ <desc>Lat.=24.7792166, Long.=121.0206449, Alt.=126m, Speed=11Km/h, Course=66deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7792099" lon="121.0207449">
+ <ele>127.000000</ele>
+ <time>2009-10-08T05:09:54Z</time>
+ <desc>Lat.=24.7792099, Long.=121.0207449, Alt.=127m, Speed=7Km/h, Course=94deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7791266" lon="121.0208383">
+ <ele>129.000000</ele>
+ <time>2009-10-08T05:09:59Z</time>
+ <desc>Lat.=24.7791266, Long.=121.0208383, Alt.=129m, Speed=9Km/h, Course=134deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7789983" lon="121.0210433">
+ <ele>131.000000</ele>
+ <time>2009-10-08T05:10:04Z</time>
+ <desc>Lat.=24.7789983, Long.=121.0210433, Alt.=131m, Speed=18Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+<trkpt lat="24.7788632" lon="121.0212533">
+ <ele>132.000000</ele>
+ <time>2009-10-08T05:10:09Z</time>
+ <desc>Lat.=24.7788632, Long.=121.0212533, Alt.=132m, Speed=18Km/h, Course=125deg.</desc>
+<extensions>
+</extensions>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
