@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<title>Map created by GPS Visualizer</title>
+		<base target="_top"></base>
+		<meta name="geo.position" content="24.7640215; 121.038189" />
+		<meta name="ICBM" content="24.7640215, 121.038189" />
+	</head>
+	<body onunload="GUnload();">
+		
+		
+		<!--
+			If you want to transplant this map into another Web page, the easiest way to do it is to
+			simply include it in a IFRAME tag (see http://www.gpsvisualizer.com/faq.html#google_html).
+			But, if you must paste the code into another page, be sure to include all of these parts:
+			   1. The DOCTYPE declaration and the extra attributes in the "html" tag (xmlns:v=...)
+			     that allow Internet Explorer for Windows to render polylines (tracks)
+			   2. The "div" tags that contain the map and its widgets
+			   3. Three sections of JavaScript code:
+			      a. Your Google Maps API key and the maps.google.com code
+			      b. "gv_options" and the code that calls "functions.js" on maps.gpsvisualizer.com
+			      c. The "GV_Map" function, which contains all the geographic info for the map
+		-->
+		<div style="margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;">
+			<div id="gmap_div" style="width:600px; height:600px; margin:0px; margin-right:12px; background-color:#F0F0F0; float:left; overflow:hidden;">
+				<p align="center" style="font:10px Arial;">This map was created using <a target="_blank" href="http://www.gpsvisualizer.com/">GPS Visualizer</a>'s do-it-yourself geographic utilities.<br><br>Please wait while the map data loads...</p>
+			</div>
+				
+			<div id="gv_legend_container" style="display:none;"><table id="gv_legend_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95; background:#ffffff;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_legend_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_legend" align="left" style="font:11px Arial; line-height:13px; border:solid #000000 1px; background:#FFFFFF; padding:4px;">
+					<!-- Although GPS Visualizer didn't create a legend with your map, you can use this box for something else if you'd like; enable it by setting legend:true in the 'gv_options' -->
+				</div>
+			</td></tr></table></div>
+
+
+			<div id="gv_tracklist_container" style="display:none;"><table id="gv_tracklist_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_tracklist_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_tracklist" align="left" style="font:11px Arial; line-height:11px; border:solid #000000 1px; background:#FFFFFF; padding:4px; overflow:auto;">
+					<div id="gv_tracklist_header" style="padding-bottom:2px; color:#000000;"><b>Tracks:</b></div>
+					<div id="gv_tracklist_links" style="color:#000000;"></div>
+				</div>
+			</td></tr></table></div>
+			<div id="gv_tracklist_tooltip" class="gv_tracklist_tooltip" style="background-color:#FFFFFF; border:1px solid #CCCCCC; padding:2px; font:11px Arial; display:none;"></div>
+
+			<div id="gv_clear_margins" style="height:0px; clear:both;"><!-- clear the "float" --></div>
+		</div>
+
+		
+		<script type="text/javascript">
+			// If you put this map on another Web site, you must include your API key or nothing will work!
+			var google_api_key = '';
+			if (document.location.toString().indexOf('http://www.gpsvisualizer.com') > -1) { eval(unescape("%67%6F%6F%67%6C%65%5F%61%70%69%5F%6B%65%79")+" = '"+unescape("%41%42%51%49%41%41%41%41%61%47%39%4A%44%62%43%65%36%52%61%31%4F%67%30%68%4B%43%6E%32%4C%52%52%6F%6B%57%5F%49%74%45%49%6D%42%6F%37%65%77%62%56%45%4A%41%7A%73%74%53%73%52%57%68%52%4A%33%52%4D%44%41%57%70%4C%35%35%51%61%63%47%5A%32%7A%51%46%32%6B%4C%43%5F%65%41")+"'"); }
+			document.writeln('<script src="http://maps.google.com/maps?v=2&file=api&key='+google_api_key+'" type="text/javascript"><'+'/'+'script>');
+		</script>
+		<!-- end Google Maps script; begin GPS Visualizer setup script (they must be separate) -->
+		<script type="text/javascript">
+			/* Global variables used by the GPS Visualizer functions (1236665297): */
+			gv_options = new Array(); gv_options = {
+				// important variable names:
+				map:'gmap', map_div:'gmap_div', marker_array:'wpts', track_array:'trk', track_info_array:'trk_info', // probably 'gmap','gmap_div','wpts','trk','trk_info'
+				
+				// basic map parameters:
+				full_screen:false,              // should the map fill the entire page (or frame)?
+				center:[24.7640215,121.038189], // latitude,longitude - be sure to keep the square brackets
+				zoom:14,                        // higher number means closer view; at 600px wide, 7 = width of New Mexico, 12 = width of San Francisco
+				map_opacity:1, map_type:'G_HYBRID_MAP', // opacity is from 0 to 1; popular map_type choices are 'G_NORMAL_MAP', 'G_SATELLITE_MAP', 'G_HYBRID_MAP', 'G_PHYSICAL_MAP', 'USGS_TOPO_TILES'
+				doubleclick_zoom:true, mousewheel_zoom:false, // true or false; or, value of 'reverse' for mousewheel_zoom makes down=in and up=out
+				
+				// widgets on the map:
+				map_type_control:{ // style: 'menu', 'list', 'none', or 'google'; filter: when map loads, are irrelevant maps ignored?; excluded: list of map types that will never show in the list, e.g., ['USGS_TOPO_TILES','USGS_AERIAL_TILES','NRCAN_TOPO_TILES','NRCAN_TOPO_NAMES_TILES','LANDSAT_TILES','BLUEMARBLE_TILES','DAILY_TERRA_TILES','DAILY_AQUA_TILES']
+					style:'menu', filter:true, excluded:[]
+				},
+				zoom_control:'large', scale_control:true, map_opacity_control:true, // zoom is 'large' or 'small', scale and opacity are true or false
+				center_coordinates:true, crosshair_hidden:true, // true or false: Show a "center coordinates" box and crosshair? Hide the crosshair initially?
+				legend_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the legend (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					legend:false, id:'gv_legend', position:['G_ANCHOR_BOTTOM_LEFT',4,60], draggable:true, collapsible:true
+				},
+				
+				
+				// marker-related options:
+				default_marker:{ color:'red',icon:'googlemini' }, // icon can be a URL, but be sure to also include size:[w,h] and optionally anchor:[x,y]
+				icon_directory:'http://maps.gpsvisualizer.com/google_maps/icons/', // don't change this unless you really know what you're doing
+				marker_link_target:'_blank',    // the name of the window or frame into which markers' URLs will load
+				info_window_width:0, thumbnail_width:0, photo_size:[0,0], // in pixels, the width of the markers' info windows or thumbnails, or width and height of photos; 0 for default (can be overridden in an individual marker's options)
+				hide_labels:false, label_offset:[0,0], label_centered:false, // hide_labels causes the "permanent" labels to be hidden at first; global label_offset setting is [x,y] (positive numbers are right and down)
+				driving_directions:false,       // put a small "driving directions" form in each marker's pop-up window? (override with dd:true or dd:false in the marker's options)
+				
+				// track-related options:
+				tracklist_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the track list (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					tracklist:true, position:['G_ANCHOR_TOP_RIGHT',6,32], max_width:180, max_height:510, desc:true, zoom_links:true, tooltips:true, draggable:true, collapsible:true, id:'gv_tracklist'
+				},
+
+
+				zzz:false // this is just here to prevent possible "hanging comma" JS errors
+			};
+			// Load GPS Visualizer's Google Maps functions (this must be loaded AFTER gv_options are set):
+			document.writeln('<script src="http://maps.gpsvisualizer.com/google_maps/functions.js" type="text/javascript"><'+'/'+'script>');
+		</script>
+		
+		<style type="text/css">
+			/* Put any custom style definitions here (e.g., .gv_marker_list_item, .gv_tooltip, .gv_label, .gv_wpt, etc.) */
+			.gv_label {
+				filter:alpha(opacity=90); -moz-opacity:0.9;
+				background:#333333; border:1px solid black; padding:1px;
+				font:9px Verdana,sans-serif; color:white; font-weight:normal;
+			}
+			
+		</style>
+		
+		<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
+		<script type="text/javascript">
+			function GV_Map() {
+				if (GBrowserIsCompatible()) { 
+					if (gv_options['full_screen']) { GV_Fill_Window_With_Map(gv_options['map_div']); }
+					gmap = new GMap2(document.getElementById(gv_options['map_div'])); // create map
+					GV_Setup_Map(gv_options);
+					
+					trk = new Array(); trk_info = new Array();
+					
+					// Setup track #1 ("Track 001")
+					trk[1] = []; trk_info[1] = {
+						name:'090310 午 柯湖路 小路 寶山水庫 再遊', desc:'Total Track Points: 1144. Total time: 2h12m27. Journey: 21.808Km',
+						color:'#E600E6', width:3, opacity:0.8, outline_color:'#000000', outline_width:5,
+						bounds:{w:121.020055,e:121.056323,s:24.746285,n:24.781758}, center:{lat:24.76496,lon:121.03752}
+					};
+					
+					var pts = [ // track 1 segment 1:
+						new GLatLng(24.77929,121.021195),
+						new GLatLng(24.779512,121.021145),
+						new GLatLng(24.779632,121.020947),
+						new GLatLng(24.77959,121.020835),
+						new GLatLng(24.77863,121.020148),
+						new GLatLng(24.778578,121.020163),
+						new GLatLng(24.778082,121.021153),
+						new GLatLng(24.77805,121.021957),
+						new GLatLng(24.778205,121.022122),
+						new GLatLng(24.778067,121.022713),
+						new GLatLng(24.777835,121.022928),
+						new GLatLng(24.77775,121.02327),
+						new GLatLng(24.77769,121.023318),
+						new GLatLng(24.777462,121.023833),
+						new GLatLng(24.777133,121.024378),
+						new GLatLng(24.776985,121.024773),
+						new GLatLng(24.776807,121.02505),
+						new GLatLng(24.77695,121.02533),
+						new GLatLng(24.777568,121.025808),
+						new GLatLng(24.777835,121.02586),
+						new GLatLng(24.778347,121.02544),
+						new GLatLng(24.7792819,121.024793),
+						new GLatLng(24.77973,121.0248),
+						new GLatLng(24.781312,121.024043),
+						new GLatLng(24.781537,121.02406),
+						new GLatLng(24.781758,121.025885),
+						new GLatLng(24.781712,121.026298),
+						new GLatLng(24.7809719,121.027128),
+						new GLatLng(24.780683,121.027763),
+						new GLatLng(24.780373,121.028188),
+						new GLatLng(24.7801079,121.029357),
+						new GLatLng(24.779945,121.028992),
+						new GLatLng(24.77981,121.029445),
+						new GLatLng(24.7792749,121.02931),
+						new GLatLng(24.779058,121.029338),
+						new GLatLng(24.778913,121.029688),
+						new GLatLng(24.778997,121.029845),
+						new GLatLng(24.778985,121.030002),
+						new GLatLng(24.778905,121.030047),
+						new GLatLng(24.77868,121.029783),
+						new GLatLng(24.778502,121.029805),
+						new GLatLng(24.778197,121.030018),
+						new GLatLng(24.778073,121.030178),
+						new GLatLng(24.777493,121.030592),
+						new GLatLng(24.777262,121.030683),
+						new GLatLng(24.777295,121.030563),
+						new GLatLng(24.77723,121.03049),
+						new GLatLng(24.776162,121.030623),
+						new GLatLng(24.775598,121.030877),
+						new GLatLng(24.775225,121.030805),
+						new GLatLng(24.7748719,121.030573),
+						new GLatLng(24.774602,121.030275),
+						new GLatLng(24.773317,121.029877),
+						new GLatLng(24.772965,121.029938),
+						new GLatLng(24.77272,121.030132),
+						new GLatLng(24.772322,121.030743),
+						new GLatLng(24.772203,121.03083),
+						new GLatLng(24.772057,121.03082),
+						new GLatLng(24.771957,121.030903),
+						new GLatLng(24.771808,121.030913),
+						new GLatLng(24.77167,121.031015),
+						new GLatLng(24.771387,121.031105),
+						new GLatLng(24.771117,121.03127),
+						new GLatLng(24.7704099,121.031327),
+						new GLatLng(24.770118,121.03151),
+						new GLatLng(24.77008,121.031825),
+						new GLatLng(24.770118,121.032202),
+						new GLatLng(24.770067,121.032385),
+						new GLatLng(24.769933,121.032538),
+						new GLatLng(24.769792,121.03287),
+						new GLatLng(24.769668,121.032907),
+						new GLatLng(24.769427,121.033097),
+						new GLatLng(24.76923,121.032902),
+						new GLatLng(24.768797,121.032145),
+						new GLatLng(24.768672,121.032105),
+						new GLatLng(24.768392,121.032212),
+						new GLatLng(24.768393,121.032312),
+						new GLatLng(24.768187,121.032402),
+						new GLatLng(24.7684,121.031993),
+						new GLatLng(24.768347,121.031858),
+						new GLatLng(24.7682,121.031803),
+						new GLatLng(24.767855,121.032062),
+						new GLatLng(24.767387,121.032085),
+						new GLatLng(24.766818,121.032412),
+						new GLatLng(24.7667429,121.03234),
+						new GLatLng(24.766925,121.032342),
+						new GLatLng(24.767195,121.032082),
+						new GLatLng(24.767305,121.032063),
+						new GLatLng(24.767677,121.032217),
+						new GLatLng(24.767917,121.031985),
+						new GLatLng(24.767942,121.03189),
+						new GLatLng(24.7680599,121.03193),
+						new GLatLng(24.7681049,121.032012),
+						new GLatLng(24.768092,121.03218),
+						new GLatLng(24.767962,121.032462),
+						new GLatLng(24.768075,121.03229),
+						new GLatLng(24.768468,121.031978),
+						new GLatLng(24.769087,121.031997),
+						new GLatLng(24.769245,121.03181),
+						new GLatLng(24.769067,121.031107),
+						new GLatLng(24.769073,121.030758),
+						new GLatLng(24.769063,121.031185),
+						new GLatLng(24.768582,121.03103),
+						new GLatLng(24.76812,121.03078),
+						new GLatLng(24.768223,121.030265),
+						new GLatLng(24.768298,121.030167),
+						new GLatLng(24.768602,121.029988),
+						new GLatLng(24.76868,121.029595),
+						new GLatLng(24.768867,121.029322),
+						new GLatLng(24.769053,121.029227),
+						new GLatLng(24.7691519,121.029065),
+						new GLatLng(24.769478,121.02925),
+						new GLatLng(24.769443,121.029855),
+						new GLatLng(24.769097,121.030458),
+						new GLatLng(24.769035,121.030983),
+						new GLatLng(24.769158,121.031702),
+						new GLatLng(24.768992,121.032052),
+						new GLatLng(24.768687,121.032032),
+						new GLatLng(24.768668,121.032095),
+						new GLatLng(24.769293,121.033103),
+						new GLatLng(24.76921,121.033362),
+						new GLatLng(24.769015,121.033535),
+						new GLatLng(24.7686129,121.034253),
+						new GLatLng(24.76847,121.034775),
+						new GLatLng(24.768512,121.034882),
+						new GLatLng(24.7686579,121.03494),
+						new GLatLng(24.769303,121.03492),
+						new GLatLng(24.76945,121.035003),
+						new GLatLng(24.769612,121.03524),
+						new GLatLng(24.769542,121.035178),
+						new GLatLng(24.7696669,121.035518),
+						new GLatLng(24.769627,121.035718),
+						new GLatLng(24.769653,121.036302),
+						new GLatLng(24.769627,121.035308),
+						new GLatLng(24.7694249,121.035022),
+						new GLatLng(24.76921,121.034895),
+						new GLatLng(24.768753,121.034928),
+						new GLatLng(24.768462,121.034832),
+						new GLatLng(24.768123,121.035007),
+						new GLatLng(24.767935,121.03525),
+						new GLatLng(24.767795,121.035322),
+						new GLatLng(24.767743,121.036145),
+						new GLatLng(24.767767,121.036628),
+						new GLatLng(24.767612,121.036788),
+						new GLatLng(24.767257,121.036943),
+						new GLatLng(24.767167,121.037112),
+						new GLatLng(24.767183,121.037787),
+						new GLatLng(24.76715,121.037925),
+						new GLatLng(24.766948,121.038208),
+						new GLatLng(24.766682,121.038447),
+						new GLatLng(24.766275,121.038698),
+						new GLatLng(24.7658479,121.039075),
+						new GLatLng(24.765655,121.039387),
+						new GLatLng(24.76558,121.039632),
+						new GLatLng(24.765478,121.039685),
+						new GLatLng(24.76452,121.039472),
+						new GLatLng(24.764357,121.039203),
+						new GLatLng(24.764087,121.039072),
+						new GLatLng(24.763915,121.039117),
+						new GLatLng(24.763613,121.038927),
+						new GLatLng(24.763545,121.038745),
+						new GLatLng(24.7635599,121.038522),
+						new GLatLng(24.763193,121.037375),
+						new GLatLng(24.763017,121.037088),
+						new GLatLng(24.762912,121.036787),
+						new GLatLng(24.762905,121.036473),
+						new GLatLng(24.76295,121.036775),
+						new GLatLng(24.763197,121.03685),
+						new GLatLng(24.763475,121.036595),
+						new GLatLng(24.763195,121.036813),
+						new GLatLng(24.762918,121.036722),
+						new GLatLng(24.7628479,121.036118),
+						new GLatLng(24.762565,121.035853),
+						new GLatLng(24.762453,121.035337),
+						new GLatLng(24.762297,121.035193),
+						new GLatLng(24.762023,121.03472),
+						new GLatLng(24.761965,121.03471),
+						new GLatLng(24.762007,121.034833),
+						new GLatLng(24.761647,121.034902),
+						new GLatLng(24.761337,121.034602),
+						new GLatLng(24.76136,121.034625),
+						new GLatLng(24.76127,121.034502),
+						new GLatLng(24.760912,121.034292),
+						new GLatLng(24.760905,121.034063),
+						new GLatLng(24.760773,121.03377),
+						new GLatLng(24.76008,121.03282),
+						new GLatLng(24.75966,121.03236),
+						new GLatLng(24.758677,121.031113),
+						new GLatLng(24.757837,121.03025),
+						new GLatLng(24.756803,121.029295),
+						new GLatLng(24.7565269,121.028955),
+						new GLatLng(24.756503,121.028857),
+						new GLatLng(24.756515,121.028942),
+						new GLatLng(24.756898,121.02938),
+						new GLatLng(24.758585,121.031045),
+						new GLatLng(24.760448,121.033293),
+						new GLatLng(24.760777,121.03391),
+						new GLatLng(24.760943,121.034392),
+						new GLatLng(24.760852,121.034633),
+						new GLatLng(24.760668,121.034823),
+						new GLatLng(24.76049,121.035268)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					var pts = [ // track 1 segment 1a:
+						new GLatLng(24.76049,121.035268),
+						new GLatLng(24.76007,121.035698),
+						new GLatLng(24.759782,121.036153),
+						new GLatLng(24.759742,121.036512),
+						new GLatLng(24.759782,121.036638),
+						new GLatLng(24.759892,121.036727),
+						new GLatLng(24.759975,121.036885),
+						new GLatLng(24.759687,121.03777),
+						new GLatLng(24.759798,121.038103),
+						new GLatLng(24.760002,121.038318),
+						new GLatLng(24.760322,121.038535),
+						new GLatLng(24.75936,121.03889),
+						new GLatLng(24.759098,121.039168),
+						new GLatLng(24.7590049,121.039483),
+						new GLatLng(24.7589219,121.039593),
+						new GLatLng(24.758663,121.039743),
+						new GLatLng(24.758515,121.04001),
+						new GLatLng(24.758228,121.040188),
+						new GLatLng(24.75803,121.040603),
+						new GLatLng(24.758177,121.040872),
+						new GLatLng(24.758247,121.041267),
+						new GLatLng(24.75823,121.041523),
+						new GLatLng(24.758177,121.041575),
+						new GLatLng(24.757825,121.041653),
+						new GLatLng(24.757665,121.041842),
+						new GLatLng(24.757435,121.041963),
+						new GLatLng(24.75713,121.042405),
+						new GLatLng(24.756938,121.042517),
+						new GLatLng(24.756295,121.043417),
+						new GLatLng(24.75594,121.043718),
+						new GLatLng(24.755677,121.04416),
+						new GLatLng(24.755677,121.0443),
+						new GLatLng(24.755475,121.04472),
+						new GLatLng(24.755212,121.045027),
+						new GLatLng(24.755198,121.045348),
+						new GLatLng(24.755033,121.045595),
+						new GLatLng(24.755097,121.046082),
+						new GLatLng(24.754842,121.046342),
+						new GLatLng(24.754782,121.046815),
+						new GLatLng(24.75494,121.047257),
+						new GLatLng(24.754893,121.04765),
+						new GLatLng(24.754983,121.047992),
+						new GLatLng(24.754845,121.048308),
+						new GLatLng(24.754482,121.048465),
+						new GLatLng(24.753948,121.048455),
+						new GLatLng(24.753925,121.048535),
+						new GLatLng(24.754048,121.048507),
+						new GLatLng(24.753988,121.048497),
+						new GLatLng(24.754157,121.048813),
+						new GLatLng(24.754242,121.049288),
+						new GLatLng(24.754307,121.049417),
+						new GLatLng(24.754558,121.049597),
+						new GLatLng(24.754737,121.049838),
+						new GLatLng(24.754623,121.050035),
+						new GLatLng(24.754152,121.05037),
+						new GLatLng(24.753692,121.051123),
+						new GLatLng(24.753615,121.051375),
+						new GLatLng(24.7534579,121.05158),
+						new GLatLng(24.753467,121.051815),
+						new GLatLng(24.7533299,121.051958),
+						new GLatLng(24.753232,121.05216),
+						new GLatLng(24.753177,121.052503),
+						new GLatLng(24.752745,121.052995),
+						new GLatLng(24.752523,121.053137),
+						new GLatLng(24.752143,121.053168),
+						new GLatLng(24.751402,121.053023),
+						new GLatLng(24.75105,121.053013),
+						new GLatLng(24.7506549,121.052802),
+						new GLatLng(24.750377,121.052463),
+						new GLatLng(24.750022,121.052488),
+						new GLatLng(24.74908,121.0524),
+						new GLatLng(24.748038,121.052385),
+						new GLatLng(24.747832,121.052308),
+						new GLatLng(24.747643,121.052362),
+						new GLatLng(24.746735,121.052157),
+						new GLatLng(24.746835,121.051842),
+						new GLatLng(24.74677,121.05164),
+						new GLatLng(24.74645,121.051473),
+						new GLatLng(24.746423,121.051308),
+						new GLatLng(24.746492,121.051182),
+						new GLatLng(24.746868,121.05099),
+						new GLatLng(24.746937,121.050503),
+						new GLatLng(24.746672,121.050323),
+						new GLatLng(24.746625,121.05012),
+						new GLatLng(24.746915,121.049878),
+						new GLatLng(24.747057,121.049842),
+						new GLatLng(24.747152,121.049732),
+						new GLatLng(24.747082,121.049403),
+						new GLatLng(24.746695,121.049177),
+						new GLatLng(24.746285,121.04871),
+						new GLatLng(24.74637,121.048497),
+						new GLatLng(24.7466319,121.048397),
+						new GLatLng(24.746822,121.04844),
+						new GLatLng(24.747127,121.048265),
+						new GLatLng(24.747188,121.048127),
+						new GLatLng(24.747098,121.047838),
+						new GLatLng(24.747188,121.047707),
+						new GLatLng(24.747448,121.047648),
+						new GLatLng(24.747847,121.04765),
+						new GLatLng(24.748127,121.04758),
+						new GLatLng(24.747972,121.047123),
+						new GLatLng(24.749503,121.046197),
+						new GLatLng(24.749462,121.0462),
+						new GLatLng(24.750097,121.046372),
+						new GLatLng(24.750463,121.046372),
+						new GLatLng(24.750692,121.046585),
+						new GLatLng(24.750982,121.046667),
+						new GLatLng(24.750987,121.046563),
+						new GLatLng(24.751467,121.04626),
+						new GLatLng(24.751887,121.046327),
+						new GLatLng(24.752513,121.045917),
+						new GLatLng(24.752733,121.045357),
+						new GLatLng(24.75272,121.045215),
+						new GLatLng(24.752528,121.045095),
+						new GLatLng(24.752512,121.045167),
+						new GLatLng(24.752567,121.045145),
+						new GLatLng(24.752637,121.045218),
+						new GLatLng(24.75273,121.045682),
+						new GLatLng(24.752507,121.046083),
+						new GLatLng(24.752502,121.046245),
+						new GLatLng(24.753035,121.047037),
+						new GLatLng(24.753345,121.047105),
+						new GLatLng(24.753363,121.047707),
+						new GLatLng(24.75354,121.047918),
+						new GLatLng(24.753585,121.048242),
+						new GLatLng(24.753948,121.048472),
+						new GLatLng(24.754083,121.048622),
+						new GLatLng(24.754293,121.049415),
+						new GLatLng(24.754683,121.049737),
+						new GLatLng(24.755057,121.05045),
+						new GLatLng(24.755762,121.05086),
+						new GLatLng(24.756243,121.051048),
+						new GLatLng(24.756682,121.051107),
+						new GLatLng(24.757108,121.05094),
+						new GLatLng(24.757567,121.050978),
+						new GLatLng(24.758878,121.051992),
+						new GLatLng(24.759228,121.05172),
+						new GLatLng(24.75969,121.051907),
+						new GLatLng(24.76141,121.053073),
+						new GLatLng(24.762207,121.05338),
+						new GLatLng(24.763947,121.0543),
+						new GLatLng(24.764253,121.054665),
+						new GLatLng(24.764612,121.054962),
+						new GLatLng(24.765998,121.05571),
+						new GLatLng(24.766615,121.05598),
+						new GLatLng(24.767087,121.056323),
+						new GLatLng(24.768217,121.055272),
+						new GLatLng(24.76847,121.054905),
+						new GLatLng(24.76873,121.05463),
+						new GLatLng(24.77009,121.052595),
+						new GLatLng(24.77092,121.051503),
+						new GLatLng(24.772677,121.049355),
+						new GLatLng(24.7748719,121.047723),
+						new GLatLng(24.776647,121.046255),
+						new GLatLng(24.777885,121.0454),
+						new GLatLng(24.778195,121.045068),
+						new GLatLng(24.778435,121.044675),
+						new GLatLng(24.77905,121.043082),
+						new GLatLng(24.779105,121.042553),
+						new GLatLng(24.778933,121.04208),
+						new GLatLng(24.778158,121.04066),
+						new GLatLng(24.777527,121.039948),
+						new GLatLng(24.777375,121.039697),
+						new GLatLng(24.777247,121.039345),
+						new GLatLng(24.776878,121.037498),
+						new GLatLng(24.776872,121.037117),
+						new GLatLng(24.777448,121.033457),
+						new GLatLng(24.777718,121.032517),
+						new GLatLng(24.778242,121.0316),
+						new GLatLng(24.780233,121.02744),
+						new GLatLng(24.780353,121.027367),
+						new GLatLng(24.7806,121.02686),
+						new GLatLng(24.78096,121.026307),
+						new GLatLng(24.781183,121.025763),
+						new GLatLng(24.781185,121.024437),
+						new GLatLng(24.781128,121.024157),
+						new GLatLng(24.78117,121.02395),
+						new GLatLng(24.781118,121.023913),
+						new GLatLng(24.78085,121.024082),
+						new GLatLng(24.778948,121.024883),
+						new GLatLng(24.77851,121.025013),
+						new GLatLng(24.778025,121.025565),
+						new GLatLng(24.77769,121.025633),
+						new GLatLng(24.77748,121.025737),
+						new GLatLng(24.777255,121.02573),
+						new GLatLng(24.776603,121.025298),
+						new GLatLng(24.776353,121.025015),
+						new GLatLng(24.7766829,121.024332),
+						new GLatLng(24.77667,121.024037),
+						new GLatLng(24.777088,121.023292),
+						new GLatLng(24.777723,121.021893),
+						new GLatLng(24.777675,121.02176),
+						new GLatLng(24.777513,121.021738),
+						new GLatLng(24.777423,121.021555),
+						new GLatLng(24.777452,121.021377),
+						new GLatLng(24.778033,121.020122),
+						new GLatLng(24.778258,121.020055),
+						new GLatLng(24.779018,121.02053),
+						new GLatLng(24.779138,121.020657),
+						new GLatLng(24.77868,121.021298)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					
+					GV_Add_Track_to_Tracklist({bullet:'- ',name:trk_info[1]['name'],desc:trk_info[1]['desc'],color:trk_info[1]['color'],id:"trk[1]"});
+					
+					
+					wpts = new Array();
+/*
+					wpts.push( GV_Marker(gmap,{lat:24.7739450,lon:121.0300840,name:'柯湖路上',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445354695054050"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYLaKp_UuI/AAAAAAAADFs/3nzdZ3J8Eek/s400/P1100022.JPG" alt="P1100022.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7715030,lon:121.0310790,name:'心情一整個舒爽',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445381013088162"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYLbsssp6I/AAAAAAAADF0/tnfkmIcVEF8/s400/P1100023.JPG" alt="P1100023.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7703500,lon:121.0313510,name:'馬場',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445402640855490"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYLc9RKMcI/AAAAAAAADF8/BFZKe0r7gr4/s400/P1100024.JPG" alt="P1100024.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7699870,lon:121.0324770,name:'馬',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445477915868578"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYLhVsHvaI/AAAAAAAADGU/POk3OkRw3Cg/s400/P1100027.JPG" alt="P1100027.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7694100,lon:121.0330600,name:'這算offroad嗎?',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445545125258722"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYLlQEFpeI/AAAAAAAADGk/plo0tPcgsRQ/s400/P1100036.JPG" alt="P1100036.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7688980,lon:121.0323260,name:'風景不錯，不過那紅磚屋的屋頂顏色只有怪怪的',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445574968611346"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYLm_PTEhI/AAAAAAAADGs/a12mSp1lNVU/s400/P1100040.JPG" alt="P1100040.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7687710,lon:121.0321360,name:'小陽光之家前的大上坡',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445630414983314"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYLqNyvkJI/AAAAAAAADG8/C9niPh1d8b0/s400/P1100044.JPG" alt="P1100044.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7683320,lon:121.0318470,name:'小陽光之家 廣場',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445657186621058"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYLrxhmVoI/AAAAAAAADHI/R41TCY_xHzY/s400/P1100048.JPG" alt="P1100048.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7678790,lon:121.0320490,name:'沒路了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445698626192962"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYLuL5kBkI/AAAAAAAADHQ/bgmx_Qu-F_Y/s400/P1100049.JPG" alt="P1100049.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7669919,lon:121.0322820,name:'看起來根本就像是個農家...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445838508407234"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYL2VAFOcI/AAAAAAAADHw/yT9c_hAB9eM/s400/P1100056.JPG" alt="P1100056.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7672830,lon:121.0320670,name:'老師出來招呼小朋友，',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445875493888242"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYL4eyG4PI/AAAAAAAADH4/9_F7pqulHhA/s400/P1100057.JPG" alt="P1100057.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7674420,lon:121.0321150,name:'許多小朋友都在屋子旁的田裡玩',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445908475726466"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYL6ZplyoI/AAAAAAAADIA/66_egTcXNEA/s400/P1100058.JPG" alt="P1100058.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7677250,lon:121.0321950,name:'老師&小朋友',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445944800564722"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYL8g-G1fI/AAAAAAAADII/Lb_nSkR7GW8/s400/P1100059.JPG" alt="P1100059.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7679009,lon:121.0319990,name:'老師&小朋友&怪叔叔',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311445980592424994"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYL-mTjSCI/AAAAAAAADIU/Gi_v5W--QDI/s400/P1100060.JPG" alt="P1100060.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7679420,lon:121.0318900,name:'老師&小朋友&想藉親近小朋友其實是想親近老師的怪叔叔',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446016522183730"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMAsJ35DI/AAAAAAAADIc/7AyyKxnuN-o/s400/P1100061.JPG" alt="P1100061.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680599,lon:121.0319300,name:'P1100062.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446050898562722"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYMCsN1zqI/AAAAAAAADIk/KiksVLPn4JQ/s400/P1100062.JPG" alt="P1100062.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680599,lon:121.0319300,name:'P1100063.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446084317631362"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYMEotkU4I/AAAAAAAADIs/0ADeQ6LG4p4/s400/P1100063.JPG" alt="P1100063.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680599,lon:121.0319300,name:'老師&小朋友&怪叔叔的合照',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446124631757042"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMG-5NEPI/AAAAAAAADI0/8I8PW00v4DQ/s400/P1100064.JPG" alt="P1100064.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680570,lon:121.0319330,name:'P1100065.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446176550353490"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYMKATj-lI/AAAAAAAADI8/OIvrLTpWT38/s400/P1100065.JPG" alt="P1100065.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680570,lon:121.0319330,name:'P1100066.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446212981433282"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYMMIBaI8I/AAAAAAAADJE/u-3QGc8Oa80/s400/P1100066.JPG" alt="P1100066.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680570,lon:121.0319330,name:'P1100067.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446241213221394"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMNxMZChI/AAAAAAAADJM/kKwb31wBQGk/s400/P1100067.JPG" alt="P1100067.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680570,lon:121.0319330,name:'P1100068.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446270653543714"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMPe3gtSI/AAAAAAAADJU/SQMlNUYVc9s/s400/P1100068.JPG" alt="P1100068.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680570,lon:121.0319330,name:'P1100069.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446299702004338"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMRLFNCnI/AAAAAAAADJc/eK48Dq4Zvx4/s400/P1100069.JPG" alt="P1100069.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680550,lon:121.0319340,name:'P1100070.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446326461291474"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMSuxHW9I/AAAAAAAADJo/OjqxZTjCTbM/s400/P1100070.JPG" alt="P1100070.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680529,lon:121.0319360,name:'我們要走了小朋友們還追下來....',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446351579467986"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMUMVwUNI/AAAAAAAADJw/0BGFEHcJKRY/s400/P1100074.JPG" alt="P1100074.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7690960,lon:121.0312450,name:'沿著高鐵鐵路走了過去',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446370709403842"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMVTmr-MI/AAAAAAAADJ4/itatrK9fAbM/s400/P1100075.JPG" alt="P1100075.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7682070,lon:121.0303530,name:'又跑回園區: 似乎是某公司的停車場',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446397016974034"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMW1m5otI/AAAAAAAADKA/6_X88kdUzwQ/s400/P1100076.JPG" alt="P1100076.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7691510,lon:121.0290710,name:'高鐵跑過去了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446435849395474"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMZGRRXRI/AAAAAAAADKQ/_U2eFdN2ENE/s400/P1100082.JPG" alt="P1100082.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7694760,lon:121.0295030,name:'P1100083.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446469146552274"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYMbCT7p9I/AAAAAAAADKY/CgTSCv_n_VE/s400/P1100083.JPG" alt="P1100083.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7686920,lon:121.0321420,name:'P1100085.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446486409047602"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYMcCnobjI/AAAAAAAADKg/OD2pO0JSb-U/s400/P1100085.JPG" alt="P1100085.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7692560,lon:121.0332640,name:'又找了個巷子鑽進去，不過沒路出去',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446507874001682"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYMdSlRoxI/AAAAAAAADKo/fsThLnnFFbM/s400/P1100086.JPG" alt="P1100086.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7677880,lon:121.0364950,name:'一整排的高壓電塔，一整個煞風景',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446589397380402"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMiCR9rTI/AAAAAAAADLA/_1BD0LyIbrU/s400/P1100089.JPG" alt="P1100089.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7662419,lon:121.0387250,name:'從高速公路邊的小路走',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446646512166610"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMlXDMJtI/AAAAAAAADLQ/GLNEEeyeDg4/s400/P1100094.JPG" alt="P1100094.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7633670,lon:121.0379380,name:'旁邊就是高速公路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446676040651122"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYMnFDVEXI/AAAAAAAADLc/ueHSVwrNWlg/s400/P1100099.JPG" alt="P1100099.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7630160,lon:121.0370850,name:'再鑽...不過跑到好兄弟的家',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446708715571106"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYMo-xox6I/AAAAAAAADLk/78jQhEk2FOc/s400/P1100106.JPG" alt="P1100106.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7633530,lon:121.0367050,name:'風景(水)不錯...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446777014250082"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYMs9NT6mI/AAAAAAAADME/8hmdvBzUsYM/s400/P1100112.JPG" alt="P1100112.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7628950,lon:121.0363830,name:'一個高速公路下的小路，旁邊有標往柯湖路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446916266171730"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYM1D9jnVI/AAAAAAAADMs/hucYarrFL_U/s400/P1100121.JPG" alt="P1100121.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7625420,lon:121.0357780,name:'真是佩服自己邊騎還能邊拍出這種照片...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311446932324871634"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYM1_yP7dI/AAAAAAAADM0/cJw8sKt1qLw/s400/P1100122.JPG" alt="P1100122.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7616590,lon:121.0348970,name:'有天兵把自己車子搬到小水溝裡，想當offroad??',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447024423547954"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYM7W4SNDI/AAAAAAAADNQ/mNRuA6_HiWA/s400/P1100129.JPG" alt="P1100129.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7590760,lon:121.0392360,name:'上寶山水庫...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447049210020274"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYM8zN1wbI/AAAAAAAADNY/zh6bU7T3lNg/s400/P1100133.JPG" alt="P1100133.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7548620,lon:121.0482670,name:'終於到頂了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447131686841378"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNBmd2LCI/AAAAAAAADNo/jLcAMM8RZDY/s400/P1100135.JPG" alt="P1100135.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7539240,lon:121.0485330,name:'上來的路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447206597350482"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNF9h51FI/AAAAAAAADN4/Vav9F20J0v8/s400/P1100140.JPG" alt="P1100140.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7539930,lon:121.0484970,name:'涼亭',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447278714568498"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYNKKL_PzI/AAAAAAAADOI/WXeeMYXiz0A/s400/P1100144.JPG" alt="P1100144.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7539790,lon:121.0506520,name:'View不錯',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447297834658418"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYNLRakqnI/AAAAAAAADOQ/a4ybCLC67-0/s400/P1100145.JPG" alt="P1100145.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7534430,lon:121.0518410,name:'看到湖囉',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447324670899474"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNM1Y1NRI/AAAAAAAADOY/FpJTWzCDe5M/s400/P1100146.JPG" alt="P1100146.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7478330,lon:121.0523090,name:'寶山碧湖吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447374022492322"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNPtPKwKI/AAAAAAAADOg/08smpdW61wY/s400/P1100148.JPG" alt="P1100148.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7472650,lon:121.0522780,name:'寶山碧湖吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447444268213730"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNTy7DZeI/AAAAAAAADO0/POHGoy2zerY/s400/P1100151.JPG" alt="P1100151.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7472210,lon:121.0522640,name:'湖邊小路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447478102715138"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbYNVw906wI/AAAAAAAADO8/hEQjotkq3KY/s400/P1100152.JPG" alt="P1100152.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7465800,lon:121.0484170,name:'第二座吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447550016568450"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNZ83bPII/AAAAAAAADPE/-fJB3gqCSbQ/s400/P1100156.JPG" alt="P1100156.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7471760,lon:121.0481550,name:'橋邊的廢墟屋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447584043891666"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYNb7oK-9I/AAAAAAAADPM/Y3ATHsKQ7eE/s400/P1100157.JPG" alt="P1100157.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7479720,lon:121.0471250,name:'第二座吊橋111',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447602926854146"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNdB-OIAI/AAAAAAAADPU/myjdtkrFd5s/s400/P1100159.JPG" alt="P1100159.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7479730,lon:121.0471260,name:'橋的一邊',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447615649160258"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNdxXdHEI/AAAAAAAADPc/MG-d35H8Er8/s400/P1100160.JPG" alt="P1100160.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7480290,lon:121.0471020,name:'隱約看的到碧湖吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447680903193586"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNhkdOo_I/AAAAAAAADPs/8LrLALfX9Zk/s400/P1100162.JPG" alt="P1100162.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7484230,lon:121.0468530,name:'橋的另一邊',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447697644361298"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNii0ollI/AAAAAAAADP0/KiMyqFGSoVU/s400/P1100163.JPG" alt="P1100163.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7522880,lon:121.0460630,name:'寶山水庫環湖園區道路示意圖',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447857023284146"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNr0jh87I/AAAAAAAADQo/ZClKrlOhNeA/s400/P1100179.JPG" alt="P1100179.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7526410,lon:121.0456470,name:'從外面看這裡的入口',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447915050481938"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNvMuSuRI/AAAAAAAADQ4/aV9RMeTiEts/s400/P1100182.JPG" alt="P1100182.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7526520,lon:121.0455970,name:'荒廢了的 山湖村衛生所',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447954391331346"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbYNxfR4chI/AAAAAAAADRA/nzskqiijEEo/s400/P1100184.JPG" alt="P1100184.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7719210,lon:121.0503010,name:'工研院一',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447973150778802"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbYNylKe5bI/AAAAAAAADRI/8a3CGvgbnu4/s400/P1100185.JPG" alt="P1100185.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7773640,lon:121.0457820,name:'工研院二',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5311447995513025682"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbYNz4eDtJI/AAAAAAAADRQ/FTBabv_4PQQ/s400/P1100187.JPG" alt="P1100187.JPG"/></a>',color:'',icon:''}) );
+*/				
+//					wpts.push( GV_Marker(gmap,{lat:24.,lon:121.,name:'',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76920,lon:121.03244,name:'似乎是個馬場',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76773,lon:121.03201,name:'小陽光之家: 一路走上來只看到一堆小朋友，原來這個毫不起眼的地方是個幼稚園!!??',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76912,lon:121.02911,name:'看地圖右轉應該是之前在高鐵鐵道邊的平台公園',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7714740,lon:121.0310850,name:'P1100022.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116295074993890"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWHBPV1uI/AAAAAAAADqk/bUSJPrWY1Fk/s400/P1100022.JPG" alt="P1100022.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7701080,lon:121.0322390,name:'P1100023.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116323269573266"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWIqRc-pI/AAAAAAAADqs/rLWRP-xf4CE/s400/P1100023.JPG" alt="P1100023.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7696750,lon:121.0329150,name:'柯湖路二段',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116343085346834"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWJ0F5sBI/AAAAAAAADq0/gYLNz-gKJsw/s400/P1100024.JPG" alt="P1100024.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7695780,lon:121.0329630,name:'是個馬場',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116364971824130"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWLFoC1AI/AAAAAAAADq8/GsdfZEJTnL4/s400/P1100027.JPG" alt="P1100027.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7688950,lon:121.0323230,name:'路上坑洞很多',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116392043621266"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWMqedq5I/AAAAAAAADrE/iy8Moag4G88/s400/P1100036.JPG" alt="P1100036.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7683920,lon:121.0322120,name:'風景不錯，不過那紅磚屋的屋頂顏色只有怪怪的',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116413357694322"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWN54InXI/AAAAAAAADrM/_wXDSRWOGzQ/s400/P1100040.JPG" alt="P1100040.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7682250,lon:121.0323600,name:'小陽光之家前的大上坡，descent不知道是怎樣就是看到坡就想上...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116436171713442"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWPO3a66I/AAAAAAAADrU/QoGVrZa6PYQ/s400/P1100044.JPG" alt="P1100044.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7681280,lon:121.0318380,name:'P1100048.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116469598563330"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWRLZALAI/AAAAAAAADrc/uWqX1aak4C4/s400/P1100048.JPG" alt="P1100048.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7667530,lon:121.0323530,name:'大上坡後沒路了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116508371606114"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWTb1N2mI/AAAAAAAADro/bArbZOgtSvw/s400/P1100049.JPG" alt="P1100049.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116590916581874"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWYPVeOfI/AAAAAAAADr4/A6q3boNrRxE/s400/P1100052.JPG" alt="P1100052.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7667650,lon:121.0323420,name:'P1100051.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116547387285730"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWVtLR4OI/AAAAAAAADrw/Vz3chxcxK34/s400/P1100051.JPG" alt="P1100051.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7668370,lon:121.0323630,name:'P1100052.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116590916581874"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWYPVeOfI/AAAAAAAADr4/A6q3boNrRxE/s400/P1100052.JPG" alt="P1100052.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7676960,lon:121.0322080,name:'看起來根本就像是個農家...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116613771431682"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWZkefjwI/AAAAAAAADsA/X8BaoffiGDw/s400/P1100056.JPG" alt="P1100056.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7680599,lon:121.0319300,name:'小陽光之家，老師、小朋友 and 怪叔叔',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116646841031330"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMWbfq5mqI/AAAAAAAADsI/g2O5sf71IWw/s400/P1100057.JPG" alt="P1100057.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116679847507346"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWdaoQdZI/AAAAAAAADsQ/nfZtY3NvBmM/s400/P1100058.JPG" alt="P1100058.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116707406633362"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWfBS3WZI/AAAAAAAADsY/89BWgPm8Fh0/s400/P1100059.JPG" alt="P1100059.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116747121958642"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWhVPvHvI/AAAAAAAADsg/l7yUJQDd28o/s400/P1100060.JPG" alt="P1100060.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116783334228882"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWjcJag5I/AAAAAAAADso/IOKnD17Typk/s400/P1100061.JPG" alt="P1100061.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116819789059682"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWlj87FmI/AAAAAAAADs0/fMp6eWAQj_Q/s400/P1100062.JPG" alt="P1100062.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315116905065583298"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWqhobksI/AAAAAAAADs8/Hh6O7D9jXY4/s400/P1100063.JPG" alt="P1100063.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117015512236578"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWw9E9wiI/AAAAAAAADtE/XoZHT5gHWYk/s400/P1100064.JPG" alt="P1100064.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117103143677506"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMW2Dh7bkI/AAAAAAAADtM/etGMjW7FDdw/s400/P1100065.JPG" alt="P1100065.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117176350929874"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMW6UP5c9I/AAAAAAAADtU/i_QRuHigY80/s400/P1100066.JPG" alt="P1100066.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117207404689186"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMW8H7sNyI/AAAAAAAADtc/ZUYRr1gRDAo/s400/P1100067.JPG" alt="P1100067.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117234302550946"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMW9sIpA6I/AAAAAAAADtk/phidt1VASaA/s400/P1100068.JPG" alt="P1100068.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117259458030898"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMW_J2LLTI/AAAAAAAADts/JxtUdy8C2SY/s400/P1100069.JPG" alt="P1100069.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117283711328706"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXAkMnIcI/AAAAAAAADt0/AY1Y2TzDczw/s400/P1100070.JPG" alt="P1100070.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7679699,lon:121.0324330,name:'我們要走了小朋友們還追下來....',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117309408529330"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXCD7TS7I/AAAAAAAADt8/auHZ3_UP3SI/s400/P1100074.JPG" alt="P1100074.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7690560,lon:121.0311760,name:'高鐵下面',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117334994176098"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXDjPZSGI/AAAAAAAADuE/Q7a6HFLkmkw/s400/P1100075.JPG" alt="P1100075.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7694470,lon:121.0296670,name:'P1100082.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117355245255170"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXEuroOgI/AAAAAAAADuQ/1Mgj_i6mvMQ/s400/P1100082.JPG" alt="P1100082.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7691540,lon:121.0317130,name:'大下坡下來',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117385099314658"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXGd5ZBeI/AAAAAAAADuY/lMGZ6QiZQjM/s400/P1100083.JPG" alt="P1100083.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7690980,lon:121.0334380,name:'路上',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117401306250786"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMXHaRbPiI/AAAAAAAADug/lYlnBE7qQaE/s400/P1100085.JPG" alt="P1100085.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7695410,lon:121.0351750,name:'路邊小河',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117432828475778"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXJPs6OYI/AAAAAAAADuo/KURxQCq-GoQ/s400/P1100088.JPG" alt="P1100088.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7671740,lon:121.0373270,name:'路上的電塔，真是煞風景',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117450233774930"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXKQiqA1I/AAAAAAAADuw/hXWK02HsNU4/s400/P1100089.JPG" alt="P1100089.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7661920,lon:121.0387650,name:'P1100092.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117479453169922"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXL9ZGmQI/AAAAAAAADu4/-TFfxPUvL2U/s400/P1100092.JPG" alt="P1100092.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7647300,lon:121.0395080,name:'從對面那條路上去',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117496255208450"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMXM7_BXAI/AAAAAAAADvA/VLsH-2Nhrvs/s400/P1100094.JPG" alt="P1100094.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7630200,lon:121.0370890,name:'旁邊就是高速公路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117531401209618"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXO-6exxI/AAAAAAAADvI/AXX01rCj6WY/s400/P1100099.JPG" alt="P1100099.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7629640,lon:121.0367760,name:'看到陡坡就想上的descent...(奇怪，看到女人反到沒那麼有興趣的樣子)',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117559726065218"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXQobpxkI/AAAAAAAADvQ/DkuM_PZ97E4/s400/P1100106.JPG" alt="P1100106.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7634610,lon:121.0366040,name:'風景(水)不錯，只是後面就是 好兄弟 的家',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117586754203394"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXSNHqbwI/AAAAAAAADvY/C2InNWsbqZA/s400/P1100112.JPG" alt="P1100112.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7620320,lon:121.0347420,name:'鑽崩康',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117608156451010"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXTc2W0MI/AAAAAAAADvg/TkKzOhIsj8M/s400/P1100121.JPG" alt="P1100121.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7619690,lon:121.0347220,name:'真是佩服自己邊騎還能邊拍出這種照片...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117620787542386"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXUL51-XI/AAAAAAAADvo/QV5JsYPTjrY/s400/P1100122.JPG" alt="P1100122.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7616900,lon:121.0348830,name:'P1100123.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117650082527298"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXV5CT-EI/AAAAAAAADvw/2Kfx-6FhD08/s400/P1100123.JPG" alt="P1100123.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7613540,lon:121.0346190,name:'有天兵把自己車子搬到小水溝裡，想當offroad??',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117678180437874"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXXhtYD3I/AAAAAAAADv8/Opoo86S7yBg/s400/P1100130.JPG" alt="P1100130.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7581859,lon:121.0409250,name:'半路風景',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117706237155778"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXZKOnmcI/AAAAAAAADwE/dJjBCzTV4Oc/s400/P1100133.JPG" alt="P1100133.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7539170,lon:121.0485220,name:'終於上到寶山水庫了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117733523981074"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXav4TgxI/AAAAAAAADwM/-hmerC9NruM/s400/P1100135.JPG" alt="P1100135.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117755017417730"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMXb_8vVAI/AAAAAAAADwU/Z2qhLxs5BQE/s400/P1100136.JPG" alt="P1100136.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117779773744962"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXdcLG50I/AAAAAAAADwc/lubmTFKzM0Q/s400/P1100144.JPG" alt="P1100144.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7534430,lon:121.0518410,name:'好風景ㄚ',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117799433018466"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXelaPnGI/AAAAAAAADwk/X94HUTPIkVY/s400/P1100145.JPG" alt="P1100145.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7472480,lon:121.0522730,name:'寶山碧湖吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117824850890802"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXgEGVkDI/AAAAAAAADws/B_CCCEVO_Z0/s400/P1100148.JPG" alt="P1100148.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7467340,lon:121.0521550,name:'寶山碧湖吊橋另一邊',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117854310402594"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXhx2CCiI/AAAAAAAADw0/UZqUKqyoXWo/s400/P1100150.JPG" alt="P1100150.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117889303746402"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXj0NGF2I/AAAAAAAADw8/RyUOx033E94/s400/P1100151.JPG" alt="P1100151.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7467320,lon:121.0521520,name:'P1100151.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117889303746402"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXj0NGF2I/AAAAAAAADw8/RyUOx033E94/s400/P1100151.JPG" alt="P1100151.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7467410,lon:121.0520860,name:'湖邊步道，不過沒有環湖，走到底沒有路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117917592383010"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXldlobiI/AAAAAAAADxE/yVXKYw76IQc/s400/P1100152.JPG" alt="P1100152.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7479939,lon:121.0471890,name:'橋邊的廢墟屋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117940289753026"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXmyJGz8I/AAAAAAAADxM/4ejXU1dED5U/s400/P1100156.JPG" alt="P1100156.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7479720,lon:121.0471240,name:'第二座吊橋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117977793081554"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXo92mMNI/AAAAAAAADxU/_G_cffWTdfc/s400/P1100157.JPG" alt="P1100157.JPG"/></a>',color:'',icon:''}) );
+
+					wpts.push( GV_Marker(gmap,{lat:24.7485310,lon:121.0467960,name:'第二座吊橋上的風景',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315117987773159234"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMXpjCCF0I/AAAAAAAADxg/W59N4mVp6Ps/s400/P1100159.JPG" alt="P1100159.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118000299499890"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXqRsi4XI/AAAAAAAADxo/F4EngNJvY30/s400/P1100160.JPG" alt="P1100160.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118032793454562"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXsKvtR-I/AAAAAAAADxw/A0egJbf9DTQ/s400/P1100161.JPG" alt="P1100161.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118062395039154"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMXt5BRnbI/AAAAAAAADx4/gcf1xzrJSPw/s400/P1100162.JPG" alt="P1100162.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118073915472594"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMXuj79etI/AAAAAAAADyA/a2jHXrgRH5s/s400/P1100163.JPG" alt="P1100163.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118096043875170"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMXv2XyG2I/AAAAAAAADyI/DiARJJ61Nvc/s400/P1100164.JPG" alt="P1100164.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118132633606898"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMXx-rdGvI/AAAAAAAADyQ/t74-RlZAfDE/s400/P1100165.JPG" alt="P1100165.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7521929,lon:121.0461170,name:'兩棵樹',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118171804231890"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMX0QmdaNI/AAAAAAAADyY/Xmc11BIuUVA/s400/P1100175.JPG" alt="P1100175.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7526440,lon:121.0456370,name:'寶山水庫環湖園區道路示意圖',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118203344466690"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMX2GGPMwI/AAAAAAAADyg/gLBzJ5gazZg/s400/P1100179.JPG" alt="P1100179.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7525120,lon:121.0451670,name:'出來的路&旁邊 荒廢了的 山湖村衛生所',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118223944389874"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMX3S1pFPI/AAAAAAAADyo/lTAxTG1n59k/s400/P1100182.JPG" alt="P1100182.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118268015418594"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMX53A_nOI/AAAAAAAADyw/jDeiS1WcHLY/s400/P1100184.JPG" alt="P1100184.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7525250,lon:121.0451690,name:'P1100184.JPGo',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118268015418594"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMX53A_nOI/AAAAAAAADyw/jDeiS1WcHLY/s400/P1100184.JPG" alt="P1100184.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7745720,lon:121.0479260,name:'工研院一',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118287206340594"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMX6-gd1_I/AAAAAAAADy4/LP6iy7khg6o/s400/P1100185.JPG" alt="P1100185.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7778660,lon:121.0403130,name:'工研院二',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090310#5315118296464545874"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMX7g_y2FI/AAAAAAAADzA/vL3wTz9aNNo/s400/P1100187.JPG" alt="P1100187.JPG"/></a>',color:'',icon:''}) );
+
+					GV_Finish_Map(gv_options);
+					
+				} else {
+					document.getElementById('gmap_div').style.backgroundColor = '#DDDDDD';
+					document.getElementById('gmap_div').innerHTML = 'Sorry, your Google Map cannot be displayed.';
+				}
+			}
+			GV_Map(); // execute the above code
+		</script>
+		
+	</body>
+
+</html>

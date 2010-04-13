@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<title>Map created by GPS Visualizer</title>
+		<base target="_top"></base>
+		<meta name="geo.position" content="24.7697491; 121.0244082" />
+		<meta name="ICBM" content="24.7697491, 121.0244082" />
+	</head>
+	<body onunload="GUnload();">
+		
+		
+		<!--
+			If you want to transplant this map into another Web page, the easiest way to do it is to
+			simply include it in a IFRAME tag (see http://www.gpsvisualizer.com/faq.html#google_html).
+			But, if you must paste the code into another page, be sure to include all of these parts:
+			   1. The DOCTYPE declaration and the extra attributes in the "html" tag (xmlns:v=...)
+			     that allow Internet Explorer for Windows to render polylines (tracks)
+			   2. The "div" tags that contain the map and its widgets
+			   3. Three sections of JavaScript code:
+			      a. Your Google Maps API key and the maps.google.com code
+			      b. "gv_options" and the code that calls "functions.js" on maps.gpsvisualizer.com
+			      c. The "GV_Map" function, which contains all the geographic info for the map
+		-->
+		<div style="margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;">
+			<div id="gmap_div" style="width:600px; height:600px; margin:0px; margin-right:12px; background-color:#F0F0F0; float:left; overflow:hidden;">
+				<p align="center" style="font:10px Arial;">This map was created using <a target="_blank" href="http://www.gpsvisualizer.com/">GPS Visualizer</a>'s do-it-yourself geographic utilities.<br><br>Please wait while the map data loads...</p>
+			</div>
+				
+			<div id="gv_legend_container" style="display:none;"><table id="gv_legend_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95; background:#ffffff;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_legend_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_legend" align="left" style="font:11px Arial; line-height:13px; border:solid #000000 1px; background:#FFFFFF; padding:4px;">
+					<!-- Although GPS Visualizer didn't create a legend with your map, you can use this box for something else if you'd like; enable it by setting legend:true in the 'gv_options' -->
+				</div>
+			</td></tr></table></div>
+
+
+			<div id="gv_tracklist_container" style="display:none;"><table id="gv_tracklist_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_tracklist_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_tracklist" align="left" style="font:11px Arial; line-height:11px; border:solid #000000 1px; background:#FFFFFF; padding:4px; overflow:auto;">
+					<div id="gv_tracklist_header" style="padding-bottom:2px; color:#000000;"><b>Tracks:</b></div>
+					<div id="gv_tracklist_links" style="color:#000000;"></div>
+				</div>
+			</td></tr></table></div>
+			<div id="gv_tracklist_tooltip" class="gv_tracklist_tooltip" style="background-color:#FFFFFF; border:1px solid #CCCCCC; padding:2px; font:11px Arial; display:none;"></div>
+
+			<!-- the following is the "floating" marker list; the "static" version is below -->
+			<div id="gv_marker_list_container" style="display:none;"><table id="gv_marker_list_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95;" cellspacing="0" cellpadding="0" border="0"><tr><td>
+				<div id="gv_marker_list_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_marker_list" align="left" class="gv_marker_list" style="overflow:auto; background:#FFFFFF; border:solid #666666 1px; padding:4px;"></div>
+			</td></tr></table></div>
+			
+			<div id="gv_marker_list_static" align="left" class="gv_marker_list" style="width:160px; height:600px; overflow:auto; display:none;"></div>
+			<div id="gv_clear_margins" style="height:0px; clear:both;"><!-- clear the "float" --></div>
+		</div>
+
+		
+		<script type="text/javascript">
+			// If you put this map on another Web site, you must include your API key or nothing will work!
+			var google_api_key = '';
+			if (document.location.toString().indexOf('http://www.gpsvisualizer.com') > -1) { eval(unescape("%67%6F%6F%67%6C%65%5F%61%70%69%5F%6B%65%79")+" = '"+unescape("%41%42%51%49%41%41%41%41%61%47%39%4A%44%62%43%65%36%52%61%31%4F%67%30%68%4B%43%6E%32%4C%52%52%6F%6B%57%5F%49%74%45%49%6D%42%6F%37%65%77%62%56%45%4A%41%7A%73%74%53%73%52%57%68%52%4A%33%52%4D%44%41%57%70%4C%35%35%51%61%63%47%5A%32%7A%51%46%32%6B%4C%43%5F%65%41")+"'"); }
+			document.writeln('<script src="http://maps.google.com/maps?v=2&file=api&key='+google_api_key+'" type="text/javascript"><'+'/'+'script>');
+		</script>
+		<!-- end Google Maps script; begin GPS Visualizer setup script (they must be separate) -->
+		<script type="text/javascript">
+			/* Global variables used by the GPS Visualizer functions (1236766076): */
+			gv_options = new Array(); gv_options = {
+				// important variable names:
+				map:'gmap', map_div:'gmap_div', marker_array:'wpts', track_array:'trk', track_info_array:'trk_info', // probably 'gmap','gmap_div','wpts','trk','trk_info'
+				
+				// basic map parameters:
+				full_screen:false,              // should the map fill the entire page (or frame)?
+				center:[24.76974915,121.02440825], // latitude,longitude - be sure to keep the square brackets
+				zoom:15,                        // higher number means closer view; at 600px wide, 7 = width of New Mexico, 12 = width of San Francisco
+				map_opacity:1, map_type:'G_HYBRID_MAP', // opacity is from 0 to 1; popular map_type choices are 'G_NORMAL_MAP', 'G_SATELLITE_MAP', 'G_HYBRID_MAP', 'G_PHYSICAL_MAP', 'USGS_TOPO_TILES'
+				doubleclick_zoom:true, mousewheel_zoom:false, // true or false; or, value of 'reverse' for mousewheel_zoom makes down=in and up=out
+				
+				// widgets on the map:
+				map_type_control:{ // style: 'menu', 'list', 'none', or 'google'; filter: when map loads, are irrelevant maps ignored?; excluded: list of map types that will never show in the list, e.g., ['USGS_TOPO_TILES','USGS_AERIAL_TILES','NRCAN_TOPO_TILES','NRCAN_TOPO_NAMES_TILES','LANDSAT_TILES','BLUEMARBLE_TILES','DAILY_TERRA_TILES','DAILY_AQUA_TILES']
+					style:'menu', filter:true, excluded:[]
+				},
+				zoom_control:'large', scale_control:true, map_opacity_control:true, // zoom is 'large' or 'small', scale and opacity are true or false
+				center_coordinates:true, crosshair_hidden:true, // true or false: Show a "center coordinates" box and crosshair? Hide the crosshair initially?
+				legend_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the legend (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					legend:false, id:'gv_legend', position:['G_ANCHOR_BOTTOM_LEFT',4,60], draggable:true, collapsible:true
+				},
+				
+				
+				// marker-related options:
+				default_marker:{ color:'red',icon:'googlemini' }, // icon can be a URL, but be sure to also include size:[w,h] and optionally anchor:[x,y]
+				icon_directory:'http://maps.gpsvisualizer.com/google_maps/icons/', // don't change this unless you really know what you're doing
+				marker_link_target:'_blank',    // the name of the window or frame into which markers' URLs will load
+				info_window_width:0, thumbnail_width:0, photo_size:[0,0], // in pixels, the width of the markers' info windows or thumbnails, or width and height of photos; 0 for default (can be overridden in an individual marker's options)
+				hide_labels:false, label_offset:[0,0], label_centered:false, // hide_labels causes the "permanent" labels to be hidden at first; global label_offset setting is [x,y] (positive numbers are right and down)
+				driving_directions:false,       // put a small "driving directions" form in each marker's pop-up window? (override with dd:true or dd:false in the marker's options)
+				marker_filter_options:{ // options for removing waypoints that are out of the current view
+					filter:false, limit:0, update_list:true, movement_threshold:8, sort_list_by_distance:false, min_zoom:0, zoom_message:''
+				},
+				marker_list_options:{ // options for a dynamically-created list of markers
+					list:false, id_floating:'gv_marker_list', id_static:'gv_marker_list_static', // id_static: id of a DIV with a non-floating list; id_floating: id of a DIV tag that holds a floating list (other associated DIVs -- _handle, _table, _container -- must be similarly named)
+					floating:false, position:['G_ANCHOR_TOP_RIGHT',6,112], width:160, height:416, draggable:true, collapsible:true, // these only affect a "floating" list
+					colors:false, default_color:'', icons:true, desc:false, dividers:false, thumbnails:false, wrap_names:true, unnamed:'[unnamed]', limit:0, // overall appearance of the list items
+					center:false, zoom:false, zoom_level:17, info_window:true, url_links:false, toggle:false, help_tooltips:false, // these define what happens when you click on an item in the list ("toggle" affects only the text)
+					header:'',footer:'',folders_collapsed:false,include_tickmarks:false,include_trackpoints:false // header & footer are HTML snippets
+				},
+				
+				// track-related options:
+				tracklist_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the track list (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					tracklist:true, position:['G_ANCHOR_TOP_RIGHT',6,32], max_width:180, max_height:510, desc:true, zoom_links:true, tooltips:true, draggable:true, collapsible:true, id:'gv_tracklist'
+				},
+
+				centering_options:{ // URL-based centering (e.g., ?center=name_of_marker&zoom=14)
+					center_key:'center', partial_match:true, default_zoom:null, open_info_window:true
+				},
+
+				zzz:false // this is just here to prevent possible "hanging comma" JS errors
+			};
+			// Load GPS Visualizer's Google Maps functions (this must be loaded AFTER gv_options are set):
+			document.writeln('<script src="http://maps.gpsvisualizer.com/google_maps/functions.js" type="text/javascript"><'+'/'+'script>');
+		</script>
+		
+		<style type="text/css">
+			/* Put any custom style definitions here (e.g., .gv_marker_list_item, .gv_tooltip, .gv_label, .gv_wpt, etc.) */
+			.gv_label {
+				filter:alpha(opacity=90); -moz-opacity:0.9;
+				background:#333333; border:1px solid black; padding:1px;
+				font:9px Verdana,sans-serif; color:white; font-weight:normal;
+			}
+			
+		</style>
+		
+		<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
+		<script type="text/javascript">
+			function GV_Map() {
+				if (GBrowserIsCompatible()) { 
+					if (gv_options['full_screen']) { GV_Fill_Window_With_Map(gv_options['map_div']); }
+					gmap = new GMap2(document.getElementById(gv_options['map_div'])); // create map
+					GV_Setup_Map(gv_options);
+					
+					trk = new Array(); trk_info = new Array();
+					
+					// Setup track #1 ("Track 001")
+					trk[1] = []; trk_info[1] = {
+						name:'090311 下午 力行路後山 之 真的沒路走...', desc:'Total Track Points: 839. Total time: 1h47m14. Journey: 13.436Km',
+						color:'#E600E6', width:3, opacity:0.8, outline_color:'#000000', outline_width:5,
+						bounds:{w:121.0165866,e:121.0322299,s:24.7602983,n:24.7792}, center:{lat:24.76814,lon:121.0262}
+					};
+					
+					var pts = [ // track 1 segment 1:
+						new GLatLng(24.7762033,121.0224533),
+						new GLatLng(24.7762249,121.0224833),
+						new GLatLng(24.7762016,121.0229549),
+						new GLatLng(24.7762233,121.0230599),
+						new GLatLng(24.7761416,121.0231883),
+						new GLatLng(24.7759949,121.0239099),
+						new GLatLng(24.775795,121.0239866),
+						new GLatLng(24.7754866,121.0246266),
+						new GLatLng(24.7751533,121.0252216),
+						new GLatLng(24.7748683,121.0255283),
+						new GLatLng(24.7745533,121.0257766),
+						new GLatLng(24.7737316,121.0261649),
+						new GLatLng(24.7733799,121.0262849),
+						new GLatLng(24.7731149,121.0261849),
+						new GLatLng(24.772995,121.0258349),
+						new GLatLng(24.7727783,121.0257483),
+						new GLatLng(24.7715683,121.0259816),
+						new GLatLng(24.7711233,121.0261266),
+						new GLatLng(24.7707983,121.0263016),
+						new GLatLng(24.7707782,121.0264399),
+						new GLatLng(24.77082,121.0266116),
+						new GLatLng(24.7708983,121.0267616),
+						new GLatLng(24.7708966,121.0270133),
+						new GLatLng(24.7706266,121.0272333),
+						new GLatLng(24.77033,121.0275433),
+						new GLatLng(24.770095,121.0278549),
+						new GLatLng(24.7698033,121.0283499),
+						new GLatLng(24.7698299,121.0284649),
+						new GLatLng(24.7699483,121.0282266),
+						new GLatLng(24.7701583,121.0279416),
+						new GLatLng(24.7701633,121.0277783),
+						new GLatLng(24.7700383,121.0277266),
+						new GLatLng(24.7698416,121.0278383),
+						new GLatLng(24.7695883,121.028195),
+						new GLatLng(24.7695249,121.0283416),
+						new GLatLng(24.769265,121.0285916),
+						new GLatLng(24.7692082,121.0286983),
+						new GLatLng(24.7691366,121.0291649),
+						new GLatLng(24.7691616,121.0290949),
+						new GLatLng(24.7691349,121.0289333),
+						new GLatLng(24.7688533,121.0289283),
+						new GLatLng(24.767965,121.0293716),
+						new GLatLng(24.7676,121.0293166),
+						new GLatLng(24.7672733,121.0292083),
+						new GLatLng(24.7669066,121.0292233),
+						new GLatLng(24.7667016,121.0291349),
+						new GLatLng(24.7667333,121.0287883),
+						new GLatLng(24.7667566,121.0292099),
+						new GLatLng(24.7666099,121.0292733),
+						new GLatLng(24.766405,121.0294516),
+						new GLatLng(24.7661833,121.0295216),
+						new GLatLng(24.765845,121.0295533),
+						new GLatLng(24.765705,121.0298383),
+						new GLatLng(24.7653566,121.0300949),
+						new GLatLng(24.7652432,121.0302166),
+						new GLatLng(24.76513,121.0305283),
+						new GLatLng(24.7651166,121.0307033),
+						new GLatLng(24.7649533,121.0309216),
+						new GLatLng(24.7648566,121.0313299),
+						new GLatLng(24.7646333,121.0315816),
+						new GLatLng(24.7646682,121.0315883),
+						new GLatLng(24.7646083,121.0315516),
+						new GLatLng(24.7645633,121.0315699),
+						new GLatLng(24.7644983,121.0317533),
+						new GLatLng(24.7645233,121.0318366),
+						new GLatLng(24.7645049,121.0318849),
+						new GLatLng(24.7645349,121.0318083),
+						new GLatLng(24.7646133,121.0317666),
+						new GLatLng(24.7647983,121.0315049),
+						new GLatLng(24.7647666,121.0315216),
+						new GLatLng(24.7646983,121.0314833),
+						new GLatLng(24.7648033,121.0313949),
+						new GLatLng(24.76495,121.0311249),
+						new GLatLng(24.7650449,121.0307949),
+						new GLatLng(24.7652083,121.0305833),
+						new GLatLng(24.7653349,121.0301499),
+						new GLatLng(24.76569,121.0298666),
+						new GLatLng(24.7656933,121.0298116),
+						new GLatLng(24.7647149,121.0293099),
+						new GLatLng(24.7644432,121.0293366),
+						new GLatLng(24.7643216,121.0294166),
+						new GLatLng(24.764165,121.0296883),
+						new GLatLng(24.7640383,121.0297866),
+						new GLatLng(24.7639616,121.0297699),
+						new GLatLng(24.7639016,121.0296783),
+						new GLatLng(24.7639466,121.0295433),
+						new GLatLng(24.7638933,121.0294233),
+						new GLatLng(24.7640266,121.0290699),
+						new GLatLng(24.7640232,121.0289683),
+						new GLatLng(24.7637949,121.0289383),
+						new GLatLng(24.7636149,121.0288266),
+						new GLatLng(24.763575,121.0289033),
+						new GLatLng(24.7635566,121.0291816),
+						new GLatLng(24.7635249,121.0291466),
+						new GLatLng(24.7633966,121.0291966),
+						new GLatLng(24.7634583,121.0292749),
+						new GLatLng(24.7633183,121.0290249),
+						new GLatLng(24.7632983,121.0290383),
+						new GLatLng(24.763435,121.0290833),
+						new GLatLng(24.7634683,121.0291783),
+						new GLatLng(24.7633932,121.0294016),
+						new GLatLng(24.7624766,121.0301566),
+						new GLatLng(24.7624499,121.0302999),
+						new GLatLng(24.7627599,121.0306383),
+						new GLatLng(24.7626749,121.0309283),
+						new GLatLng(24.7626566,121.0312749),
+						new GLatLng(24.762495,121.0314549),
+						new GLatLng(24.7622916,121.0316049),
+						new GLatLng(24.7622966,121.0319599),
+						new GLatLng(24.7623349,121.0319666),
+						new GLatLng(24.7623666,121.0318233),
+						new GLatLng(24.762315,121.0318049),
+						new GLatLng(24.7623132,121.0318616),
+						new GLatLng(24.7624183,121.0320149),
+						new GLatLng(24.7624216,121.0319099),
+						new GLatLng(24.7625449,121.0318733),
+						new GLatLng(24.7625883,121.0319966),
+						new GLatLng(24.7627466,121.0322299),
+						new GLatLng(24.7624833,121.0319499),
+						new GLatLng(24.76244,121.0320199),
+						new GLatLng(24.7623266,121.0320799),
+						new GLatLng(24.7623416,121.0318599),
+						new GLatLng(24.762385,121.0318783),
+						new GLatLng(24.7623399,121.0318583),
+						new GLatLng(24.7623183,121.0316666),
+						new GLatLng(24.7622566,121.0316216),
+						new GLatLng(24.7622833,121.0315033),
+						new GLatLng(24.7624449,121.0313949),
+						new GLatLng(24.7626233,121.0311533),
+						new GLatLng(24.7627683,121.0306583),
+						new GLatLng(24.7624816,121.0302799),
+						new GLatLng(24.7624666,121.0301666),
+						new GLatLng(24.7625483,121.0300666),
+						new GLatLng(24.7630133,121.0299116),
+						new GLatLng(24.7631049,121.0297766),
+						new GLatLng(24.7635466,121.0295049),
+						new GLatLng(24.7637249,121.0289133),
+						new GLatLng(24.763845,121.0288466),
+						new GLatLng(24.7640183,121.0289316),
+						new GLatLng(24.7641533,121.0289066),
+						new GLatLng(24.7640033,121.0287316),
+						new GLatLng(24.763775,121.02854),
+						new GLatLng(24.76369,121.0283983),
+						new GLatLng(24.7633999,121.0283166),
+						new GLatLng(24.7633033,121.0281816),
+						new GLatLng(24.7632833,121.0279599),
+						new GLatLng(24.7633266,121.0277799),
+						new GLatLng(24.763435,121.0276549),
+						new GLatLng(24.7636399,121.0275416),
+						new GLatLng(24.763715,121.0275633),
+						new GLatLng(24.7636949,121.0275416),
+						new GLatLng(24.7638399,121.0274616),
+						new GLatLng(24.7638483,121.0273266),
+						new GLatLng(24.7639083,121.0271666),
+						new GLatLng(24.7638533,121.0270749),
+						new GLatLng(24.7635266,121.0268733),
+						new GLatLng(24.7633366,121.0268349),
+						new GLatLng(24.7636183,121.0268916),
+						new GLatLng(24.7637783,121.0269716),
+						new GLatLng(24.7637766,121.0270066),
+						new GLatLng(24.76363,121.026995),
+						new GLatLng(24.7634466,121.0269199),
+						new GLatLng(24.7631916,121.0269333),
+						new GLatLng(24.7629983,121.0270333),
+						new GLatLng(24.7628383,121.027055),
+						new GLatLng(24.7623166,121.0269449),
+						new GLatLng(24.7619683,121.0270666),
+						new GLatLng(24.7616899,121.0272216),
+						new GLatLng(24.7612999,121.0272683),
+						new GLatLng(24.7609116,121.0274499),
+						new GLatLng(24.7607733,121.0273316),
+						new GLatLng(24.7606466,121.0273033),
+						new GLatLng(24.7605666,121.0273916),
+						new GLatLng(24.7602983,121.0274433),
+						new GLatLng(24.7607233,121.0272966),
+						new GLatLng(24.7610299,121.0274816),
+						new GLatLng(24.7611816,121.0274216),
+						new GLatLng(24.7612983,121.0272616),
+						new GLatLng(24.7618516,121.0271749),
+						new GLatLng(24.7623099,121.0269749),
+						new GLatLng(24.76257,121.0269399),
+						new GLatLng(24.7627333,121.0269583),
+						new GLatLng(24.7628016,121.0270166),
+						new GLatLng(24.7630583,121.0269916),
+						new GLatLng(24.76327,121.0269116),
+						new GLatLng(24.7634966,121.0268999),
+						new GLatLng(24.7639449,121.0270816),
+						new GLatLng(24.7640383,121.0270633),
+						new GLatLng(24.7641632,121.0269699),
+						new GLatLng(24.7644483,121.0266533),
+						new GLatLng(24.7644366,121.0266333),
+						new GLatLng(24.7647333,121.0264666),
+						new GLatLng(24.7654233,121.0263466),
+						new GLatLng(24.7656283,121.0263949),
+						new GLatLng(24.7658549,121.0263849),
+						new GLatLng(24.7660516,121.0263033),
+						new GLatLng(24.7662999,121.0263083),
+						new GLatLng(24.7665683,121.0264266),
+						new GLatLng(24.7668783,121.0264466),
+						new GLatLng(24.7669233,121.0265299),
+						new GLatLng(24.7668333,121.0266733)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					var pts = [ // track 1 segment 1a:
+						new GLatLng(24.7668333,121.0266733),
+						new GLatLng(24.7665549,121.0266666),
+						new GLatLng(24.7662766,121.0267166),
+						new GLatLng(24.765845,121.0269666),
+						new GLatLng(24.7659316,121.0268783),
+						new GLatLng(24.7662149,121.0267249),
+						new GLatLng(24.7663833,121.0266916),
+						new GLatLng(24.7666266,121.0266999),
+						new GLatLng(24.766855,121.0266299),
+						new GLatLng(24.766815,121.0265983),
+						new GLatLng(24.7667799,121.0266233),
+						new GLatLng(24.7668366,121.0266216),
+						new GLatLng(24.7669016,121.0265249),
+						new GLatLng(24.7670349,121.0265216),
+						new GLatLng(24.7674549,121.0269383),
+						new GLatLng(24.7678816,121.0272),
+						new GLatLng(24.76782,121.0273749),
+						new GLatLng(24.7677932,121.0273366),
+						new GLatLng(24.7678233,121.0272166),
+						new GLatLng(24.767865,121.0271966),
+						new GLatLng(24.7680149,121.0272816),
+						new GLatLng(24.7680649,121.0272766),
+						new GLatLng(24.7681333,121.0272016),
+						new GLatLng(24.7682233,121.0271749),
+						new GLatLng(24.7683883,121.0273049),
+						new GLatLng(24.7686283,121.0274299),
+						new GLatLng(24.7691116,121.0275749),
+						new GLatLng(24.7693666,121.0276016),
+						new GLatLng(24.7696683,121.0275416),
+						new GLatLng(24.7699516,121.0274066),
+						new GLatLng(24.7706766,121.02678),
+						new GLatLng(24.7709149,121.0266449),
+						new GLatLng(24.7708149,121.0264333),
+						new GLatLng(24.7706583,121.0263299),
+						new GLatLng(24.7702732,121.02665),
+						new GLatLng(24.7702083,121.0266683),
+						new GLatLng(24.7703083,121.0266166),
+						new GLatLng(24.7699483,121.0266249),
+						new GLatLng(24.769685,121.0267833),
+						new GLatLng(24.7695699,121.0267633),
+						new GLatLng(24.7695732,121.0268133),
+						new GLatLng(24.7696099,121.0267949),
+						new GLatLng(24.7695183,121.0266233),
+						new GLatLng(24.7693066,121.0266299),
+						new GLatLng(24.7689016,121.0268516),
+						new GLatLng(24.7687733,121.0268349),
+						new GLatLng(24.7682816,121.0265833),
+						new GLatLng(24.7682399,121.0264549),
+						new GLatLng(24.7681466,121.0263183),
+						new GLatLng(24.7683999,121.0264049),
+						new GLatLng(24.76844,121.0263766),
+						new GLatLng(24.7684566,121.0262683),
+						new GLatLng(24.768525,121.0261533),
+						new GLatLng(24.7690949,121.0260066),
+						new GLatLng(24.7691749,121.0259366),
+						new GLatLng(24.769265,121.0259666),
+						new GLatLng(24.7693616,121.0261966),
+						new GLatLng(24.7691983,121.0259533),
+						new GLatLng(24.7690816,121.0260116),
+						new GLatLng(24.7691749,121.0259383),
+						new GLatLng(24.7691382,121.0258649),
+						new GLatLng(24.7690716,121.0254283),
+						new GLatLng(24.7689233,121.0251883),
+						new GLatLng(24.7687249,121.0253133),
+						new GLatLng(24.76865,121.0255633),
+						new GLatLng(24.7685833,121.02562),
+						new GLatLng(24.7683799,121.0256666),
+						new GLatLng(24.7682933,121.0254866),
+						new GLatLng(24.7681533,121.0253066),
+						new GLatLng(24.7677716,121.0256849),
+						new GLatLng(24.7676033,121.0257933),
+						new GLatLng(24.7675832,121.0258833),
+						new GLatLng(24.7674982,121.0260033),
+						new GLatLng(24.7674266,121.0260266),
+						new GLatLng(24.7672033,121.0253349),
+						new GLatLng(24.7669499,121.0249266),
+						new GLatLng(24.7669733,121.0247166),
+						new GLatLng(24.7668466,121.0245466),
+						new GLatLng(24.7668,121.0244116),
+						new GLatLng(24.7666216,121.024135),
+						new GLatLng(24.7660349,121.0236249),
+						new GLatLng(24.7654933,121.0233983),
+						new GLatLng(24.764965,121.0232366),
+						new GLatLng(24.76478,121.0232233),
+						new GLatLng(24.7642783,121.0231033),
+						new GLatLng(24.7633749,121.0222633),
+						new GLatLng(24.7630499,121.0217033),
+						new GLatLng(24.7628433,121.0211916),
+						new GLatLng(24.7627966,121.020795),
+						new GLatLng(24.7628466,121.0204133),
+						new GLatLng(24.7629349,121.02022),
+						new GLatLng(24.763085,121.0196633),
+						new GLatLng(24.7631933,121.0195183),
+						new GLatLng(24.7632683,121.0192983),
+						new GLatLng(24.7636533,121.0189966),
+						new GLatLng(24.7646383,121.0186483),
+						new GLatLng(24.7653883,121.0181866),
+						new GLatLng(24.7660333,121.0176116),
+						new GLatLng(24.7668466,121.0166883),
+						new GLatLng(24.7671516,121.0165866),
+						new GLatLng(24.7675916,121.0171416),
+						new GLatLng(24.767825,121.0175133),
+						new GLatLng(24.76799,121.0178866),
+						new GLatLng(24.7680999,121.0182549),
+						new GLatLng(24.768215,121.018965),
+						new GLatLng(24.7682099,121.0191416),
+						new GLatLng(24.7682416,121.0191533),
+						new GLatLng(24.7681649,121.0189249),
+						new GLatLng(24.7681266,121.019),
+						new GLatLng(24.7682083,121.0191233),
+						new GLatLng(24.7683083,121.0198733),
+						new GLatLng(24.7683133,121.0206266),
+						new GLatLng(24.7681949,121.0210816),
+						new GLatLng(24.7681833,121.0210583),
+						new GLatLng(24.7700383,121.0219699),
+						new GLatLng(24.7702783,121.0220183),
+						new GLatLng(24.7705616,121.0218983),
+						new GLatLng(24.7710966,121.0212166),
+						new GLatLng(24.7718716,121.0203683),
+						new GLatLng(24.7721433,121.0203016),
+						new GLatLng(24.7724066,121.0203566),
+						new GLatLng(24.772895,121.0206816),
+						new GLatLng(24.7733383,121.021105),
+						new GLatLng(24.7739066,121.0217349),
+						new GLatLng(24.7739499,121.0217383),
+						new GLatLng(24.7737683,121.0216299),
+						new GLatLng(24.7736966,121.0215449),
+						new GLatLng(24.77368,121.0216183),
+						new GLatLng(24.7741416,121.0221316),
+						new GLatLng(24.7745166,121.0224716),
+						new GLatLng(24.7746583,121.0226833),
+						new GLatLng(24.7748916,121.022805),
+						new GLatLng(24.7754416,121.0227733),
+						new GLatLng(24.7756749,121.0228033),
+						new GLatLng(24.7757199,121.0230666),
+						new GLatLng(24.7756599,121.0236149),
+						new GLatLng(24.7755916,121.0238566),
+						new GLatLng(24.7752983,121.0245216),
+						new GLatLng(24.7750083,121.0249016),
+						new GLatLng(24.774435,121.0252833),
+						new GLatLng(24.7740266,121.0254883),
+						new GLatLng(24.7731399,121.0256516),
+						new GLatLng(24.7721883,121.02593),
+						new GLatLng(24.7712599,121.0261483),
+						new GLatLng(24.7710616,121.0262433),
+						new GLatLng(24.7710099,121.0264666),
+						new GLatLng(24.7711649,121.0266449),
+						new GLatLng(24.7714599,121.0265883),
+						new GLatLng(24.7725933,121.0262433),
+						new GLatLng(24.7730516,121.0261483),
+						new GLatLng(24.7732266,121.0263149),
+						new GLatLng(24.7734416,121.0264133),
+						new GLatLng(24.7737183,121.0263433),
+						new GLatLng(24.7745483,121.0260033),
+						new GLatLng(24.7747883,121.0260933),
+						new GLatLng(24.774815,121.0259183),
+						new GLatLng(24.7750416,121.0256166),
+						new GLatLng(24.7754883,121.0251316),
+						new GLatLng(24.7756099,121.0250383),
+						new GLatLng(24.7759149,121.0254083),
+						new GLatLng(24.7760983,121.0255166),
+						new GLatLng(24.7762199,121.0254383),
+						new GLatLng(24.7763416,121.0252699),
+						new GLatLng(24.7763083,121.0250566),
+						new GLatLng(24.7758566,121.0246016),
+						new GLatLng(24.7759966,121.0242599),
+						new GLatLng(24.7761933,121.0236033),
+						new GLatLng(24.7762649,121.0227033),
+						new GLatLng(24.7764316,121.0226333),
+						new GLatLng(24.7774849,121.0226266),
+						new GLatLng(24.7774683,121.0225949),
+						new GLatLng(24.777265,121.0226183),
+						new GLatLng(24.7771616,121.0225533),
+						new GLatLng(24.777,121.0225266),
+						new GLatLng(24.7765899,121.0225949),
+						new GLatLng(24.7763283,121.0225866),
+						new GLatLng(24.7762366,121.0223699),
+						new GLatLng(24.7761316,121.0217683),
+						new GLatLng(24.7760516,121.0215949),
+						new GLatLng(24.7759966,121.0209166),
+						new GLatLng(24.7759183,121.0204049),
+						new GLatLng(24.7759016,121.0199683),
+						new GLatLng(24.7758533,121.0197599),
+						new GLatLng(24.7759833,121.0196199),
+						new GLatLng(24.7763633,121.019585),
+						new GLatLng(24.7765666,121.0196283),
+						new GLatLng(24.7768649,121.0195816),
+						new GLatLng(24.7767999,121.0195349),
+						new GLatLng(24.7773633,121.0196249),
+						new GLatLng(24.7779149,121.0196049),
+						new GLatLng(24.7781449,121.0196533),
+						new GLatLng(24.778305,121.0197716),
+						new GLatLng(24.7782866,121.0199483),
+						new GLatLng(24.778335,121.0201216),
+						new GLatLng(24.7787283,121.020315),
+						new GLatLng(24.7790999,121.0205749),
+						new GLatLng(24.7792,121.0206866),
+						new GLatLng(24.7790916,121.0208516),
+						new GLatLng(24.7789016,121.0210249),
+						new GLatLng(24.7787616,121.0212199)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					
+					GV_Add_Track_to_Tracklist({bullet:'- ',name:trk_info[1]['name'],desc:trk_info[1]['desc'],color:trk_info[1]['color'],id:"trk[1]"});
+					
+					
+					wpts = new Array();
+/*					wpts.push( GV_Marker(gmap,{lat:24.7762170,lon:121.0224650,name:'金山面藝術生活館',desc:'我知道照起來不怎樣，但是騎在旁邊感覺還是不錯<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311866995945234402"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeK46tv3-I/AAAAAAAADTA/rR4-X1R8EmY/s400/P1100189.JPG" alt="P1100189.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7762170,lon:121.0224650,name:'P1100190.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867011218687330"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeK5znORWI/AAAAAAAADTI/pHriIzTFv7Q/s400/P1100190.JPG" alt="P1100190.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7678350,lon:121.0293380,name:'上次的平台與這次上來的路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867043233556162"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeK7q4KZsI/AAAAAAAADTQ/pJOxdGBcr1s/s400/P1100192.JPG" alt="P1100192.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7672730,lon:121.0292080,name:'可以Offroad下去，看起來一整個荒蕪',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867067060000434"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeK9Do1FrI/AAAAAAAADTY/XMPw6ncOCL8/s400/P1100193.JPG" alt="P1100193.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7652430,lon:121.0302170,name:'又遇到鐵門，下車走不遠就有幾隻狗來 "迎接" 我，回頭!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867096254404274"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeK-wZUVrI/AAAAAAAADTg/GFFc1k53qLo/s400/P1100194.JPG" alt="P1100194.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7629470,lon:121.0297870,name:'水泥路變泥土路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867130905946722"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLAxe46mI/AAAAAAAADTo/-FPxw4nBz1I/s400/P1100195.JPG" alt="P1100195.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7624700,lon:121.0319080,name:'走不遠就沒路了(太模糊，沒辦法，只有這張)',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867151898789890"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLB_r-SAI/AAAAAAAADTw/4z6Dhnf-9eE/s400/P1100196.JPG" alt="P1100196.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7620380,lon:121.0270430,name:'P1100197.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867162782804898"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLCoO7K6I/AAAAAAAADT4/nLvkuQiXAB0/s400/P1100197.JPG" alt="P1100197.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7606150,lon:121.0273390,name:'又是 汪!!汪!!汪!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867209509309650"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLFWTZDNI/AAAAAAAADUI/hC_BMvAfMco/s400/P1100199.JPG" alt="P1100199.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7616900,lon:121.0272220,name:'過了高鐵軌道',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867184995976594"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLD6-9RZI/AAAAAAAADUA/JF6V1Fz-d7Y/s400/P1100198.JPG" alt="P1100198.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867231128134642"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLGm1uI_I/AAAAAAAADUQ/HT6SSYIQo9U/s400/P1100200.JPG" alt="P1100200.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867247394495618"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLHjb7HII/AAAAAAAADUY/RCPVHwHrKts/s400/P1100201.JPG" alt="P1100201.JPG"/></a>',color:'',icon:''}) );
+//*					wpts.push( GV_Marker(gmap,{lat:24.7603040,lon:121.0274480,name:'P1100200.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867231128134642"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLGm1uI_I/AAAAAAAADUQ/HT6SSYIQo9U/s400/P1100200.JPG" alt="P1100200.JPG"/></a>',color:'',icon:''}) );
+//*					wpts.push( GV_Marker(gmap,{lat:24.7603030,lon:121.0274470,name:'P1100201.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867247394495618"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLHjb7HII/AAAAAAAADUY/RCPVHwHrKts/s400/P1100201.JPG" alt="P1100201.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7663270,lon:121.0267030,name:'就跟你說沒路了ㄇㄟ，就差沒說內有惡犬了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867275330571074"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLJLgZy0I/AAAAAAAADUg/JGrGMpFSNnY/s400/P1100202.JPG" alt="P1100202.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867316987821778"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLLmsQ_tI/AAAAAAAADUo/u1ZJQMhxcsw/s400/P1100204.JPG" alt="P1100204.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7665660,lon:121.0266980,name:'P1100204.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867316987821778"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLLmsQ_tI/AAAAAAAADUo/u1ZJQMhxcsw/s400/P1100204.JPG" alt="P1100204.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7668130,lon:121.0265990,name:'隱藏在轉角的地圖',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867349756511970"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLNgw7huI/AAAAAAAADUw/wXlvHfQeDCw/s400/P1100205.JPG" alt="P1100205.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867388864213154"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLPyc7sKI/AAAAAAAADU4/tU98QU634WI/s400/P1100206.JPG" alt="P1100206.JPG"/></a>',color:'',icon:''}) );
+//*					wpts.push( GV_Marker(gmap,{lat:24.7668100,lon:121.0266020,name:'P1100206.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867388864213154"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLPyc7sKI/AAAAAAAADU4/tU98QU634WI/s400/P1100206.JPG" alt="P1100206.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76782,lon:121.02732,name:'(這位置是特別改過的，是對的)在另一邊的平台公園offroad到這裡上來',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867422960367458"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLRxeFt2I/AAAAAAAADVA/bAMkO4HAXns/s400/P1100207.JPG" alt="P1100207.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7706890,lon:121.0263510,name:'旺園',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867455785262450"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLTrwJ3XI/AAAAAAAADVI/W4tTSDs_omg/s400/P1100208.JPG" alt="P1100208.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7704270,lon:121.0265140,name:'P1100209.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867476602672370"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLU5TaVPI/AAAAAAAADVU/BH_nnFs9onY/s400/P1100209.JPG" alt="P1100209.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7703060,lon:121.0266190,name:'P1100210.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867506548506450"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLWo3Df1I/AAAAAAAADVc/ZqmY5umgIBc/s400/P1100210.JPG" alt="P1100210.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7703080,lon:121.0266170,name:'腳踏車扛上去! ',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867534558376210"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLYRNIMRI/AAAAAAAADVk/ErhzCv09nZQ/s400/P1100211.JPG" alt="P1100211.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867506548506450"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLWo3Df1I/AAAAAAAADVc/ZqmY5umgIBc/s400/P1100210.JPG" alt="P1100210.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7695710,lon:121.0267730,name:'再扛!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867574525146114"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLamF8tAI/AAAAAAAADVs/n8l4e7b5xBw/s400/P1100212.JPG" alt="P1100212.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7687980,lon:121.0260800,name:'P1100213.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867614052334770"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLc5V9vLI/AAAAAAAADV0/i80rGVDpmM8/s400/P1100213.JPG" alt="P1100213.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7693170,lon:121.0261010,name:'P1100214.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867638060430450"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLeSx8NHI/AAAAAAAADV8/QUS858pq43A/s400/P1100214.JPG" alt="P1100214.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7693150,lon:121.0260960,name:'P1100215.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867665989797986"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLf600iGI/AAAAAAAADWE/sJFnP5WnmvQ/s400/P1100215.JPG" alt="P1100215.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7692690,lon:121.0260250,name:'到頂了，可是放眼所及卻是排著廢氣的工廠.....',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867694425575346"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLhkwcD7I/AAAAAAAADWM/FnJSXAWGFp8/s400/P1100216.JPG" alt="P1100216.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7683709,lon:121.0256440,name:'扛扛扛...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867719432784402"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLjB6nyhI/AAAAAAAADWU/S6V6APOfkhE/s400/P1100217.JPG" alt="P1100217.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7669570,lon:121.0247430,name:'"汪"宏 之 機車警衛',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867746567455362"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLknACAoI/AAAAAAAADWc/RbNRJ5AAqqE/s400/P1100218.JPG" alt="P1100218.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867779432959538"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLmhbxzjI/AAAAAAAADWk/rpAYAR1ao-Y/s400/P1100219.JPG" alt="P1100219.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867806782409010"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLoHUZSTI/AAAAAAAADWs/akqhv48NB6w/s400/P1100220.JPG" alt="P1100220.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7669570,lon:121.0247430,name:'P1100218.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867746567455362"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLknACAoI/AAAAAAAADWc/RbNRJ5AAqqE/s400/P1100218.JPG" alt="P1100218.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7669590,lon:121.0247400,name:'P1100219.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867779432959538"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/SbeLmhbxzjI/AAAAAAAADWk/rpAYAR1ao-Y/s400/P1100219.JPG" alt="P1100219.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7669609,lon:121.0247360,name:'P1100220.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867806782409010"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeLoHUZSTI/AAAAAAAADWs/akqhv48NB6w/s400/P1100220.JPG" alt="P1100220.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7672380,lon:121.0166860,name:'聯園',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867827154791186"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLpTNjKxI/AAAAAAAADW0/ye8riR_GvV4/s400/P1100221.JPG" alt="P1100221.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7718320,lon:121.0204060,name:'Faraday',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867854401111346"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLq4tlBTI/AAAAAAAADW8/UfW3ZZLHUFE/s400/P1100222.JPG" alt="P1100222.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867881121628578"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLscQPwaI/AAAAAAAADXI/7xwhtE0Rfgw/s400/P1100223.JPG" alt="P1100223.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7723010,lon:121.0203350,name:'P1100223.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867881121628578"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLscQPwaI/AAAAAAAADXI/7xwhtE0Rfgw/s400/P1100223.JPG" alt="P1100223.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7762600,lon:121.0228220,name:'一整排獨棟的透天，看來賣的多住的少',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867904298915330"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLtymJFgI/AAAAAAAADXQ/BGg0y8FIOVw/s400/P1100224.JPG" alt="P1100224.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7765910,lon:121.0225960,name:'其中一棟自售屋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867936402181794"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLvqMKDqI/AAAAAAAADXY/ZbGoQuH9OD0/s400/P1100225.JPG" alt="P1100225.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867972219175314"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeLxvnmAZI/AAAAAAAADXg/EAN3O_lFIvk/s400/P1100226.JPG" alt="P1100226.JPG"/></a>連門牌都有感覺<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311868020693878354"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeL0kM3RlI/AAAAAAAADXw/f_jKUZ0S314/s400/P1100230.JPG" alt="P1100230.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311867982945021250"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeLyXk1bUI/AAAAAAAADXo/J84XpQA1_Nk/s400/P1100228.JPG" alt="P1100228.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7768010,lon:121.0195360,name:'光圓科技(股)公司',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5311868049211629762"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/SbeL2OcBoMI/AAAAAAAADX4/MWoSiEDkNZs/s400/P1100231.JPG" alt="P1100231.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311868075275382898"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/SbeL3viG8HI/AAAAAAAADYA/gMQXJWhyaJU/s400/P1100232.JPG" alt="P1100232.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5311868096037993010"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/SbeL484TOjI/AAAAAAAADYI/md9zZOPbLto/s400/P1100233.JPG" alt="P1100233.JPG"/></a>',color:'',icon:''}) );
+*/
+					wpts.push( GV_Marker(gmap,{lat:24.7645300,lon:121.0318580,name:'汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!',desc:'Lat.=24.7645300, Long.=121.0318583, Alt.=136m, Speed=2Km/h, Course=295deg.',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76587,lon:121.02694,name:'汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!汪!!!',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76971,lon:121.02838,name:'這裡再走下去就是柯湖路了',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.77572,lon:121.02271,name:'還在不爽"汪"宏 警衛事件，所以這裡走錯路了.....',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					
+					wpts.push( GV_Marker(gmap,{lat:24.7762170,lon:121.0224650,name:'金山面藝術生活館，我知道照起來不怎樣，但是騎在旁邊感覺還是不錯',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115359616720306"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVQkYtXbI/AAAAAAAADmI/mzuNJY8MlVc/s400/P1100189.JPG" alt="P1100189.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7667420,lon:121.0290380,name:'上次的平台與這次上來的路',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115396207865186"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVSsst7WI/AAAAAAAADmQ/T22qZs2zr4Y/s400/P1100192.JPG" alt="P1100192.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76671,lon:121.02877,name:'可以Offroad下去，看起來一整個荒蕪',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115417906359314"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMVT9iCrBI/AAAAAAAADmY/fdkJ6IijFns/s400/P1100193.JPG" alt="P1100193.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7646550,lon:121.0315380,name:'又遇到鐵門，下車走不遠就有幾隻狗來 "迎接" 我，回頭!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115441438357490"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMVVVMgd_I/AAAAAAAADmg/osHITZ6sDSE/s400/P1100194.JPG" alt="P1100194.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7622900,lon:121.0318900,name:'水泥路變泥土路，走不遠就沒路了',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115481558983810"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMVXqqApII/AAAAAAAADmo/3dJof04Uyms/s400/P1100195.JPG" alt="P1100195.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7623490,lon:121.0318570,name:'P1100196.JPG',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115495286951202"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMVYdzAzSI/AAAAAAAADmw/EKiRkZEqrww/s400/P1100196.JPG" alt="P1100196.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7603009,lon:121.0274460,name:'左右兩邊的風景，還有一堆 汪!!汪!!汪!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116264693463266"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMWFQD0eOI/AAAAAAAADqY/E3xpSJrJeZQ/s400/P1100198.JPG" alt="P1100198.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115539410721138"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMVbCK8GXI/AAAAAAAADnA/Sd6wfFICG5M/s400/P1100200.JPG" alt="P1100200.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115522849929666"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMVaEeiecI/AAAAAAAADm4/CYKLUSkrvGw/s400/P1100199.JPG" alt="P1100199.JPG"/></a>',color:'',icon:''}) );
+//					wpts.push( GV_Marker(gmap,{lat:24.7603480,lon:121.0274160,name:'P1100200.JPG',desc:'',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7668019,lon:121.0266080,name:'就跟你說沒路了ㄇㄟ，就差沒說內有惡犬了&隱藏在轉角的地圖',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115560027579442"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMVcO-YZDI/AAAAAAAADnI/IwbjNkpJ0jU/s400/P1100202.JPG" alt="P1100202.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115598940853362"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMVef8B1HI/AAAAAAAADnQ/MCdgdN-gUkg/s400/P1100204.JPG" alt="P1100204.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115631129561682"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVgX2ailI/AAAAAAAADnY/cMw84qwT1DY/s400/P1100205.JPG" alt="P1100205.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115678044661714"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMVjGn2J9I/AAAAAAAADng/0TfQMqAkRss/s400/P1100206.JPG" alt="P1100206.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76779,lon:121.02738,name:'在另一邊的平台公園offroad到這裡上來',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115703298125810"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMVkksvb_I/AAAAAAAADno/4m-YZdgPqgc/s400/P1100207.JPG" alt="P1100207.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7695730,lon:121.0267660,name:'新竹科學園區 自行車道系統 看板',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115753920332466"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVnhSBArI/AAAAAAAADnw/kM_oWYeRHdM/s400/P1100208.JPG" alt="P1100208.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76957,lon:121.02681,name:'腳踏車扛上去!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115798431606466"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMVqHGVJsI/AAAAAAAADn8/lSNTcq-LYhE/s400/P1100210.JPG" alt="P1100210.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115822519077794"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMVrg1Oy6I/AAAAAAAADoE/OW5ZcvPROec/s400/P1100211.JPG" alt="P1100211.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76929,lon:121.02662,name:'再扛!!',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115850162667458"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMVtHz-f8I/AAAAAAAADoM/Vtqi9tPIFkA/s400/P1100212.JPG" alt="P1100212.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76914,lon:121.02598,name:'到頂了，可是放眼所及卻是排著廢氣的工廠.....',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115872547170786"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVubM26eI/AAAAAAAADoU/kxogUpq9YOc/s400/P1100216.JPG" alt="P1100216.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.76822,lon:121.02542,name:'扛扛扛...',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115914801770002"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMVw4nI7hI/AAAAAAAADoc/gvDgMlIgcjg/s400/P1100217.JPG" alt="P1100217.JPG"/></a>',color:'',icon:''}) );
+
+					wpts.push( GV_Marker(gmap,{lat:24.76676,lon:121.02436,name:'"汪"宏 之 機車警衛',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115933566094786"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMVx-g5zcI/AAAAAAAADok/c5Bk3Z-5oTU/s400/P1100218.JPG" alt="P1100218.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115961638622514"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMVznF6lTI/AAAAAAAADos/pXZ57bIQqdM/s400/P1100219.JPG" alt="P1100219.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315115979162172946"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMV0oX2vhI/AAAAAAAADo0/O6jp-Yozjq0/s400/P1100220.JPG" alt="P1100220.JPG"/></a>',color:'',icon:''}) );
+
+
+					wpts.push( GV_Marker(gmap,{lat:24.76818,lon:121.01905,name:'聯園',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116008200885154"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMV2UjOU6I/AAAAAAAADo8/NgJw3XQn8jM/s400/P1100221.JPG" alt="P1100221.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.77379,lon:121.02162,name:'Faraday',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116031447827970"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMV3rJuhgI/AAAAAAAADpE/WF4VcDbFxUA/s400/P1100222.JPG" alt="P1100222.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116057247865058"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMV5LQ72OI/AAAAAAAADpM/V3XSYGy0Q-A/s400/P1100223.JPG" alt="P1100223.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.77745,lon:121.02261,name:'整排獨棟的透天，看來賣的多住的少',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116077376677794"><img style="border:1px solid #5C7FB9" src="http://lh6.ggpht.com/_Pp5g_yqWWq8/ScMV6WQBJ6I/AAAAAAAADpU/8JvXH2pybRY/s400/P1100224.JPG" alt="P1100224.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7765940,lon:121.0226000,name:'其中一棟自售屋',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116142564540482"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMV-JGBAEI/AAAAAAAADpk/gTFRyyrmXaA/s400/P1100226.JPG" alt="P1100226.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116157175119778"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMV-_hcv6I/AAAAAAAADpw/umREqddKTyE/s400/P1100228.JPG" alt="P1100228.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116182852323106"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWAfLXxyI/AAAAAAAADp4/pN7CskTSJ8w/s400/P1100230.JPG" alt="P1100230.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116118471334066"><img style="border:1px solid #5C7FB9" src="http://lh5.ggpht.com/_Pp5g_yqWWq8/ScMV8vVv2LI/AAAAAAAADpc/FNNMxVTlhU4/s400/P1100225.JPG" alt="P1100225.JPG"/></a>',color:'',icon:''}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7768000,lon:121.0195350,name:'光圓科技(股)公司',desc:'<a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116202675493122"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWBpBlWQI/AAAAAAAADqA/GnqUmFzTtXU/s400/P1100231.JPG" alt="P1100231.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116226965403090"><img style="border:1px solid #5C7FB9" src="http://lh3.ggpht.com/_Pp5g_yqWWq8/ScMWDDgv9dI/AAAAAAAADqI/ojNm5oiv8No/s400/P1100232.JPG" alt="P1100232.JPG"/></a><a href="http://picasaweb.google.com.tw/mkl0301/090311#5315116245636381106"><img style="border:1px solid #5C7FB9" src="http://lh4.ggpht.com/_Pp5g_yqWWq8/ScMWEJEQebI/AAAAAAAADqQ/QOeCpBsuuuA/s400/P1100233.JPG" alt="P1100233.JPG"/></a>',color:'',icon:''}) );
+
+					GV_Finish_Map(gv_options);
+					
+				} else {
+					document.getElementById('gmap_div').style.backgroundColor = '#DDDDDD';
+					document.getElementById('gmap_div').innerHTML = 'Sorry, your Google Map cannot be displayed.';
+				}
+			}
+			GV_Map(); // execute the above code
+		</script>
+		
+	</body>
+
+</html>
