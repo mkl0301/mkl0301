@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<title>Map created by GPS Visualizer</title>
+		<base target="_top"></base>
+		<meta name="geo.position" content="24.7491542; 121.0430233" />
+		<meta name="ICBM" content="24.7491542, 121.0430233" />
+	</head>
+	<body onunload="GUnload();" style="margin:0px;">
+		
+		
+		<!--
+			If you want to transplant this map into another Web page, by far the best method is to
+			simply include it in a IFRAME tag (see http://www.gpsvisualizer.com/faq.html#google_html).
+			But, if you must paste the code into another page, be sure to include all of these parts:
+			   1. The DOCTYPE declaration and the extra attributes in the "html" tag (xmlns:v=...)
+			     that allow Internet Explorer for Windows to render polylines (tracks)
+			   2. The "div" tags that contain the map and its widgets
+			   3. Three sections of JavaScript code:
+			      a. Your Google Maps API key and the maps.google.com code
+			      b. "gv_options" and the code that calls "functions.js" on maps.gpsvisualizer.com
+			      c. The "GV_Map" function, which contains all the geographic info for the map
+		-->
+		<div style="margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;">
+			<div id="gmap_div" style="width:600px; height:600px; margin:0px; margin-right:12px; background-color:#F0F0F0; float:left; overflow:hidden;">
+				<p align="center" style="font:10px Arial;">This map was created using <a target="_blank" href="http://www.gpsvisualizer.com/">GPS Visualizer</a>'s do-it-yourself geographic utilities.<br><br>Please wait while the map data loads...</p>
+			</div>
+				
+			<div id="gv_legend_container" style="display:none;"><table id="gv_legend_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95; background:#ffffff;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_legend_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_legend" align="left" style="font:11px Arial; line-height:13px; border:solid #000000 1px; background:#FFFFFF; padding:4px;">
+					<!-- Although GPS Visualizer didn't create a legend with your map, you can use this box for something else if you'd like; enable it by setting legend:true in the 'gv_options' -->
+				</div>
+			</td></tr></table></div>
+
+
+			<div id="gv_tracklist_container" style="display:none;"><table id="gv_tracklist_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95;" cellpadding="0" cellspacing="0" border="0"><tr><td><div id="gv_tracklist_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_tracklist" align="left" style="font:11px Arial; line-height:11px; border:solid #000000 1px; background:#FFFFFF; padding:4px; overflow:auto;">
+					<div id="gv_tracklist_header" style="padding-bottom:2px; color:#000000;"><b>Tracks:</b></div>
+					<div id="gv_tracklist_links" style="color:#000000;"></div>
+				</div>
+			</td></tr></table></div>
+			<div id="gv_tracklist_tooltip" class="gv_tracklist_tooltip" style="background-color:#FFFFFF; border:1px solid #CCCCCC; padding:2px; font:11px Arial; display:none;"></div>
+
+			<!-- the following is the "floating" marker list; the "static" version is below -->
+			<div id="gv_marker_list_container" style="display:none;"><table id="gv_marker_list_table" style="position:relative; filter:alpha(opacity=95); -moz-opacity:0.95;" cellspacing="0" cellpadding="0" border="0"><tr><td>
+				<div id="gv_marker_list_handle" align="center" style="height:6px; max-height:6px; background:#CCCCCC; border-left:1px solid #999999; border-top:1px solid #EEEEEE; border-right:1px solid #999999; padding:0px; cursor:move;"><!-- --></div>
+				<div id="gv_marker_list" align="left" class="gv_marker_list" style="overflow:auto; background:#FFFFFF; border:solid #666666 1px; padding:4px;"></div>
+			</td></tr></table></div>
+			
+			<div id="gv_marker_list_static" align="left" class="gv_marker_list" style="width:160px; height:600px; overflow:auto; display:none;"></div>
+			<div id="gv_clear_margins" style="height:0px; clear:both;"><!-- clear the "float" --></div>
+		</div>
+
+		
+		<script type="text/javascript">
+			// If you put this map on another Web site, you must include your API key or nothing will work!
+			var google_api_key = '';
+			if (document.location.toString().indexOf('http://www.gpsvisualizer.com') > -1) { eval(unescape("%67%6F%6F%67%6C%65%5F%61%70%69%5F%6B%65%79")+" = '"+unescape("%41%42%51%49%41%41%41%41%61%47%39%4A%44%62%43%65%36%52%61%31%4F%67%30%68%4B%43%6E%32%4C%52%52%6F%6B%57%5F%49%74%45%49%6D%42%6F%37%65%77%62%56%45%4A%41%7A%73%74%53%73%52%57%68%52%4A%33%52%4D%44%41%57%70%4C%35%35%51%61%63%47%5A%32%7A%51%46%32%6B%4C%43%5F%65%41")+"'"); }
+			document.writeln('<script src="http://maps.google.com/maps?v=2&file=api&key='+google_api_key+'" type="text/javascript"><'+'/'+'script>');
+		</script>
+		<!-- end Google Maps script; begin GPS Visualizer setup script (they must be separate) -->
+		<script type="text/javascript">
+			/* Global variables used by the GPS Visualizer functions (1239690122): */
+			gv_options = new Array(); gv_options = {
+				// important variable names:
+				map:'gmap', map_div:'gmap_div', marker_array:'wpts', track_array:'trk', track_info_array:'trk_info', // probably 'gmap','gmap_div','wpts','trk','trk_info'
+				
+				// basic map parameters:
+				full_screen:false,              // should the map fill the entire page (or frame)?
+				center:[24.74915415,121.0430233], // latitude,longitude - be sure to keep the square brackets
+				zoom:13,                        // higher number means closer view; at 600px wide, 7 = width of New Mexico, 12 = width of San Francisco
+				map_opacity:1, map_type:'G_HYBRID_MAP', // opacity is from 0 to 1; popular map_type choices are 'G_NORMAL_MAP', 'G_SATELLITE_MAP', 'G_HYBRID_MAP', 'G_PHYSICAL_MAP', 'USGS_TOPO_TILES'
+				doubleclick_zoom:true, mousewheel_zoom:false, // true or false; or, value of 'reverse' for mousewheel_zoom makes down=in and up=out
+				
+				// widgets on the map:
+				map_type_control:{ // style: 'menu', 'list', 'none', or 'google'; filter: when map loads, are irrelevant maps ignored?; excluded: list of map types that will never show in the list, e.g., ['USGS_TOPO_TILES','USGS_AERIAL_TILES','NRCAN_TOPO_TILES','NRCAN_TOPO_NAMES_TILES','LANDSAT_TILES','BLUEMARBLE_TILES','DAILY_MODIS_TILES','SRTM_COLOR_TILES']
+					style:'menu', filter:true, excluded:['G_SATELLITE_3D_MAP']
+				},
+				zoom_control:'large', scale_control:true, map_opacity_control:true, // zoom is 'large' or 'small', scale and opacity are true or false
+				center_coordinates:true, crosshair_hidden:true, // true or false: Show a "center coordinates" box and crosshair? Hide the crosshair initially?
+				legend_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the legend (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					legend:false, id:'gv_legend', position:['G_ANCHOR_BOTTOM_LEFT',4,60], draggable:true, collapsible:true
+				},
+				
+				
+				// marker-related options:
+				default_marker:{ color:'red',icon:'googlemini' }, // icon can be a URL, but be sure to also include size:[w,h] and optionally anchor:[x,y]
+				icon_directory:'http://maps.gpsvisualizer.com/google_maps/icons/', // don't change this unless you really know what you're doing
+				marker_link_target:'_blank',    // the name of the window or frame into which markers' URLs will load
+				info_window_width:0, thumbnail_width:0, photo_size:[0,0], // in pixels, the width of the markers' info windows or thumbnails, or width and height of photos; 0 for default (can be overridden in an individual marker's options)
+				hide_labels:false, label_offset:[0,0], label_centered:false, // hide_labels causes the "permanent" labels to be hidden at first; global label_offset setting is [x,y] (positive numbers are right and down)
+				driving_directions:false,       // put a small "driving directions" form in each marker's pop-up window? (override with dd:true or dd:false in the marker's options)
+				marker_filter_options:{ // options for removing waypoints that are out of the current view
+					filter:false, limit:0, update_list:true, movement_threshold:8, sort_list_by_distance:false, min_zoom:0, zoom_message:''
+				},
+				marker_list_options:{ // options for a dynamically-created list of markers
+					list:false, id_floating:'gv_marker_list', id_static:'gv_marker_list_static', // id_static: id of a DIV with a non-floating list; id_floating: id of a DIV tag that holds a floating list (other associated DIVs -- _handle, _table, _container -- must be similarly named)
+					floating:false, position:['G_ANCHOR_TOP_RIGHT',6,112], width:160, height:416, draggable:true, collapsible:true, // these only affect a "floating" list
+					colors:false, default_color:'', icons:true, desc:false, dividers:false, thumbnails:false, wrap_names:true, unnamed:'[unnamed]', limit:0, // overall appearance of the list items
+					center:false, zoom:false, zoom_level:16, info_window:true, url_links:false, toggle:false, help_tooltips:false, // these define what happens when you click on an item in the list ("toggle" affects only the text)
+					header:'',footer:'',folders_collapsed:false,include_tickmarks:false,include_trackpoints:false // header & footer are HTML snippets
+				},
+				
+				// track-related options:
+				tracklist_options:{ // position: [Google anchor, x, y]; id: id of a DIV tag that holds the track list (other associated DIVs -- e.g., _handle, _table, -container -- must be similarly named)
+					tracklist:true, position:['G_ANCHOR_TOP_RIGHT',6,32], max_width:180, max_height:510, desc:true, zoom_links:true, tooltips:true, draggable:true, collapsible:true, id:'gv_tracklist'
+				},
+
+				centering_options:{ // URL-based centering (e.g., ?center=name_of_marker&zoom=14)
+					center_key:'center', partial_match:true, default_zoom:null, open_info_window:true
+				},
+
+				zzz:false // this is just here to prevent possible "hanging comma" JS errors
+			};
+			// Load GPS Visualizer's Google Maps functions (this must be loaded AFTER gv_options are set):
+			document.writeln('<script src="http://maps.gpsvisualizer.com/google_maps/functions.js" type="text/javascript"><'+'/'+'script>');
+		</script>
+		
+		<style type="text/css">
+			/* Put any custom style definitions here (e.g., .gv_marker_list_item, .gv_tooltip, .gv_label, .gv_wpt, etc.) */
+			.gv_label {
+				filter:alpha(opacity=90); -moz-opacity:0.9;
+				background:#333333; border:1px solid black; padding:1px;
+				font:9px Verdana,sans-serif; color:white; font-weight:normal;
+			}
+			
+		</style>
+		
+		<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
+		<script type="text/javascript">
+			function GV_Map() {
+				if (GBrowserIsCompatible()) { 
+					if (gv_options['full_screen']) { GV_Fill_Window_With_Map(gv_options['map_div']); }
+					gmap = new GMap2(document.getElementById(gv_options['map_div'])); // create map
+					GV_Setup_Map(gv_options);
+					
+					trk = new Array(); trk_info = new Array();
+					
+					// Setup track #1 ("Track 001")
+					trk[1] = []; trk_info[1] = {
+						name:'090414 午 寶山路 寶二水庫 水仙路', desc:'Total Track Points: 1329. Total time: 1h53m57s. Journey: 34.227Km',
+						color:'#E600E6', width:3, opacity:0.8, outline_color:'#000000', outline_width:5,
+						bounds:{w:121.0163183,e:121.0697283,s:24.7164183,n:24.78189}, center:{lat:24.74377,lon:121.04083}
+					};
+					
+					var pts = [ // track 1 segment 1:
+						new GLatLng(24.7758466,121.0220416),
+						new GLatLng(24.7760583,121.022735),
+						new GLatLng(24.7760016,121.0224333),
+						new GLatLng(24.7759666,121.0228033),
+						new GLatLng(24.7755833,121.0228599),
+						new GLatLng(24.7755799,121.0237866),
+						new GLatLng(24.7750849,121.0252166),
+						new GLatLng(24.7746916,121.0255916),
+						new GLatLng(24.7729883,121.0257283),
+						new GLatLng(24.7717149,121.0260283),
+						new GLatLng(24.7705916,121.0246583),
+						new GLatLng(24.7698349,121.023455),
+						new GLatLng(24.7694233,121.0230933),
+						new GLatLng(24.7678233,121.0222466),
+						new GLatLng(24.7677366,121.0219933),
+						new GLatLng(24.7681333,121.0210366),
+						new GLatLng(24.7682683,121.0202383),
+						new GLatLng(24.7681649,121.0182866),
+						new GLatLng(24.7676333,121.0171499),
+						new GLatLng(24.7668883,121.0163183),
+						new GLatLng(24.7667249,121.0163849),
+						new GLatLng(24.7664949,121.0168333),
+						new GLatLng(24.7665799,121.0172283),
+						new GLatLng(24.7662216,121.0174733),
+						new GLatLng(24.7660366,121.0179416),
+						new GLatLng(24.7652383,121.0182316),
+						new GLatLng(24.7640583,121.0191316),
+						new GLatLng(24.76352,121.0191016),
+						new GLatLng(24.7626966,121.0186849),
+						new GLatLng(24.7604116,121.0190449),
+						new GLatLng(24.7598166,121.0193766),
+						new GLatLng(24.7591099,121.0194883),
+						new GLatLng(24.7589566,121.0197849),
+						new GLatLng(24.7581699,121.0201233),
+						new GLatLng(24.7568533,121.0197349),
+						new GLatLng(24.7558316,121.0197916),
+						new GLatLng(24.7553366,121.0196033),
+						new GLatLng(24.7548699,121.019095),
+						new GLatLng(24.7531433,121.0190183),
+						new GLatLng(24.7525066,121.0192716),
+						new GLatLng(24.751805,121.0192799),
+						new GLatLng(24.7512366,121.0197533),
+						new GLatLng(24.750655,121.02004),
+						new GLatLng(24.7499799,121.0193116),
+						new GLatLng(24.7495183,121.0191016),
+						new GLatLng(24.7489849,121.0190483),
+						new GLatLng(24.7485033,121.0193716),
+						new GLatLng(24.7479883,121.0199916),
+						new GLatLng(24.7476132,121.0202349),
+						new GLatLng(24.7469883,121.0200016),
+						new GLatLng(24.7465233,121.0199766),
+						new GLatLng(24.7455499,121.0202233),
+						new GLatLng(24.7452483,121.0206583),
+						new GLatLng(24.7447249,121.0209083),
+						new GLatLng(24.7437483,121.0208866),
+						new GLatLng(24.7428066,121.0213933),
+						new GLatLng(24.7398283,121.0215649),
+						new GLatLng(24.7391866,121.0222666),
+						new GLatLng(24.73855,121.022425),
+						new GLatLng(24.7381749,121.0228633),
+						new GLatLng(24.7372383,121.02294),
+						new GLatLng(24.7363366,121.0235933),
+						new GLatLng(24.7348949,121.0231499),
+						new GLatLng(24.734525,121.0232883),
+						new GLatLng(24.7340166,121.0242899),
+						new GLatLng(24.7343,121.0249216),
+						new GLatLng(24.7342083,121.0252483),
+						new GLatLng(24.7338316,121.0257033),
+						new GLatLng(24.734035,121.0270649),
+						new GLatLng(24.733965,121.0273183),
+						new GLatLng(24.7335483,121.0276299),
+						new GLatLng(24.7326016,121.0278433),
+						new GLatLng(24.7325066,121.0283616),
+						new GLatLng(24.7316299,121.0285499),
+						new GLatLng(24.7314133,121.02871),
+						new GLatLng(24.7311316,121.0292316),
+						new GLatLng(24.7310433,121.0298883),
+						new GLatLng(24.7296999,121.0315483),
+						new GLatLng(24.7288166,121.0322016),
+						new GLatLng(24.7283316,121.0333466),
+						new GLatLng(24.7274516,121.0344533),
+						new GLatLng(24.7268583,121.0347583),
+						new GLatLng(24.7260433,121.0342333),
+						new GLatLng(24.725935,121.03362),
+						new GLatLng(24.7255816,121.0335583),
+						new GLatLng(24.7244599,121.0344499),
+						new GLatLng(24.7228016,121.0349016),
+						new GLatLng(24.7220316,121.0360649),
+						new GLatLng(24.7204716,121.0372149),
+						new GLatLng(24.7198183,121.0372783),
+						new GLatLng(24.7191916,121.037655),
+						new GLatLng(24.7191866,121.0379599),
+						new GLatLng(24.7194116,121.0381299),
+						new GLatLng(24.7195016,121.0383933),
+						new GLatLng(24.7194383,121.0399233),
+						new GLatLng(24.7206033,121.0411583),
+						new GLatLng(24.7213233,121.0416049),
+						new GLatLng(24.7219599,121.0417049),
+						new GLatLng(24.7234249,121.04224),
+						new GLatLng(24.7241816,121.0428383),
+						new GLatLng(24.7272266,121.0424583),
+						new GLatLng(24.7275016,121.0426716),
+						new GLatLng(24.7278216,121.0442449),
+						new GLatLng(24.7277683,121.0445333),
+						new GLatLng(24.7271916,121.0453333),
+						new GLatLng(24.7275283,121.0454416),
+						new GLatLng(24.7275766,121.0457433),
+						new GLatLng(24.72811,121.0452883),
+						new GLatLng(24.7276966,121.0456383),
+						new GLatLng(24.7276766,121.0458016),
+						new GLatLng(24.7274616,121.0453583),
+						new GLatLng(24.7262166,121.0449149),
+						new GLatLng(24.7269183,121.0462383),
+						new GLatLng(24.727785,121.0466099),
+						new GLatLng(24.72805,121.0470883),
+						new GLatLng(24.7280782,121.0479249),
+						new GLatLng(24.7283099,121.0482599),
+						new GLatLng(24.728305,121.0488533),
+						new GLatLng(24.7284466,121.0490283),
+						new GLatLng(24.7294499,121.0489233),
+						new GLatLng(24.7302266,121.0498416),
+						new GLatLng(24.7304433,121.050395),
+						new GLatLng(24.7315099,121.0517666),
+						new GLatLng(24.7316266,121.052375),
+						new GLatLng(24.7319399,121.05265),
+						new GLatLng(24.7324316,121.0523233),
+						new GLatLng(24.7334166,121.0524816),
+						new GLatLng(24.7336949,121.0527483),
+						new GLatLng(24.7338716,121.0533983),
+						new GLatLng(24.7343799,121.053645),
+						new GLatLng(24.7348866,121.0541499),
+						new GLatLng(24.7353416,121.0540833),
+						new GLatLng(24.7359716,121.0543866),
+						new GLatLng(24.7365766,121.0551449),
+						new GLatLng(24.7368316,121.05524),
+						new GLatLng(24.736965,121.0551566),
+						new GLatLng(24.7371333,121.0546983),
+						new GLatLng(24.7376933,121.0542533),
+						new GLatLng(24.7379499,121.0542433),
+						new GLatLng(24.7384966,121.0548049),
+						new GLatLng(24.7388816,121.0547516),
+						new GLatLng(24.7398633,121.0552799),
+						new GLatLng(24.7399266,121.0555866),
+						new GLatLng(24.7390216,121.0569833),
+						new GLatLng(24.7395199,121.0575933),
+						new GLatLng(24.7391816,121.0578966),
+						new GLatLng(24.7385099,121.0580916),
+						new GLatLng(24.7380799,121.0587616),
+						new GLatLng(24.7379582,121.0592833),
+						new GLatLng(24.7381649,121.0606533),
+						new GLatLng(24.7384266,121.0610616),
+						new GLatLng(24.7388883,121.0611083),
+						new GLatLng(24.7389516,121.0616183),
+						new GLatLng(24.7392883,121.0618299),
+						new GLatLng(24.73988,121.061665),
+						new GLatLng(24.7415149,121.0626083),
+						new GLatLng(24.7415066,121.0630833),
+						new GLatLng(24.7407066,121.0641199),
+						new GLatLng(24.7398633,121.0643449),
+						new GLatLng(24.739585,121.0646233),
+						new GLatLng(24.7391599,121.0657016),
+						new GLatLng(24.7388933,121.0659383),
+						new GLatLng(24.7382733,121.0661383),
+						new GLatLng(24.7382583,121.0668833),
+						new GLatLng(24.7375716,121.0676449),
+						new GLatLng(24.7358416,121.0683383),
+						new GLatLng(24.7349549,121.0688649),
+						new GLatLng(24.7343183,121.0690149),
+						new GLatLng(24.7337616,121.0695383),
+						new GLatLng(24.7323216,121.0691499),
+						new GLatLng(24.7317999,121.0695499),
+						new GLatLng(24.7313183,121.0697283),
+						new GLatLng(24.7310666,121.069685),
+						new GLatLng(24.7304999,121.0692916),
+						new GLatLng(24.7303983,121.0690016),
+						new GLatLng(24.7303983,121.0680233),
+						new GLatLng(24.7301816,121.0675433),
+						new GLatLng(24.7296516,121.06707),
+						new GLatLng(24.7295999,121.0668433),
+						new GLatLng(24.7300383,121.066095),
+						new GLatLng(24.7298416,121.0652099),
+						new GLatLng(24.7300132,121.0647983),
+						new GLatLng(24.7303816,121.0645),
+						new GLatLng(24.730535,121.0635733),
+						new GLatLng(24.73042,121.0632166),
+						new GLatLng(24.7309416,121.0617783),
+						new GLatLng(24.7303833,121.0609483),
+						new GLatLng(24.7302749,121.0603783),
+						new GLatLng(24.73035,121.059295),
+						new GLatLng(24.7302049,121.0587183),
+						new GLatLng(24.7298133,121.0584366),
+						new GLatLng(24.7290916,121.058415),
+						new GLatLng(24.7279416,121.0573983),
+						new GLatLng(24.7277866,121.0569383),
+						new GLatLng(24.72783,121.0566683),
+						new GLatLng(24.7274783,121.0563699),
+						new GLatLng(24.7259999,121.0558849),
+						new GLatLng(24.7250233,121.0549333),
+						new GLatLng(24.724925,121.0543899),
+						new GLatLng(24.72455,121.0538),
+						new GLatLng(24.724285,121.0536066)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					var pts = [ // track 1 segment 1a:
+						new GLatLng(24.724285,121.0536066),
+						new GLatLng(24.7236816,121.0537016),
+						new GLatLng(24.7234333,121.0535883),
+						new GLatLng(24.7231816,121.0526749),
+						new GLatLng(24.722685,121.0525083),
+						new GLatLng(24.7223583,121.051705),
+						new GLatLng(24.7217266,121.0514366),
+						new GLatLng(24.7215466,121.05095),
+						new GLatLng(24.7209999,121.050395),
+						new GLatLng(24.7201283,121.0505416),
+						new GLatLng(24.7198749,121.0504366),
+						new GLatLng(24.7197333,121.0492399),
+						new GLatLng(24.7195349,121.0490249),
+						new GLatLng(24.7187983,121.0491516),
+						new GLatLng(24.7183266,121.0486566),
+						new GLatLng(24.7171299,121.0478633),
+						new GLatLng(24.7168183,121.0478383),
+						new GLatLng(24.7164183,121.0472766),
+						new GLatLng(24.7164833,121.0463166),
+						new GLatLng(24.7169382,121.0456349),
+						new GLatLng(24.7171333,121.0451066),
+						new GLatLng(24.71708,121.0445149),
+						new GLatLng(24.7175466,121.0423783),
+						new GLatLng(24.71841,121.0423599),
+						new GLatLng(24.7187466,121.0425016),
+						new GLatLng(24.7193533,121.0424899),
+						new GLatLng(24.7228016,121.0440666),
+						new GLatLng(24.7236416,121.044955),
+						new GLatLng(24.7250766,121.0446633),
+						new GLatLng(24.7255883,121.0447649),
+						new GLatLng(24.7260033,121.0446783),
+						new GLatLng(24.726175,121.0447866),
+						new GLatLng(24.72647,121.0454733),
+						new GLatLng(24.7271016,121.0463883),
+						new GLatLng(24.7277,121.0465733),
+						new GLatLng(24.7281166,121.0470916),
+						new GLatLng(24.72812,121.0479666),
+						new GLatLng(24.7282849,121.0481716),
+						new GLatLng(24.7283166,121.0488233),
+						new GLatLng(24.7285049,121.0490833),
+						new GLatLng(24.7293133,121.0489749),
+						new GLatLng(24.7295983,121.0491266),
+						new GLatLng(24.73028,121.0499283),
+						new GLatLng(24.7306083,121.0506133),
+						new GLatLng(24.7311799,121.0511983),
+						new GLatLng(24.7318482,121.0526316),
+						new GLatLng(24.7321866,121.052615),
+						new GLatLng(24.7323999,121.0524316),
+						new GLatLng(24.7329166,121.0525566),
+						new GLatLng(24.7333816,121.0524866),
+						new GLatLng(24.7337716,121.0528466),
+						new GLatLng(24.7339366,121.0534799),
+						new GLatLng(24.7345466,121.0538166),
+						new GLatLng(24.7347983,121.0541199),
+						new GLatLng(24.7358399,121.0539),
+						new GLatLng(24.7362683,121.0536499),
+						new GLatLng(24.7361116,121.0533049),
+						new GLatLng(24.7357266,121.0531033),
+						new GLatLng(24.7354816,121.0527616),
+						new GLatLng(24.73562,121.0522016),
+						new GLatLng(24.7360349,121.0514499),
+						new GLatLng(24.7370316,121.0523183),
+						new GLatLng(24.7374049,121.0521866),
+						new GLatLng(24.7375183,121.0516899),
+						new GLatLng(24.7376616,121.0516733),
+						new GLatLng(24.7380549,121.0520216),
+						new GLatLng(24.7383883,121.0519533),
+						new GLatLng(24.7385033,121.0517816),
+						new GLatLng(24.7383749,121.0511383),
+						new GLatLng(24.73862,121.0508683),
+						new GLatLng(24.7385966,121.0507016),
+						new GLatLng(24.7376133,121.0495916),
+						new GLatLng(24.73838,121.0497683),
+						new GLatLng(24.7386333,121.0499766),
+						new GLatLng(24.7390316,121.0500716),
+						new GLatLng(24.7388516,121.0494033),
+						new GLatLng(24.7392599,121.0490833),
+						new GLatLng(24.7389883,121.0484066),
+						new GLatLng(24.7382616,121.0475933),
+						new GLatLng(24.73814,121.0469716),
+						new GLatLng(24.7384049,121.0461633),
+						new GLatLng(24.7382166,121.0456833),
+						new GLatLng(24.7382116,121.0453416),
+						new GLatLng(24.7389566,121.0445849),
+						new GLatLng(24.7392883,121.0440416),
+						new GLatLng(24.7389683,121.0432799),
+						new GLatLng(24.739415,121.0424666),
+						new GLatLng(24.7393233,121.0422433),
+						new GLatLng(24.7388666,121.0419549),
+						new GLatLng(24.7388433,121.0417233),
+						new GLatLng(24.7398733,121.0412233),
+						new GLatLng(24.74054,121.0396033),
+						new GLatLng(24.7406933,121.0394633),
+						new GLatLng(24.7413916,121.03953),
+						new GLatLng(24.7415849,121.0394233),
+						new GLatLng(24.741885,121.0389249),
+						new GLatLng(24.7426433,121.0387283),
+						new GLatLng(24.7433333,121.0381283),
+						new GLatLng(24.7436516,121.0382483),
+						new GLatLng(24.7440199,121.0381583),
+						new GLatLng(24.7444283,121.0383049),
+						new GLatLng(24.7443333,121.0390216),
+						new GLatLng(24.7450016,121.0401666),
+						new GLatLng(24.74529,121.0404266),
+						new GLatLng(24.7455682,121.0404349),
+						new GLatLng(24.7459799,121.0393949),
+						new GLatLng(24.746325,121.0389933),
+						new GLatLng(24.7466449,121.0389383),
+						new GLatLng(24.7472383,121.0392816),
+						new GLatLng(24.7497516,121.0431766),
+						new GLatLng(24.7502316,121.0430233),
+						new GLatLng(24.7509849,121.0423349),
+						new GLatLng(24.7511399,121.0417649),
+						new GLatLng(24.7522133,121.0400683),
+						new GLatLng(24.7528933,121.0396133),
+						new GLatLng(24.7530616,121.0392566),
+						new GLatLng(24.7531849,121.038415),
+						new GLatLng(24.7533799,121.0382716),
+						new GLatLng(24.753585,121.037415),
+						new GLatLng(24.7548016,121.0368616),
+						new GLatLng(24.7574766,121.0370649),
+						new GLatLng(24.757955,121.0369666),
+						new GLatLng(24.75881,121.0370883),
+						new GLatLng(24.7589866,121.0372549),
+						new GLatLng(24.7591866,121.0372149),
+						new GLatLng(24.7591099,121.037175),
+						new GLatLng(24.7589232,121.0374216),
+						new GLatLng(24.7590883,121.0377699),
+						new GLatLng(24.7581283,121.038705),
+						new GLatLng(24.7573833,121.0382666),
+						new GLatLng(24.7573199,121.0385666),
+						new GLatLng(24.7574733,121.03879),
+						new GLatLng(24.7573016,121.0383966),
+						new GLatLng(24.75734,121.0381883),
+						new GLatLng(24.7566382,121.0379916),
+						new GLatLng(24.7567966,121.0379449),
+						new GLatLng(24.7576666,121.0382799),
+						new GLatLng(24.7581966,121.0387433),
+						new GLatLng(24.7583016,121.038655),
+						new GLatLng(24.7584466,121.0387516),
+						new GLatLng(24.7591666,121.0380333),
+						new GLatLng(24.759485,121.0381449),
+						new GLatLng(24.759875,121.0380599),
+						new GLatLng(24.7607533,121.0387633),
+						new GLatLng(24.7610783,121.0388349),
+						new GLatLng(24.7624883,121.0397416),
+						new GLatLng(24.7638733,121.0395566),
+						new GLatLng(24.764065,121.0391266),
+						new GLatLng(24.7642783,121.0390633),
+						new GLatLng(24.764545,121.0395399),
+						new GLatLng(24.7654899,121.0396533),
+						new GLatLng(24.765805,121.0391766),
+						new GLatLng(24.7667399,121.0384533),
+						new GLatLng(24.7671599,121.0379366),
+						new GLatLng(24.7672866,121.0369083),
+						new GLatLng(24.7677366,121.0366633),
+						new GLatLng(24.76781,121.0355416),
+						new GLatLng(24.7680499,121.0351299),
+						new GLatLng(24.76837,121.034875),
+						new GLatLng(24.7693133,121.03304),
+						new GLatLng(24.7697249,121.0327033),
+						new GLatLng(24.7692899,121.0330016),
+						new GLatLng(24.7686783,121.0321133),
+						new GLatLng(24.76917,121.0319516),
+						new GLatLng(24.7690016,121.0311099),
+						new GLatLng(24.7690983,121.0304433),
+						new GLatLng(24.7694033,121.0298683),
+						new GLatLng(24.76945,121.0292699),
+						new GLatLng(24.7691283,121.0291349),
+						new GLatLng(24.7696799,121.0278933),
+						new GLatLng(24.7709016,121.0271399),
+						new GLatLng(24.7710466,121.0269016),
+						new GLatLng(24.77102,121.0266799),
+						new GLatLng(24.7711583,121.0265549),
+						new GLatLng(24.7729916,121.0261199),
+						new GLatLng(24.77344,121.0263433),
+						new GLatLng(24.7747566,121.0258616),
+						new GLatLng(24.7755249,121.0250799),
+						new GLatLng(24.77605,121.0238849),
+						new GLatLng(24.7761966,121.0229583),
+						new GLatLng(24.77585,121.0202616),
+						new GLatLng(24.7758833,121.0192233),
+						new GLatLng(24.7767666,121.0190299),
+						new GLatLng(24.7769283,121.0191699),
+						new GLatLng(24.7769783,121.0196316),
+						new GLatLng(24.7771049,121.0194583),
+						new GLatLng(24.7776233,121.0194749),
+						new GLatLng(24.7780049,121.0192549),
+						new GLatLng(24.7783032,121.0193249),
+						new GLatLng(24.7784949,121.01919),
+						new GLatLng(24.781655,121.0209249),
+						new GLatLng(24.78189,121.0212099),
+						new GLatLng(24.7817599,121.02179),
+						new GLatLng(24.7817866,121.0212416),
+						new GLatLng(24.7802983,121.0202483),
+						new GLatLng(24.7785766,121.0193249),
+						new GLatLng(24.7781466,121.0199749),
+						new GLatLng(24.7782549,121.0201449),
+						new GLatLng(24.779215,121.0206466),
+						new GLatLng(24.778755,121.0212466)
+					];
+					//trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['outline_color']),trk_info[1]['outline_width'],1)); gmap.addOverlay(trk[1][trk[1].length-1]); // outline
+					trk[1].push (new GPolyline(pts,GV_Color_Name2Hex(trk_info[1]['color']),trk_info[1]['width'],trk_info[1]['opacity'])); gmap.addOverlay(trk[1][trk[1].length-1]);
+					
+					
+					GV_Add_Track_to_Tracklist({bullet:'- ',name:trk_info[1]['name'],desc:trk_info[1]['desc'],color:trk_info[1]['color'],id:"trk[1]"});
+					
+					
+					wpts = new Array();
+					wpts.push( GV_Marker(gmap,{lat:24.7281020,lon:121.0452920,name:'這裡走下去會到二重埔農路，通水仙路...',desc:'Lat.=24.7281016, Long.=121.0452916, Alt.=164m, Speed=1Km/h, Course=158deg.',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.75899,lon:121.03734,name:'這邊有 泥土路 進去',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7574500,lon:121.0387550,name:'還可以繼續走下去，gmap說還可以爬上新湖路勒...',desc:'Lat.=24.7574500, Long.=121.0387550, Alt.=139m, Speed=3Km/h, Course=236deg.',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					wpts.push( GV_Marker(gmap,{lat:24.7566480,lon:121.0379950,name:'竹林，沒路',desc:'Lat.=24.7566483, Long.=121.0379949, Alt.=143m, Speed=2Km/h, Course=296deg.',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+					
+//					wpts.push( GV_Marker(gmap,{lat:24.,lon:121.,name:'',desc:'',color:'',icon:'http://maps.gpsvisualizer.com/google_maps/icons/garmin/gpsmap/Waypoint.png',icon_size:[16,16]}) );
+				
+					GV_Finish_Map(gv_options);
+					
+				} else {
+					document.getElementById('gmap_div').style.backgroundColor = '#DDDDDD';
+					document.getElementById('gmap_div').innerHTML = 'Sorry, your Google Map cannot be displayed.';
+				}
+			}
+			GV_Map(); // execute the above code
+		</script>
+		
+	</body>
+
+</html>
