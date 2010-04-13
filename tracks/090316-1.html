@@ -54,7 +54,7 @@
 		
 		<script type="text/javascript">
 			// If you put this map on another Web site, you must include your API key or nothing will work!
-			var google_api_key = '';
+			var google_api_key = 'ABQIAAAAEze7wu8rtJbLUMg9r38hVBR6JEi-CnLH6jrRAqbmTPdvqdeWphRtMIliFfu-FA0D8DH8UOrc56VJkQ';
 			if (document.location.toString().indexOf('http://www.gpsvisualizer.com') > -1) { eval(unescape("%67%6F%6F%67%6C%65%5F%61%70%69%5F%6B%65%79")+" = '"+unescape("%41%42%51%49%41%41%41%41%61%47%39%4A%44%62%43%65%36%52%61%31%4F%67%30%68%4B%43%6E%32%4C%52%52%6F%6B%57%5F%49%74%45%49%6D%42%6F%37%65%77%62%56%45%4A%41%7A%73%74%53%73%52%57%68%52%4A%33%52%4D%44%41%57%70%4C%35%35%51%61%63%47%5A%32%7A%51%46%32%6B%4C%43%5F%65%41")+"'"); }
 			document.writeln('<script src="http://maps.google.com/maps?v=2&file=api&key='+google_api_key+'" type="text/javascript"><'+'/'+'script>');
 		</script>
@@ -66,7 +66,7 @@
 				map:'gmap', map_div:'gmap_div', marker_array:'wpts', track_array:'trk', track_info_array:'trk_info', // probably 'gmap','gmap_div','wpts','trk','trk_info'
 				
 				// basic map parameters:
-				full_screen:false,              // should the map fill the entire page (or frame)?
+				full_screen:true,              // should the map fill the entire page (or frame)?
 				center:[24.7612624,121.02975495], // latitude,longitude - be sure to keep the square brackets
 				zoom:14,                        // higher number means closer view; at 600px wide, 7 = width of New Mexico, 12 = width of San Francisco
 				map_opacity:1, map_type:'G_HYBRID_MAP', // opacity is from 0 to 1; popular map_type choices are 'G_NORMAL_MAP', 'G_SATELLITE_MAP', 'G_HYBRID_MAP', 'G_PHYSICAL_MAP', 'USGS_TOPO_TILES'
